@@ -205,7 +205,7 @@ math { font-family: math, "STIX Two Math", "Cambria Math", "Latin Modern Math", 
   cursor: pointer;
 }
 .motion-control:focus-visible { outline-offset: -3px; }
-.motion-pause-icon {
+.motion-icon {
   display: none;
   width: 2.4rem;
   height: 2.4rem;
@@ -214,11 +214,19 @@ math { font-family: math, "STIX Two Math", "Cambria Math", "Latin Modern Math", 
   background: rgb(0 0 0 / 65%);
   color: white;
 }
-.motion-control[aria-pressed="true"] .motion-pause-icon { display: grid; }
-.motion-pause-icon::before {
+.motion-control[aria-pressed="true"] .motion-icon,
+.motion-control.is-resuming .motion-icon { display: grid; }
+.motion-icon::before {
   content: "";
   width: 0.65rem;
   height: 0.8rem;
+}
+.motion-control[aria-pressed="true"] .motion-icon::before {
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transform: translateX(0.06rem);
+}
+.motion-control.is-resuming .motion-icon::before {
   border-inline: 0.17rem solid currentColor;
 }
 

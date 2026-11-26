@@ -33,6 +33,7 @@ for (const stage of document.querySelectorAll(".motion-stage")) {
   const animation = stage.querySelector(".motion-animation");
   const control = stage.querySelector(".motion-control");
   let pausedByUser = false;
+  let resumeFeedbackTimer;
 
   const showFallback = () => {
     video.classList.remove("has-frame");
@@ -59,11 +60,15 @@ for (const stage of document.querySelectorAll(".motion-stage")) {
     pausedByUser = !pausedByUser;
     control.setAttribute("aria-pressed", String(pausedByUser));
     if (pausedByUser) {
+      clearTimeout(resumeFeedbackTimer);
+      control.classList.remove("is-resuming");
       video.pause();
       animation.hidden = true;
       return;
     }
 
+    control.classList.add("is-resuming");
+    resumeFeedbackTimer = setTimeout(() => control.classList.remove("is-resuming"), 400);
     if (!video.classList.contains("has-frame")) showFallback();
     video.play().catch(() => {
       if (!pausedByUser && video.paused) showFallback();
