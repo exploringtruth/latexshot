@@ -23,13 +23,15 @@ LaTeXShot is a free, open-source menu bar app for macOS. Press **⌘⇧L** and s
 
 ## Install
 
-LaTeXShot requires an **Apple silicon Mac (M1 or later) running macOS 14 or later**.
+```sh
+brew install --cask exploringtruth/tap/latexshot
+```
 
-1. Download the [installer DMG](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg) and open it.
-2. Drag **LaTeXShot** into **Applications**, then eject the disk image.
-3. Open **LaTeXShot** from Applications. Grant Screen Recording access when macOS prompts you so LaTeXShot can read the region you select.
+Requires an **Apple silicon Mac (M1 or later) running macOS 14 or later**.
 
-The [v1.0.0 ZIP](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0.zip) is also available. Verify the installer against its [SHA-256 checksum](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg.sha256). The ZIP uses the [original release checksums](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/SHA256SUMS).
+For a manual install, open the [DMG](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg), drag **LaTeXShot** to **Applications**, and eject the disk image. [DMG checksum](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg.sha256) · [ZIP](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0.zip) · [ZIP checksum](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/SHA256SUMS)
+
+Open LaTeXShot from Applications and grant Screen Recording access when prompted.
 
 ### If macOS blocks the app
 
@@ -39,17 +41,6 @@ LaTeXShot is **ad-hoc signed and unnotarized**. If you trust the copy you downlo
 2. Go to **System Settings → Privacy & Security** and scroll to **Security**.
 3. Click **Open Anyway** next to the LaTeXShot warning, then confirm **Open**.
 4. Look for the LaTeXShot icon in the menu bar. [Apple’s instructions](https://support.apple.com/en-us/102445)
-
-### Install with Homebrew
-
-The LaTeXShot repository doubles as a Homebrew tap.
-
-```sh
-brew tap exploringtruth/latexshot https://github.com/exploringtruth/latexshot
-brew install --cask exploringtruth/latexshot/latexshot
-```
-
-Open LaTeXShot from Applications. The same [first-launch instructions](#if-macos-blocks-the-app) apply if macOS blocks it.
 
 ## Usage
 
@@ -101,7 +92,7 @@ v1.0.0 supports printed equations in PDFs and websites. Handwriting support is p
 
 ### How do I update v1.0.0?
 
-Quit LaTeXShot before updating. If you installed with Homebrew, run `brew upgrade --cask exploringtruth/latexshot/latexshot` once the cask lists the new version. For a direct install, download the new version from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases) and replace the app in Applications. In-app update checks and automatic updates are disabled in v1.0.0.
+Quit LaTeXShot before updating. If you installed with Homebrew, run `brew upgrade --cask exploringtruth/tap/latexshot` once the cask lists the new version. For a direct install, download the new version from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases) and replace the app in Applications. In-app update checks and automatic updates are disabled in v1.0.0.
 
 ## Build from source
 
