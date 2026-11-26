@@ -1,3 +1,11 @@
+:root, .privacy-band {
+  --paper-grid:
+    repeating-linear-gradient(90deg, var(--grid-major) 0 1px, transparent 1px 96px),
+    repeating-linear-gradient(0deg, var(--grid-major) 0 1px, transparent 1px 96px),
+    repeating-linear-gradient(90deg, var(--grid-minor) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(0deg, var(--grid-minor) 0 1px, transparent 1px 24px);
+}
+
 :root {
   color-scheme: light dark;
   --paper: #fcf8fe;
@@ -9,13 +17,21 @@
   --rule: #dcd0e5;
   --sheet: #f5edf9;
   --grid: #e4d6ec;
+  --grid-minor: #835c9b0b;
+  --grid-major: #74458d15;
+  --paper-glow: #ce9deb1c;
+  --paper-wash: #e9d6f420;
   --focus: #9a5619;
   --plum: #311b42;
   --plum-ink: #fcf5ff;
   --plum-muted: #e1d2ec;
   --serif: Georgia, "Times New Roman", serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image:
+    var(--paper-grid),
+    radial-gradient(ellipse 60rem 43rem at 78% 7rem, var(--paper-glow), transparent 86%),
+    linear-gradient(160deg, transparent 24%, var(--paper-wash));
   color: var(--ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
@@ -32,6 +48,10 @@
     --rule: #483653;
     --sheet: #291a35;
     --grid: #3a2946;
+    --grid-minor: #b08bce0c;
+    --grid-major: #b894dc18;
+    --paper-glow: #7f45ad2a;
+    --paper-wash: #481e6520;
     --focus: #f0be76;
     --plum: #301b41;
   }
@@ -197,6 +217,7 @@ kbd {
 }
 
 .output {
+  background: var(--paper);
   padding: 0.9rem 1.1rem 0.75rem;
   border-top: 1px solid var(--rule);
 }
@@ -297,7 +318,13 @@ pre {
 .settings dt { font-weight: 650; }
 .settings dd { margin: 0; color: var(--muted); }
 
-.privacy-band { background: var(--plum); color: var(--plum-ink); }
+.privacy-band {
+  --grid-minor: #e4c7fb0e;
+  --grid-major: #e4c7fb1b;
+  background-color: var(--plum);
+  background-image: var(--paper-grid);
+  color: var(--plum-ink);
+}
 .privacy-inner, .install, .faq {
   display: grid;
   grid-template-columns: minmax(0, 0.83fr) minmax(0, 1fr);
