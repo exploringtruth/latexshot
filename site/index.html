@@ -1,40 +1,192 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Screenshot a printed equation and copy it as LaTeX, offline. A menu bar app for Apple silicon Macs.">
-<meta name="color-scheme" content="light dark">
-<title>LaTeXShot — Screenshot an equation. Copy it as LaTeX.</title>
-<link rel="icon" type="image/png" href="LaTeXShot.png">
-<link rel="stylesheet" href="style.css?v=prism-1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Capture a printed equation from a PDF or website and copy it as LaTeX, offline. A menu bar app for Apple silicon Macs.">
+  <meta name="color-scheme" content="light dark">
+  <title>LaTeXShot — Screenshot an equation. Copy it as LaTeX.</title>
+  <link rel="icon" type="image/png" href="LaTeXShot.png">
+  <link rel="stylesheet" href="style.css?v=equations-1">
+  <script src="script.js?v=equations-1" defer></script>
 </head>
-<body>
-<header><a class="wordmark" href="./">LaTeXShot</a><a href="https://github.com/exploringtruth/latexshot">GitHub ↗</a></header>
-<main>
-<section class="hero" aria-labelledby="headline">
-<p class="eyebrow">A little shortcut for big equations</p>
-<img class="app-icon" src="LaTeXShot.png" alt="LaTeXShot" width="104" height="104" onerror="this.hidden=true">
-<h1 id="headline">Screenshot an equation.<br><span>Copy it as LaTeX.</span></h1>
-<p class="intro">Select a printed equation in a PDF or website. LaTeXShot recognizes it on your Mac and puts the LaTeX on your clipboard.</p>
-<div class="download"><a class="button" href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg">Download for Mac <span aria-hidden="true">↓</span></a><a class="install-link" href="https://github.com/exploringtruth/latexshot#if-macos-blocks-the-app">First-launch instructions</a></div>
-<p class="requirements">Apple silicon · macOS 14 or later</p>
-<p class="status">v1.0.0 is ad-hoc signed and unnotarized. <a href="https://github.com/exploringtruth/latexshot/releases/tag/v1.0.0">Release notes, ZIP, and checksums</a></p>
-</section>
-<section class="flow" aria-label="How it works">
-<div><span class="step">01</span><h2>Capture</h2><p>Press <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>L</kbd> and drag around an equation.</p></div>
-<div><span class="step">02</span><h2>Recognize</h2><p>Your Mac reads the crop offline. Your equation stays on your machine.</p></div>
-<div><span class="step">03</span><h2>Paste</h2><p>Copy raw LaTeX, Markdown, or your own wrapper. Paste where you work.</p></div>
-</section>
-<section class="details"><h2>Ready when you are.</h2><p>Lives in your menu bar. Customize the shortcut, choose your clipboard format, and enable Launch at Login in Settings. Printed math comes first; handwriting support is planned.</p><p>Screen Recording permission is needed to read your selection. Download updates manually from GitHub Releases. The frozen printed-equation benchmark accepted 60 of 66 results (90.9%). Review the copied LaTeX before using it. <a href="https://github.com/exploringtruth/latexshot/blob/v1.0.0/benchmarks/pix2text-v1/README.md">Benchmark results</a></p></section>
-<section id="privacy" class="details privacy" aria-labelledby="privacy-heading">
-<h2 id="privacy-heading">Privacy &amp; Offline Guarantee</h2>
-<p><strong>Offline Recognition:</strong> Equation crops stay in memory during processing and are recognized entirely on-device by the bundled offline model and engine. Images and equations are never uploaded or transmitted to any server.</p>
-<p><strong>Screen Recording Permission:</strong> Screen recording access is used exclusively to capture the exact screen rectangle you select during capture.</p>
-<p><strong>Local Preferences and Equation History</strong> — Custom clipboard wrappers, shortcut configurations, and preferences are stored locally on your device in macOS preferences. Equation History stores recent copied formula text on your Mac across restarts.</p>
-<p><strong>Network Connections:</strong> <em>Send Feedback…</em> opens GitHub Issues in your browser. Version 1.0.0 uses manual downloads and has no automatic update checks or analytics.</p>
-</section>
-</main>
-<footer><span>Made for the equation in front of you.</span><nav aria-label="Project links"><a href="https://github.com/exploringtruth/latexshot#if-macos-blocks-the-app">Install Guide</a><a href="#privacy">Privacy</a><a href="https://github.com/exploringtruth/latexshot/issues">Feedback</a><a href="https://github.com/exploringtruth/latexshot">Source</a></nav></footer>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="page-width site-header">
+    <a class="wordmark" href="#top"><img src="LaTeXShot.png" alt="" width="40" height="40">LaTeXShot</a>
+    <nav aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="page-width hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Screenshot an equation. <em>Copy it as LaTeX.</em></h1>
+        <p>Draw a box around a printed equation in a PDF or website. LaTeXShot reads it on your Mac and copies the LaTeX, ready to paste.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg">Download for Mac</a>
+          <a href="https://github.com/exploringtruth/latexshot#if-macos-blocks-the-app">First-launch instructions</a>
+        </div>
+        <p class="system-note">Apple silicon · macOS 14 or later</p>
+      </div>
+
+      <figure class="demo" aria-labelledby="demo-caption">
+        <figcaption id="demo-caption" class="sheet-label">Example screen selection</figcaption>
+        <div class="capture-sheet">
+          <div class="selection-frame">
+            <span class="corner top-left" aria-hidden="true"></span>
+            <span class="corner top-right" aria-hidden="true"></span>
+            <span class="corner bottom-left" aria-hidden="true"></span>
+            <span class="corner bottom-right" aria-hidden="true"></span>
+            <math display="block" aria-label="The sum from k equals 1 to n of k equals n times n plus 1, divided by 2">
+              <munderover>
+                <mo>∑</mo>
+                <mpadded height="+0.16em"><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></mpadded>
+                <mpadded depth="+0.16em"><mi>n</mi></mpadded>
+              </munderover>
+              <mi>k</mi><mo>=</mo>
+              <mfrac>
+                <mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow>
+                <mn>2</mn>
+              </mfrac>
+            </math>
+          </div>
+          <div class="sheet-shortcut"><kbd aria-label="Command Shift L">⌘⇧L</kbd></div>
+        </div>
+        <div class="output">
+          <div class="output-heading">
+            <span class="sheet-label">Raw LaTeX</span>
+            <button class="copy-button" type="button" hidden>Copy example</button>
+          </div>
+          <pre><code id="example-latex">\sum_{k=1}^{n} k = \frac{n(n + 1)}{2}</code></pre>
+          <p class="copy-status" role="status"></p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="page-width ruled-section workflow" id="how-it-works" aria-labelledby="workflow-title">
+      <h2 id="workflow-title">From screen to source</h2>
+      <ol class="workflow-list">
+        <li><h3>Capture</h3><p>Press <kbd aria-label="Command Shift L">⌘⇧L</kbd> or choose <strong>Capture Equation</strong> in the menu bar. Drag around the formula. Press Escape to cancel.</p></li>
+        <li><h3>Recognize</h3><p>The bundled Pix2Text model reads the selected region offline. A popup previews the equation when it can render it.</p></li>
+        <li><h3>Paste</h3><p>Paste the result into a document, notebook or editor. Your preferred clipboard format is applied when LaTeXShot copies it.</p></li>
+      </ol>
+    </section>
+
+    <section class="page-width ruled-section features" id="features" aria-labelledby="features-title">
+      <h2 id="features-title">Make it fit your work</h2>
+      <div class="feature-row">
+        <div class="feature-copy">
+          <h3>Keep equations within reach</h3>
+          <p>Open <strong>Equation History</strong> from the menu bar. Click a rendered equation to copy it again, or drag it into a compatible text field. Both use the current clipboard format.</p>
+          <p>History keeps your last 10 copies by default and can hold up to 5,000. Pause recording in Settings or clear saved entries from the History panel.</p>
+        </div>
+        <figure class="history-sample">
+          <figcaption class="sheet-label">Example history entries</figcaption>
+          <ul>
+            <li><math aria-label="x squared plus y squared equals r squared"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math></li>
+            <li><math aria-label="The square root of a squared plus b squared"><msqrt><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></msqrt></math></li>
+            <li><math aria-label="a over b equals c over d"><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>d</mi></mfrac></math></li>
+          </ul>
+        </figure>
+      </div>
+      <div class="feature-row">
+        <div class="feature-copy">
+          <h3>Choose what goes on the clipboard</h3>
+          <p>Use raw LaTeX, Markdown, LaTeX delimiters, or a custom prefix and suffix. Custom text keeps spaces and line breaks.</p>
+          <p>Changing the format in <strong>Settings → General</strong> recopies the latest equation when one is available.</p>
+        </div>
+        <table class="formats">
+          <caption class="sheet-label">Clipboard formats</caption>
+          <thead><tr><th scope="col">Format</th><th scope="col">Example</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Raw LaTeX <span>(default)</span></th><td><code>x^2</code></td></tr>
+            <tr><th scope="row">Inline Markdown</th><td><code>$x^2$</code></td></tr>
+            <tr><th scope="row">Display Markdown</th><td><code>$$x^2$$</code></td></tr>
+            <tr><th scope="row">Inline LaTeX</th><td><code>\(x^2\)</code></td></tr>
+            <tr><th scope="row">Display LaTeX</th><td><code>\[x^2\]</code></td></tr>
+            <tr><th scope="row">Custom</th><td><code>prefix + x^2 + suffix</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="feature-row">
+        <div class="feature-copy">
+          <h3>Set your own shortcuts</h3>
+          <p>Change the capture shortcut or assign shortcuts to Settings, Equation History, and clipboard formats. In General, adjust selection dimming and choose whether LaTeXShot launches at login.</p>
+        </div>
+        <dl class="settings">
+          <div><dt>Capture Equation</dt><dd><kbd aria-label="Command Shift L">⌘⇧L</kbd> by default</dd></div>
+          <div><dt>Show Equation History</dt><dd>Optional shortcut</dd></div>
+          <div><dt>Capture Appearance</dt><dd>Dimming on or off</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+      <div class="page-width privacy-inner">
+        <h2 id="privacy-title">Recognition stays<br>on your Mac.</h2>
+        <div>
+          <p>Equation crops stay in memory while the bundled model reads them. Neither crops nor equations are uploaded. Your preferences and equation history stay on your Mac.</p>
+          <p>LaTeXShot uses Screen Recording to read the screen region you select. It has no analytics. Feedback opens GitHub Issues in your browser.</p>
+          <a href="https://github.com/exploringtruth/latexshot">Read the source</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-width ruled-section install" id="download" aria-labelledby="download-title">
+      <div>
+        <h2 id="download-title">Install LaTeXShot</h2>
+        <p>For Apple silicon Macs running macOS 14 or later.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg">Download for Mac</a>
+          <a href="https://github.com/exploringtruth/latexshot/releases/tag/v1.0.0">ZIP, checksums and release notes</a>
+        </div>
+      </div>
+      <div class="install-steps">
+        <ol>
+          <li>Open the DMG and drag LaTeXShot into Applications.</li>
+          <li>Open LaTeXShot and look for its icon in the menu bar.</li>
+          <li>Grant Screen Recording permission when macOS asks.</li>
+        </ol>
+        <p>v1.0.0 is ad-hoc signed and unnotarized. <a href="https://github.com/exploringtruth/latexshot#if-macos-blocks-the-app">Follow the first-launch instructions</a> if macOS blocks it.</p>
+      </div>
+    </section>
+
+    <section class="page-width ruled-section faq" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <div>
+        <details>
+          <summary>Which equations can it recognize?</summary>
+          <p>LaTeXShot v1.0.0 supports printed equations in PDFs and websites. Handwriting support is planned. The frozen printed-equation benchmark accepted 60 of 66 results (90.9%), below the 95% target. Review the copied LaTeX before using it. <a href="https://github.com/exploringtruth/latexshot/blob/v1.0.0/benchmarks/pix2text-v1/README.md">See the benchmark results</a>.</p>
+        </details>
+        <details>
+          <summary>Do I need an internet connection?</summary>
+          <p>The installed app recognizes equations entirely offline. Downloading the app or an update and opening GitHub for feedback requires an internet connection.</p>
+        </details>
+        <details>
+          <summary>What if macOS blocks the first launch?</summary>
+          <p>v1.0.0 is ad-hoc signed and unnotarized. If you trust your download, open <strong>System Settings → Privacy &amp; Security</strong> and use <strong>Open Anyway</strong>. <a href="https://support.apple.com/en-us/102445">Read Apple’s instructions</a>.</p>
+        </details>
+        <details>
+          <summary>How do I update v1.0.0?</summary>
+          <p>Download a newer version from <a href="https://github.com/exploringtruth/latexshot/releases">GitHub Releases</a>, quit LaTeXShot and replace it in Applications. In-app update checks and automatic updates are disabled in v1.0.0.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-width site-footer">
+    <a class="wordmark" href="#top"><img src="LaTeXShot.png" alt="" width="32" height="32">LaTeXShot</a>
+    <nav aria-label="Project links">
+      <a href="https://github.com/exploringtruth/latexshot#if-macos-blocks-the-app">Install guide</a>
+      <a href="#privacy">Privacy</a>
+      <a href="https://github.com/exploringtruth/latexshot/issues">Feedback</a>
+      <a href="https://github.com/exploringtruth/latexshot">Source</a>
+    </nav>
+  </footer>
 </body>
 </html>
