@@ -7,8 +7,8 @@
   <meta name="color-scheme" content="light dark">
   <title>LaTeXShot — Screenshot an equation. Copy it as LaTeX.</title>
   <link rel="icon" type="image/png" href="LaTeXShot.png">
-  <link rel="stylesheet" href="style.css?v=graph-paper-1">
-  <script src="script.js?v=equations-1" defer></script>
+  <link rel="stylesheet" href="style.css?v=motion-1">
+  <script src="script.js?v=motion-1" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,28 +34,35 @@
         <p class="system-note">Apple silicon · macOS 14 or later</p>
       </div>
 
-      <figure class="demo" aria-labelledby="demo-caption">
-        <figcaption id="demo-caption" class="sheet-label">Example screen selection</figcaption>
-        <div class="capture-sheet">
-          <div class="selection-frame">
-            <span class="corner top-left" aria-hidden="true"></span>
-            <span class="corner top-right" aria-hidden="true"></span>
-            <span class="corner bottom-left" aria-hidden="true"></span>
-            <span class="corner bottom-right" aria-hidden="true"></span>
-            <math display="block" aria-label="The sum from k equals 1 to n of k equals n times n plus 1, divided by 2">
-              <munderover>
-                <mo>∑</mo>
-                <mpadded height="+0.16em"><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></mpadded>
-                <mpadded depth="+0.16em"><mi>n</mi></mpadded>
-              </munderover>
-              <mi>k</mi><mo>=</mo>
-              <mfrac>
-                <mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow>
-                <mn>2</mn>
-              </mfrac>
-            </math>
+      <figure class="demo motion-demo" data-motion="capture demo" aria-labelledby="demo-caption" aria-describedby="demo-description">
+        <figcaption class="motion-caption">
+          <span id="demo-caption" class="sheet-label">Capture and copy example</span>
+          <span id="demo-description" class="visually-hidden">Illustration of selecting a printed equation and pasting the copied LaTeX into an editor.</span>
+          <button class="motion-toggle" type="button" aria-controls="capture-motion" hidden>Play</button>
+        </figcaption>
+        <div class="motion-stage">
+          <div class="capture-sheet motion-fallback">
+            <div class="selection-frame">
+              <span class="corner top-left" aria-hidden="true"></span>
+              <span class="corner top-right" aria-hidden="true"></span>
+              <span class="corner bottom-left" aria-hidden="true"></span>
+              <span class="corner bottom-right" aria-hidden="true"></span>
+              <math display="block" aria-label="The sum from k equals 1 to n of k equals n times n plus 1, divided by 2">
+                <munderover>
+                  <mo>∑</mo>
+                  <mpadded height="+0.16em"><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></mpadded>
+                  <mpadded depth="+0.16em"><mi>n</mi></mpadded>
+                </munderover>
+                <mi>k</mi><mo>=</mo>
+                <mfrac>
+                  <mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </math>
+            </div>
           </div>
-          <div class="sheet-shortcut"><kbd aria-label="Command Shift L">⌘⇧L</kbd></div>
+          <img class="motion-poster" src="media/capture.webp" width="960" height="600" alt="" decoding="async">
+          <video id="capture-motion" class="motion-video" src="media/capture.mp4" width="960" height="600" preload="none" muted playsinline loop disablepictureinpicture disableremoteplayback aria-hidden="true" hidden></video>
         </div>
         <div class="output">
           <div class="output-heading">
@@ -85,13 +92,23 @@
           <p>Open <strong>Equation History</strong> from the menu bar. Click a rendered equation to copy it again, or drag it into a compatible text field. Both use the current clipboard format.</p>
           <p>History keeps your last 10 copies by default and can hold up to 5,000. Pause recording in Settings or clear saved entries from the History panel.</p>
         </div>
-        <figure class="history-sample">
-          <figcaption class="sheet-label">Example history entries</figcaption>
-          <ul>
-            <li><math aria-label="x squared plus y squared equals r squared"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math></li>
-            <li><math aria-label="The square root of a squared plus b squared"><msqrt><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></msqrt></math></li>
-            <li><math aria-label="a over b equals c over d"><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>d</mi></mfrac></math></li>
-          </ul>
+        <figure class="history-demo motion-demo" data-motion="Equation History demo" aria-labelledby="history-caption" aria-describedby="history-description">
+          <figcaption class="motion-caption">
+            <span id="history-caption" class="sheet-label">Equation History example</span>
+            <span id="history-description" class="visually-hidden">Illustration of dragging an equation from history into a compatible editor.</span>
+            <button class="motion-toggle" type="button" aria-controls="history-motion" hidden>Play</button>
+          </figcaption>
+          <div class="motion-stage">
+            <div class="history-sample motion-fallback">
+              <ul>
+                <li><math aria-label="x squared plus y squared equals r squared"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math></li>
+                <li><math aria-label="The square root of a squared plus b squared"><msqrt><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></msqrt></math></li>
+                <li><math aria-label="a over b equals c over d"><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>d</mi></mfrac></math></li>
+              </ul>
+            </div>
+            <img class="motion-poster" src="media/history.webp" width="960" height="600" alt="" decoding="async" loading="lazy">
+            <video id="history-motion" class="motion-video" src="media/history.mp4" width="960" height="600" preload="none" muted playsinline loop disablepictureinpicture disableremoteplayback aria-hidden="true" hidden></video>
+          </div>
         </figure>
       </div>
       <div class="feature-row">
