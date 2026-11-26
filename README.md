@@ -15,8 +15,8 @@
 </p>
 
 <p align="center">
-  <a href="https://exploringtruth.github.io/latexshot/#download"><picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/exploringtruth/latexshot/main/site/media/capture.webp"><img src="docs/demos/capture.webp" width="49%" alt="Capture a PDF equation and paste its LaTeX into an editor"></picture></a>
-  <a href="https://exploringtruth.github.io/latexshot/#download"><picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/exploringtruth/latexshot/main/site/media/history.webp"><img src="docs/demos/history.webp" width="49%" alt="Drag saved equations from Equation History into an editor"></picture></a>
+  <a href="https://exploringtruth.github.io/latexshot/#download"><picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/exploringtruth/latexshot/main/site/media/capture.webp"><img src="docs/demos/capture-workflow.webp" width="49%" alt="Capture a PDF equation and paste its LaTeX into an editor"></picture></a>
+  <a href="https://exploringtruth.github.io/latexshot/#download"><picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/exploringtruth/latexshot/main/site/media/history.webp"><img src="docs/demos/equation-history-workflow.webp" width="49%" alt="Drag saved equations from Equation History into an editor"></picture></a>
 </p>
 
 LaTeXShot is a free, open-source menu bar app for macOS. Press **⌘⇧L** and select a printed equation in a PDF or website to copy its LaTeX. Recognition runs on your Mac.
