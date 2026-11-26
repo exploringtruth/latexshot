@@ -27,3 +27,46 @@ for (const image of document.querySelectorAll(".motion-stage img")) {
   image.addEventListener("error", hideFailedImage);
   if (image.complete && image.naturalWidth === 0) hideFailedImage();
 }
+
+for (const stage of document.querySelectorAll(".motion-stage")) {
+  const video = stage.querySelector(".motion-video");
+  const animation = stage.querySelector(".motion-animation");
+  const control = stage.querySelector(".motion-control");
+  let pausedByUser = false;
+
+  const showFallback = () => {
+    video.classList.remove("has-frame");
+    animation.hidden = pausedByUser || (animation.complete && animation.naturalWidth === 0);
+  };
+  const showVideo = () => {
+    if (pausedByUser) {
+      video.pause();
+      return;
+    }
+    video.classList.add("has-frame");
+    animation.hidden = true;
+  };
+
+  video.addEventListener("playing", showVideo);
+  video.addEventListener("error", showFallback);
+  video.addEventListener("pause", () => {
+    if (!pausedByUser && video.paused) showFallback();
+  });
+  if (!video.paused && video.readyState >= 2) showVideo();
+
+  control.hidden = false;
+  control.addEventListener("click", () => {
+    pausedByUser = !pausedByUser;
+    control.setAttribute("aria-pressed", String(pausedByUser));
+    if (pausedByUser) {
+      video.pause();
+      animation.hidden = true;
+      return;
+    }
+
+    if (!video.classList.contains("has-frame")) showFallback();
+    video.play().catch(() => {
+      if (!pausedByUser && video.paused) showFallback();
+    });
+  });
+}
