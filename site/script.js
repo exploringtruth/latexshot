@@ -21,66 +21,9 @@ copyButton.addEventListener("click", async () => {
   }
 });
 
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+for (const image of document.querySelectorAll(".motion-stage img")) {
+  const hideFailedImage = () => { image.hidden = true; };
 
-for (const demo of document.querySelectorAll(".motion-demo")) {
-  const stage = demo.querySelector(".motion-stage");
-  const video = demo.querySelector("video");
-  const poster = demo.querySelector(".motion-poster");
-  const fallback = demo.querySelector(".motion-fallback");
-  let visible = false;
-  let playbackUnavailable = false;
-
-  const shouldPlay = () => visible && !document.hidden && !reducedMotion.matches;
-  const updateStill = () => {
-    const started = video.classList.contains("started");
-    const showPoster = !started && poster.naturalWidth > 0;
-    poster.classList.toggle("available", showPoster);
-    fallback.hidden = started || showPoster;
-  };
-  const showStill = () => {
-    video.hidden = true;
-    video.classList.remove("started");
-    updateStill();
-  };
-  const stopAfterFailure = () => {
-    playbackUnavailable = true;
-    showStill();
-  };
-  const updatePlayback = () => {
-    if (playbackUnavailable) return;
-
-    if (!shouldPlay()) {
-      video.pause();
-      if (reducedMotion.matches) showStill();
-      return;
-    }
-    if (!video.paused) return;
-
-    video.hidden = false;
-    video.play().catch(error => {
-      // Scrolling or switching tabs can pause a pending play request.
-      if (error.name !== "AbortError") stopAfterFailure();
-    });
-  };
-
-  video.addEventListener("playing", () => {
-    if (playbackUnavailable || !shouldPlay()) {
-      video.pause();
-      return;
-    }
-    video.classList.add("started");
-    updateStill();
-  });
-  video.addEventListener("error", stopAfterFailure);
-  poster.addEventListener("load", updateStill);
-  poster.addEventListener("error", updateStill);
-  reducedMotion.addEventListener("change", updatePlayback);
-  document.addEventListener("visibilitychange", updatePlayback);
-  new IntersectionObserver(([entry]) => {
-    visible = entry.intersectionRatio >= 0.25;
-    updatePlayback();
-  }, {threshold: 0.25}).observe(stage);
-
-  updateStill();
+  image.addEventListener("error", hideFailedImage);
+  if (image.complete && image.naturalWidth === 0) hideFailedImage();
 }

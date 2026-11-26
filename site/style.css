@@ -181,7 +181,7 @@ math { font-family: math, "STIX Two Math", "Cambria Math", "Latin Modern Math", 
   background: var(--sheet);
 }
 
-.motion-poster, .motion-video {
+.motion-poster, .motion-animation {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -189,10 +189,6 @@ math { font-family: math, "STIX Two Math", "Cambria Math", "Latin Modern Math", 
   object-fit: contain;
 }
 
-.motion-poster { z-index: 1; visibility: hidden; }
-.motion-poster.available { visibility: visible; }
-.motion-video { opacity: 0; }
-.motion-video.started { opacity: 1; }
 .sheet-label {
   color: var(--muted);
   font-size: 0.875rem;
