@@ -7,8 +7,8 @@
   <meta name="color-scheme" content="light dark">
   <title>LaTeXShot — Screenshot an equation. Copy it as LaTeX.</title>
   <link rel="icon" type="image/png" href="LaTeXShot.png">
-  <link rel="stylesheet" href="style.css?v=motion-1">
-  <script src="script.js?v=motion-1" defer></script>
+  <link rel="stylesheet" href="style.css?v=motion-2">
+  <script src="script.js?v=motion-2" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,11 +34,10 @@
         <p class="system-note">Apple silicon · macOS 14 or later</p>
       </div>
 
-      <figure class="demo motion-demo" data-motion="capture demo" aria-labelledby="demo-caption" aria-describedby="demo-description">
+      <figure class="demo motion-demo" aria-labelledby="demo-caption" aria-describedby="demo-description">
         <figcaption class="motion-caption">
           <span id="demo-caption" class="sheet-label">Capture and copy example</span>
           <span id="demo-description" class="visually-hidden">Illustration of selecting a printed equation in a PDF. The Copied popup shows the rendered equation, then Command V pastes its LaTeX into a separate editor. The editor then displays the typeset equation in its preview.</span>
-          <button class="motion-toggle" type="button" aria-controls="capture-motion" hidden>Play</button>
         </figcaption>
         <div class="motion-stage">
           <div class="capture-sheet motion-fallback">
@@ -62,7 +61,7 @@
             </div>
           </div>
           <img class="motion-poster" src="media/capture.webp?v=2" width="960" height="600" alt="" decoding="async">
-          <video id="capture-motion" class="motion-video" src="media/capture.mp4?v=5" width="960" height="600" preload="none" muted playsinline loop disablepictureinpicture disableremoteplayback aria-hidden="true" hidden></video>
+          <video class="motion-video" src="media/capture.mp4?v=5" width="960" height="600" preload="none" muted playsinline loop disablepictureinpicture disableremoteplayback aria-hidden="true" hidden></video>
         </div>
         <div class="output">
           <div class="output-heading">
@@ -92,11 +91,10 @@
           <p>Open <strong>Equation History</strong> from the menu bar. Click a rendered equation to copy it again, or drag it into a compatible text field. Both use the current clipboard format.</p>
           <p>History keeps your last 10 copies by default and can hold up to 5,000. Pause recording in Settings or clear saved entries from the History panel.</p>
         </div>
-        <figure class="history-demo motion-demo" data-motion="Equation History demo" aria-labelledby="history-caption" aria-describedby="history-description">
+        <figure class="history-demo motion-demo" aria-labelledby="history-caption" aria-describedby="history-description">
           <figcaption class="motion-caption">
             <span id="history-caption" class="sheet-label">Equation History example</span>
             <span id="history-description" class="visually-hidden">Illustration of dragging two different saved equations from Equation History into an editor. The History panel stays open after each drop.</span>
-            <button class="motion-toggle" type="button" aria-controls="history-motion" hidden>Play</button>
           </figcaption>
           <div class="motion-stage">
             <div class="history-sample motion-fallback">
@@ -107,7 +105,7 @@
               </ul>
             </div>
             <img class="motion-poster" src="media/history.webp?v=2" width="960" height="600" alt="" decoding="async" loading="lazy">
-            <video id="history-motion" class="motion-video" src="media/history.mp4?v=2" width="960" height="600" preload="none" muted playsinline loop disablepictureinpicture disableremoteplayback aria-hidden="true" hidden></video>
+            <video class="motion-video" src="media/history.mp4?v=2" width="960" height="600" preload="none" muted playsinline loop disablepictureinpicture disableremoteplayback aria-hidden="true" hidden></video>
           </div>
         </figure>
       </div>

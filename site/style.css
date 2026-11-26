@@ -168,28 +168,10 @@ math { font-family: math, "STIX Two Math", "Cambria Math", "Latin Modern Math", 
 .motion-caption {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
   min-height: 2.85rem;
   padding-inline: 1.1rem;
   border-bottom: 1px solid var(--rule);
 }
-
-.motion-toggle {
-  min-height: 2rem;
-  padding: 0.25rem 0.1rem;
-  border: 0;
-  background: transparent;
-  color: var(--accent);
-  font: inherit;
-  font-size: 0.875rem;
-  font-weight: 650;
-  text-decoration: underline;
-  text-underline-offset: 0.23em;
-  cursor: pointer;
-}
-
-.motion-toggle:hover { text-decoration-thickness: 2px; }
 
 .motion-stage {
   position: relative;

@@ -28,66 +28,54 @@ for (const demo of document.querySelectorAll(".motion-demo")) {
   const video = demo.querySelector("video");
   const poster = demo.querySelector(".motion-poster");
   const fallback = demo.querySelector(".motion-fallback");
-  const button = demo.querySelector(".motion-toggle");
   let visible = false;
-  let explicitPlayback = null;
-  let failed = false;
+  let playbackUnavailable = false;
 
-  const wantsPlayback = () => explicitPlayback ?? !reducedMotion.matches;
+  const shouldPlay = () => visible && !document.hidden && !reducedMotion.matches;
   const updateStill = () => {
     const started = video.classList.contains("started");
     const showPoster = !started && poster.naturalWidth > 0;
     poster.classList.toggle("available", showPoster);
     fallback.hidden = started || showPoster;
   };
+  const showStill = () => {
+    video.hidden = true;
+    video.classList.remove("started");
+    updateStill();
+  };
+  const stopAfterFailure = () => {
+    playbackUnavailable = true;
+    showStill();
+  };
   const updatePlayback = () => {
-    if (failed) return;
+    if (playbackUnavailable) return;
 
-    const action = wantsPlayback() ? "Pause" : "Play";
-    button.textContent = action;
-    button.setAttribute("aria-label", `${action} ${demo.dataset.motion}`);
-
-    if (!visible || document.hidden || !wantsPlayback()) {
+    if (!shouldPlay()) {
       video.pause();
+      if (reducedMotion.matches) showStill();
       return;
     }
     if (!video.paused) return;
 
     video.hidden = false;
     video.play().catch(error => {
-      if (error.name === "AbortError" || failed) return;
-      explicitPlayback = false;
-      updatePlayback();
+      // Scrolling or switching tabs can pause a pending play request.
+      if (error.name !== "AbortError") stopAfterFailure();
     });
   };
 
   video.addEventListener("playing", () => {
-    if (!visible || document.hidden || !wantsPlayback()) {
+    if (playbackUnavailable || !shouldPlay()) {
       video.pause();
       return;
     }
     video.classList.add("started");
     updateStill();
   });
-  video.addEventListener("error", () => {
-    failed = true;
-    video.hidden = true;
-    video.classList.remove("started");
-    button.hidden = true;
-    updateStill();
-  });
+  video.addEventListener("error", stopAfterFailure);
   poster.addEventListener("load", updateStill);
   poster.addEventListener("error", updateStill);
-
-  button.hidden = false;
-  button.addEventListener("click", () => {
-    explicitPlayback = !wantsPlayback();
-    updatePlayback();
-  });
-  reducedMotion.addEventListener("change", () => {
-    if (reducedMotion.matches) explicitPlayback = null;
-    updatePlayback();
-  });
+  reducedMotion.addEventListener("change", updatePlayback);
   document.addEventListener("visibilitychange", updatePlayback);
   new IntersectionObserver(([entry]) => {
     visible = entry.intersectionRatio >= 0.25;
@@ -95,5 +83,4 @@ for (const demo of document.querySelectorAll(".motion-demo")) {
   }, {threshold: 0.25}).observe(stage);
 
   updateStill();
-  updatePlayback();
 }
