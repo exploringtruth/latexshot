@@ -4,16 +4,17 @@
 <h1 align="center">LaTeXShot</h1>
 <p align="center">Screenshot an equation and copy it as LaTeX, offline.</p>
 <p align="center">
-  <a href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg"><strong>Download the DMG</strong></a>
-  · <a href="https://github.com/exploringtruth/latexshot/releases/latest">Latest release</a>
-  · <a href="https://exploringtruth.github.io/latexshot/">Website</a>
+  <a href="https://github.com/exploringtruth/latexshot/releases/latest"><img src="https://img.shields.io/github/v/release/exploringtruth/latexshot.png?style=flat&amp;label=release&amp;color=0061ae" height="20" alt="Latest release"></a>
+  <a href="LICENSE"><img src="docs/badges/gpl-3.0-only.png" height="20" alt="License: GPL-3.0-only"></a>
+  <a href="#install"><img src="docs/badges/macos-14-plus.png" height="20" alt="Requires macOS 14 or later on Apple silicon"></a>
 </p>
 <p align="center">
-  <a href="#install">Apple silicon · macOS 14 or later</a>
-  · <a href="LICENSE">GPL-3.0-only</a>
+  <a href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg"><strong>Download the DMG</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://exploringtruth.github.io/latexshot/"><strong>Official website</strong></a>
 </p>
 
-LaTeXShot puts printed equations from PDFs and websites on your clipboard. Press **⌘⇧L**, select the equation, and paste the LaTeX into your editor. Recognition runs on your Mac.
+LaTeXShot is a free, open-source menu bar app for macOS. Press **⌘⇧L** and select a printed equation in a PDF or website to copy its LaTeX. Recognition runs on your Mac.
 
 ## Install
 
