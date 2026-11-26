@@ -9,7 +9,7 @@
   <a href="#install"><img src="docs/badges/compatibility-macos-14.png" height="20" alt="Requires macOS 14 or later on Apple silicon"></a>
 </p>
 <p align="center">
-  <a href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg"><strong>Download the DMG</strong></a>
+  <a href="https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg"><strong>Download the DMG</strong></a>
   &nbsp;·&nbsp;
   <a href="https://exploringtruth.github.io/latexshot/"><strong>Official website</strong></a>
 </p>
@@ -25,11 +25,11 @@ LaTeXShot is a free, open-source menu bar app for macOS. Press **⌘⇧L** and s
 
 LaTeXShot requires an **Apple silicon Mac (M1 or later) running macOS 14 or later**.
 
-1. Download the [latest DMG](https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg) and open it.
+1. Download the [installer DMG](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg) and open it.
 2. Drag **LaTeXShot** into **Applications**, then eject the disk image.
 3. Open **LaTeXShot** from Applications. Grant Screen Recording access when macOS prompts you so LaTeXShot can read the region you select.
 
-The [v1.0.0 ZIP](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0.zip) is also available. Verify either download against the [published checksums](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/SHA256SUMS).
+The [v1.0.0 ZIP](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0.zip) is also available. Verify the installer against its [SHA-256 checksum](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0-Installer.dmg.sha256). The ZIP uses the [original release checksums](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/SHA256SUMS).
 
 ### If macOS blocks the app
 
