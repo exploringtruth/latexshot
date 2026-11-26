@@ -40,6 +40,17 @@ LaTeXShot is **ad-hoc signed and unnotarized**. If you trust the copy you downlo
 3. Click **Open Anyway** next to the LaTeXShot warning, then confirm **Open**.
 4. Look for the LaTeXShot icon in the menu bar. [Apple’s instructions](https://support.apple.com/en-us/102445)
 
+### Install with Homebrew
+
+The LaTeXShot repository doubles as a Homebrew tap.
+
+```sh
+brew tap exploringtruth/latexshot https://github.com/exploringtruth/latexshot
+brew install --cask exploringtruth/latexshot/latexshot
+```
+
+Open LaTeXShot from Applications. The same [first-launch instructions](#if-macos-blocks-the-app) apply if macOS blocks it.
+
 ## Usage
 
 1. Press **⌘⇧L** or choose **Capture Equation** from the menu bar.
@@ -90,7 +101,7 @@ v1.0.0 supports printed equations in PDFs and websites. Handwriting support is p
 
 ### How do I update v1.0.0?
 
-Download the new version from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases). Quit LaTeXShot, then replace the app in Applications. In-app update checks and automatic updates are disabled in v1.0.0.
+Quit LaTeXShot before updating. If you installed with Homebrew, run `brew upgrade --cask exploringtruth/latexshot/latexshot` once the cask lists the new version. For a direct install, download the new version from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases) and replace the app in Applications. In-app update checks and automatic updates are disabled in v1.0.0.
 
 ## Build from source
 

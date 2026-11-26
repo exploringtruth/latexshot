@@ -198,6 +198,12 @@ Alternatively `scripts/release.sh VERSION --push` performs the fetch, ancestry c
 
 Tag-triggered Actions checks evidence and signing/asset settings **before building**, verifies pinned recognition archives, builds/packages, signs the update ZIP, verifies its signature, creates a draft release with all five assets, then publishes the draft and marks it latest. It downloads every public asset again, verifies SHA256 against local output, and compares both latest-release links. Release workflow concurrency prevents overlapping publication; it never cancels an in-progress publication. Retain workflow logs and artifact checksums as the audit of commit/tag, operator, and output.
 
+After a new release is public, update the `version`, `sha256`, and any
+changed asset filename in [the cask](../Casks/latexshot.rb). Pin the exact
+release DMG URL and use the checksum of that DMG. Verify it with
+`brew fetch --cask exploringtruth/latexshot/latexshot` from a tap checkout
+that includes the update.
+
 ## Failure and recovery
 
 - **Preflight, build, signing, or signature failure:** no public release is created. Correct the source/configuration, prepare a new immutable version when necessary, and rerun the checks. The previous public feed and installed apps stay unchanged.
