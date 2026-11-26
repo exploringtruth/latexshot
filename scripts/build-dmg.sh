@@ -32,10 +32,8 @@ SCRATCH="${SWIFT_BUILD_DIR:-$ROOT/.build/packaging}"
 OUT="${PACKAGE_OUTPUT_DIR:-$ROOT/.build/dist/$MODE/$VERSION}"
 [[ "$SCRATCH" == /* && "$OUT" == /* ]] || { echo 'Build/output paths must be absolute' >&2; exit 1; }
 mkdir -p "$SCRATCH" "$OUT"
-STAGE=''
 ASSET_STAGE=''
 cleanup() {
-  if [[ -n "$STAGE" ]]; then rm -rf "$STAGE"; fi
   if [[ -n "$ASSET_STAGE" ]]; then rm -rf "$ASSET_STAGE"; fi
 }
 trap cleanup EXIT
@@ -130,11 +128,7 @@ codesign --force --sign - "$APP"
 codesign --verify --deep --strict --verbose=2 "$APP"
 plutil -lint "$APP/Contents/Info.plist"
 [[ "$(lipo -archs "$APP/Contents/MacOS/LaTeXShot")" == arm64 ]] || { echo 'Unexpected executable architecture' >&2; exit 1; }
-STAGE="$(mktemp -d "$SCRATCH/dmg-stage.XXXXXX")"
-ditto "$APP" "$STAGE/LaTeXShot.app"
-ln -s /Applications "$STAGE/Applications"
-hdiutil create -volname 'LaTeXShot' -srcfolder "$STAGE" -format UDZO "$OUT/LaTeXShot-$VERSION.dmg"
-hdiutil verify "$OUT/LaTeXShot-$VERSION.dmg"
+bash scripts/create-installer-dmg.sh "$APP" "$OUT/LaTeXShot-$VERSION.dmg"
 ditto -c -k --sequesterRsrc --keepParent "$APP" "$OUT/LaTeXShot-$VERSION.zip"
 cp "$OUT/LaTeXShot-$VERSION.dmg" "$OUT/LaTeXShot.dmg"
 echo "Created $OUT (ad-hoc signed, not notarized; mode $MODE)"

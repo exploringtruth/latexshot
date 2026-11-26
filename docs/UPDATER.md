@@ -159,6 +159,25 @@ Local-only `PACKAGE_OUTPUT_DIR` and `SWIFT_BUILD_DIR` may point at absolute exte
 
 Output is `.build/dist/--release/VERSION/`; local output lives separately under `--local`. Existing output apps cause an error, preventing accidental mixing of successive builds. Archive old local output or remove that exact generated version directory before rebuilding. The app, versioned DMG, stable-name DMG, and ZIP are assembled once; signing the ZIP does not rebuild the app. Never replace artifacts in an already published version.
 
+The installer uses a 500 × 264 point Finder icon-view preset with
+96-point icons. LaTeXShot appears on the left and the Applications link
+appears on the right. Finder uses the system appearance for colors and
+filenames. The release build includes this layout in the stable `LaTeXShot.dmg`.
+`scripts/create-installer-dmg.sh` takes an already signed app and writes a new
+disk image with native macOS tools. The ZIP comes from the signed app directly.
+
+To rewrap an already verified app without rebuilding or signing it again,
+use a new output file in an existing directory:
+
+```sh
+bash scripts/create-installer-dmg.sh \
+  /absolute/path/to/LaTeXShot.app /absolute/path/to/LaTeXShot-1.0.0-Installer.dmg
+```
+
+The v1.0.0 download links point to this versioned installer and its own
+checksum to preserve the original published downloads and checksums. Verify
+the rewrapped app against the original, including its deep code signature.
+
 The release workflow requires the `release` environment. Configure GitHub environment protection appropriate to repository ownership before publication; do not assume an unconfigured environment supplies an approval gate. Pages must be configured for GitHub Actions in repository Settings. There is no automatic application/schema migration in this release.
 
 Write `.github/release-notes/vX.Y.Z.md`, commit all changes, and prepare a version:
@@ -182,7 +201,7 @@ Tag-triggered Actions checks evidence and signing/asset settings **before buildi
 ## Failure and recovery
 
 - **Preflight, build, signing, or signature failure:** no public release is created. Correct the source/configuration, prepare a new immutable version when necessary, and rerun the checks. The previous public feed and installed apps stay unchanged.
-- **Interrupted build:** no mounted temporary DMG is left behind because image creation does not attach one. Only generated output and a temporary staging directory are involved. A new local attempt refuses the existing app; inspect and remove/archive that exact output before retrying.
+- **Interrupted build:** image creation leaves no staging volume mounted. The installer cleans up its private staging directory on exit. If the process is killed before cleanup, archive or remove the exact `.latexshot-dmg.*` staging directory. A new local attempt refuses the existing app. Inspect and remove or archive that exact output before retrying.
 - **Interrupted publication before publish:** inspect the GitHub draft. Published releases are never overwritten. If all assets are present, download them and verify against `SHA256SUMS`, then publish that exact draft after review. If incomplete, delete only the unpublished draft, retain the tag, and rerun the workflow. This is an explicit operator action; the workflow fails on any existing release instead of guessing.
 - **Post-publication link/checksum failure:** stop further releases, inspect the named release and latest designation, and preserve all evidence. Do not upload replacement binaries under the same version. Restore the previous good release as latest only after verifying its appcast and archives; this stops offering the faulty version to older installs but does not downgrade already updated apps. Coordinate website messaging if downloads need to pause.
 - **Bad installed update:** quit LaTeXShot and reinstall the previous known-good official DMG in Applications, preserving the existing local preferences. If newer preferences are incompatible, back them up and document a tested recovery before release. Sparkle does not automatically downgrade. Ship a corrected build with a **higher** version using the same trusted Ed25519 key. Keep old versioned assets available for manual recovery.
