@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "distribution_signing": "adhoc-unnotarized",
+  "icon_selected": {"passed": true, "evidence": "Assets/Icon/LaTeXShot.png"},
+  "user_trial_passed": {"passed": true, "evidence": "docs/releases/v1.0.0-trial.md"},
+  "clean_account_install_passed": {"passed": false, "evidence": ""},
+  "login_both_states_passed": {"passed": false, "evidence": ""},
+  "manual_update_passed": {"passed": false, "evidence": ""},
+  "scheduled_update_passed": {"passed": false, "evidence": ""},
+  "packaged_update_relaunch_passed": {"passed": false, "evidence": ""},
+  "offline_runtime_verified": {"passed": true, "evidence": "docs/releases/v1.0.0-package.md"},
+  "recognition_archives": {
+    "runtime_sha256": "8697cb6de114111ca58e48089d89e504f620ca580c99e2b43427376ec7c546e4",
+    "model_sha256": "0f65a8ba60bdc9f4dfa554dd50e464f51c67cecd2c31583ad3b9c778a31f6143"
+  },
+  "benchmark": {
+    "model": "breezedeus/pix2text-mfr-1.5",
+    "model_revision": "1cef9f0bdcd6a4c63df7de1311fb0894593340cc",
+    "printed_crops": 66,
+    "correct_fraction": 0.9090909090909091,
+    "warm_p95_seconds": null,
+    "first_capture_seconds": null,
+    "first_capture_evidence": "",
+    "cold_start_ready_seconds": null,
+    "cold_start_evidence": "",
+    "timing_scope": "mouse-up-to-clipboard-including-readiness-wait",
+    "evidence": "benchmarks/pix2text-v1/README.md"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "mouseUpToCaptureMs" : 139.409375,
+    "mouseUpToClipboardMs" : 7806.8319169999995,
+    "readyAtMouseUp" : false,
+    "scenario" : "immediate",
+    "startupHookToClipboardMs" : 7878.181125,
+    "startupHookToMouseUpMs" : 71.349208,
+    "startupHookToReadyMs" : 7718.537166
+  },
+  {
+    "mouseUpToCaptureMs" : 67.454583,
+    "mouseUpToClipboardMs" : 197.566125,
+    "readyAtMouseUp" : true,
+    "scenario" : "waitForReady",
+    "startupHookToClipboardMs" : 6028.207375,
+    "startupHookToMouseUpMs" : 5830.64125,
+    "startupHookToReadyMs" : 5825.133
+  }
+]

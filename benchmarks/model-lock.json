@@ -1,0 +1,33 @@
+{
+  "model": "PP-FormulaNet-S",
+  "repository": "PaddlePaddle/PP-FormulaNet-S",
+  "revision": "0572450e501be9eb1b1cdb7e00fccf4b22fab4df",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 20262,
+      "sha256": "e8d1abde69bf5f5f9b9ddfd3a913893846b5c24bff8e9028f3f8a82944ec48fc"
+    },
+    {
+      "name": "config.json",
+      "bytes": 3951671,
+      "sha256": "ea32742b976ba34711042cac4e46206f114067949448c2bd8dec60a44d3de1fb"
+    },
+    {
+      "name": "inference.json",
+      "bytes": 504505,
+      "sha256": "2c8fc31a94d461a7325fe06e8cbaa5db6c5658c490f74d3d6116defe8c859d6f"
+    },
+    {
+      "name": "inference.pdiparams",
+      "bytes": 231675001,
+      "sha256": "b6392296d16e2a9f414c0a751d7ccbd1bd9d8272b68aab72df1d3875f35a7489"
+    },
+    {
+      "name": "inference.yml",
+      "bytes": 2244559,
+      "sha256": "08b21c2d255041008266b8fb947758e9731eafff191568af21da5a4b9c9dd5a0"
+    }
+  ]
+}

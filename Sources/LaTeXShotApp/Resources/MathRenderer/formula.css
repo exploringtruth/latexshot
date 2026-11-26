@@ -1,0 +1,32 @@
+:root {
+    color-scheme: light dark;
+    color: CanvasText;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    place-items: center;
+    overflow: hidden;
+}
+
+#formula {
+    width: max-content;
+    transform-origin: center;
+}
+
+#formula .katex-display {
+    margin: 0;
+}
+
+body.natural-size {
+    display: block;
+    width: max-content;
+    height: auto;
+    padding: 12px;
+    overflow: visible;
+    color-scheme: light;
+    color: black;
+}

@@ -1,0 +1,82 @@
+{
+  "Fraction": {
+    "url": "https://en.wikipedia.org/wiki/Fraction",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Fraction&oldid=1386815123",
+    "history": "https://en.wikipedia.org/wiki/Fraction?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "e6344628d8f2912f246c084362cb1932a91dae6fe0624875b8bfa6e26fa1c207"
+  },
+  "Square_root": {
+    "url": "https://en.wikipedia.org/wiki/Square_root",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Square_root&oldid=1380705882",
+    "history": "https://en.wikipedia.org/wiki/Square_root?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "04752cb810c13d4d069c7e214418f7d1b705e29fdb16cff0c8a22cc46b8715c1"
+  },
+  "Matrix_(mathematics)": {
+    "url": "https://en.wikipedia.org/wiki/Matrix_(mathematics)",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Matrix_(mathematics)&oldid=1384916056",
+    "history": "https://en.wikipedia.org/wiki/Matrix_(mathematics)?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "1f2c278fa9ff649b10fe303da1b1dbe06e8c430990aed2313f7a080e584a709a"
+  },
+  "System_of_linear_equations": {
+    "url": "https://en.wikipedia.org/wiki/System_of_linear_equations",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=System_of_linear_equations&oldid=1382534594",
+    "history": "https://en.wikipedia.org/wiki/System_of_linear_equations?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "ccb0065f9ebbc44e66000113372b3a4df941b49345c350c3df8828452495a63b"
+  },
+  "Derivative": {
+    "url": "https://en.wikipedia.org/wiki/Derivative",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Derivative&oldid=1382704127",
+    "history": "https://en.wikipedia.org/wiki/Derivative?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "717984b747fd1efd81ab12766e3df193a77f9f875c808e0947e0937753f462b5"
+  },
+  "Integration_by_parts": {
+    "url": "https://en.wikipedia.org/wiki/Integration_by_parts",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Integration_by_parts&oldid=1370001209",
+    "history": "https://en.wikipedia.org/wiki/Integration_by_parts?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "0fcdad68ee636e759b287165dde501b0e0f4c653806c757801215b3eaa0c3c8b"
+  },
+  "Quadratic_formula": {
+    "url": "https://en.wikipedia.org/wiki/Quadratic_formula",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Quadratic_formula&oldid=1382357522",
+    "history": "https://en.wikipedia.org/wiki/Quadratic_formula?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "694b51eaf9b552604aee7d2f9f9b09da6916067208e8a2b1415f22f3677f2690"
+  },
+  "Gaussian_elimination": {
+    "url": "https://en.wikipedia.org/wiki/Gaussian_elimination",
+    "permalink": "https://en.wikipedia.org/w/index.php?title=Gaussian_elimination&oldid=1380056789",
+    "history": "https://en.wikipedia.org/wiki/Gaussian_elimination?action=history",
+    "copyright_holder": "Wikipedia contributors",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "footer_notice": "Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.",
+    "source_html_sha256": "9d45e58f5ec49b72933c2b3c0de7370834faed115c9b497bc8d0254995353646"
+  }
+}

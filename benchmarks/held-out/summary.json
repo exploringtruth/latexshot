@@ -1,0 +1,545 @@
+{
+  "status": "Provisional agent review; independent review pending",
+  "release_approved": false,
+  "app_latency_target_seconds": 0.8,
+  "latency_target_scope": "Mouse-up to clipboard, including first capture",
+  "timing_limitation": "Recorded times are warm worker pipe round trips. Cold start and app end-to-end timing are outside this measurement.",
+  "training_overlap": "Unknown. Public source exclusion from training cannot be proven.",
+  "suites": {
+    "wikipedia": {
+      "baseline": {
+        "correct": 41,
+        "pending": 0,
+        "total": 60,
+        "provisional_confirmed_accuracy": 0.6833333333333333,
+        "warm_worker_p95_seconds": 0.6840818750060862,
+        "categories": {
+          "fractions": {
+            "correct": 8,
+            "incorrect": 2,
+            "pending": 0
+          },
+          "roots": {
+            "correct": 6,
+            "incorrect": 4,
+            "pending": 0
+          },
+          "matrices": {
+            "correct": 10,
+            "incorrect": 0,
+            "pending": 0
+          },
+          "aligned": {
+            "correct": 2,
+            "incorrect": 8,
+            "pending": 0
+          },
+          "small-type": {
+            "correct": 7,
+            "incorrect": 3,
+            "pending": 0
+          },
+          "dark-background": {
+            "correct": 8,
+            "incorrect": 2,
+            "pending": 0
+          }
+        },
+        "failed_cases": [
+          {
+            "id": "fractions-01",
+            "structurally_correct": false,
+            "reason": "Corrupted nested fractions or malformed array"
+          },
+          {
+            "id": "fractions-08",
+            "structurally_correct": false,
+            "reason": "Cancellation annotations corrupted and math lost"
+          },
+          {
+            "id": "roots-02",
+            "structurally_correct": false,
+            "reason": "Malformed cases and changed terms"
+          },
+          {
+            "id": "roots-03",
+            "structurally_correct": false,
+            "reason": "Adds an overline to x within the radical"
+          },
+          {
+            "id": "roots-09",
+            "structurally_correct": false,
+            "reason": "Changes continued-fraction denominator"
+          },
+          {
+            "id": "roots-10",
+            "structurally_correct": false,
+            "reason": "Adds a term or corrupts continued fraction"
+          },
+          {
+            "id": "aligned-01",
+            "structurally_correct": false,
+            "reason": "Loses denominator 2 of 7/2"
+          },
+          {
+            "id": "aligned-02",
+            "structurally_correct": false,
+            "reason": "Malformed grouping and lost derivative terms"
+          },
+          {
+            "id": "aligned-04",
+            "structurally_correct": false,
+            "reason": "Drops integral from the first right hand side"
+          },
+          {
+            "id": "aligned-05",
+            "structurally_correct": false,
+            "reason": "Corrupted logarithm or malformed commands"
+          },
+          {
+            "id": "aligned-06",
+            "structurally_correct": false,
+            "reason": "Corrupted arctangent, integrals or rows"
+          },
+          {
+            "id": "aligned-08",
+            "structurally_correct": false,
+            "reason": "Corrupted gamma function derivation"
+          },
+          {
+            "id": "aligned-09",
+            "structurally_correct": false,
+            "reason": "Corrupted Fourier transform derivation"
+          },
+          {
+            "id": "aligned-10",
+            "structurally_correct": false,
+            "reason": "Corrupted Laplacian derivation"
+          },
+          {
+            "id": "small-type-02",
+            "structurally_correct": false,
+            "reason": "Missing fraction command"
+          },
+          {
+            "id": "small-type-03",
+            "structurally_correct": false,
+            "reason": "Adds literal textstyle as mathematical letters"
+          },
+          {
+            "id": "small-type-04",
+            "structurally_correct": false,
+            "reason": "Adds a dangling multiplication dot"
+          },
+          {
+            "id": "dark-background-02",
+            "structurally_correct": false,
+            "reason": "Corrupted product-rule arguments and commands"
+          },
+          {
+            "id": "dark-background-03",
+            "structurally_correct": false,
+            "reason": "Adds unmatched closing parentheses"
+          }
+        ]
+      },
+      "ink-cap-36": {
+        "correct": 39,
+        "pending": 0,
+        "total": 60,
+        "provisional_confirmed_accuracy": 0.65,
+        "warm_worker_p95_seconds": 1.5073116669955198,
+        "categories": {
+          "fractions": {
+            "correct": 8,
+            "incorrect": 2,
+            "pending": 0
+          },
+          "roots": {
+            "correct": 5,
+            "incorrect": 5,
+            "pending": 0
+          },
+          "matrices": {
+            "correct": 9,
+            "incorrect": 1,
+            "pending": 0
+          },
+          "aligned": {
+            "correct": 1,
+            "incorrect": 9,
+            "pending": 0
+          },
+          "small-type": {
+            "correct": 7,
+            "incorrect": 3,
+            "pending": 0
+          },
+          "dark-background": {
+            "correct": 9,
+            "incorrect": 1,
+            "pending": 0
+          }
+        },
+        "failed_cases": [
+          {
+            "id": "fractions-01",
+            "structurally_correct": false,
+            "reason": "Corrupted nested fractions or malformed array"
+          },
+          {
+            "id": "fractions-08",
+            "structurally_correct": false,
+            "reason": "Cancellation annotations corrupted and math lost"
+          },
+          {
+            "id": "roots-02",
+            "structurally_correct": false,
+            "reason": "Malformed cases and changed terms"
+          },
+          {
+            "id": "roots-03",
+            "structurally_correct": false,
+            "reason": "Adds an overline to x within the radical"
+          },
+          {
+            "id": "roots-06",
+            "structurally_correct": false,
+            "reason": "Changes summation lower bound from 0 to 9"
+          },
+          {
+            "id": "roots-09",
+            "structurally_correct": false,
+            "reason": "Changes continued-fraction denominator"
+          },
+          {
+            "id": "roots-10",
+            "structurally_correct": false,
+            "reason": "Adds a term or corrupts continued fraction"
+          },
+          {
+            "id": "matrices-06",
+            "structurally_correct": false,
+            "reason": "Corrupts subscripts and matrix delimiters"
+          },
+          {
+            "id": "aligned-01",
+            "structurally_correct": false,
+            "reason": "Loses denominator 2 of 7/2"
+          },
+          {
+            "id": "aligned-02",
+            "structurally_correct": false,
+            "reason": "Malformed grouping and lost derivative terms"
+          },
+          {
+            "id": "aligned-04",
+            "structurally_correct": false,
+            "reason": "Drops integral from the first right hand side"
+          },
+          {
+            "id": "aligned-05",
+            "structurally_correct": false,
+            "reason": "Corrupted logarithm or malformed commands"
+          },
+          {
+            "id": "aligned-06",
+            "structurally_correct": false,
+            "reason": "Corrupted arctangent, integrals or rows"
+          },
+          {
+            "id": "aligned-07",
+            "structurally_correct": false,
+            "reason": "Corrupts product factors and commands"
+          },
+          {
+            "id": "aligned-08",
+            "structurally_correct": false,
+            "reason": "Corrupted gamma function derivation"
+          },
+          {
+            "id": "aligned-09",
+            "structurally_correct": false,
+            "reason": "Corrupted Fourier transform derivation"
+          },
+          {
+            "id": "aligned-10",
+            "structurally_correct": false,
+            "reason": "Corrupted Laplacian derivation"
+          },
+          {
+            "id": "small-type-02",
+            "structurally_correct": false,
+            "reason": "Missing fraction command"
+          },
+          {
+            "id": "small-type-03",
+            "structurally_correct": false,
+            "reason": "Adds literal textstyle as mathematical letters"
+          },
+          {
+            "id": "small-type-04",
+            "structurally_correct": false,
+            "reason": "Adds a dangling multiplication dot"
+          },
+          {
+            "id": "dark-background-02",
+            "structurally_correct": false,
+            "reason": "Corrupted product-rule arguments and commands"
+          }
+        ]
+      },
+      "ink-cap-48": {
+        "correct": 40,
+        "pending": 0,
+        "total": 60,
+        "provisional_confirmed_accuracy": 0.6666666666666666,
+        "warm_worker_p95_seconds": 1.3991557499975897,
+        "categories": {
+          "fractions": {
+            "correct": 8,
+            "incorrect": 2,
+            "pending": 0
+          },
+          "roots": {
+            "correct": 6,
+            "incorrect": 4,
+            "pending": 0
+          },
+          "matrices": {
+            "correct": 10,
+            "incorrect": 0,
+            "pending": 0
+          },
+          "aligned": {
+            "correct": 1,
+            "incorrect": 9,
+            "pending": 0
+          },
+          "small-type": {
+            "correct": 7,
+            "incorrect": 3,
+            "pending": 0
+          },
+          "dark-background": {
+            "correct": 8,
+            "incorrect": 2,
+            "pending": 0
+          }
+        },
+        "failed_cases": [
+          {
+            "id": "fractions-01",
+            "structurally_correct": false,
+            "reason": "Corrupted nested fractions or malformed array"
+          },
+          {
+            "id": "fractions-08",
+            "structurally_correct": false,
+            "reason": "Cancellation annotations corrupted and math lost"
+          },
+          {
+            "id": "roots-02",
+            "structurally_correct": false,
+            "reason": "Malformed cases and changed terms"
+          },
+          {
+            "id": "roots-03",
+            "structurally_correct": false,
+            "reason": "Adds an overline to x within the radical"
+          },
+          {
+            "id": "roots-09",
+            "structurally_correct": false,
+            "reason": "Changes continued-fraction denominator"
+          },
+          {
+            "id": "roots-10",
+            "structurally_correct": false,
+            "reason": "Adds a term or corrupts continued fraction"
+          },
+          {
+            "id": "aligned-01",
+            "structurally_correct": false,
+            "reason": "Loses denominator 2 of 7/2"
+          },
+          {
+            "id": "aligned-02",
+            "structurally_correct": false,
+            "reason": "Malformed grouping and lost derivative terms"
+          },
+          {
+            "id": "aligned-04",
+            "structurally_correct": false,
+            "reason": "Drops integral from the first right hand side"
+          },
+          {
+            "id": "aligned-05",
+            "structurally_correct": false,
+            "reason": "Corrupted logarithm or malformed commands"
+          },
+          {
+            "id": "aligned-06",
+            "structurally_correct": false,
+            "reason": "Corrupted arctangent, integrals or rows"
+          },
+          {
+            "id": "aligned-07",
+            "structurally_correct": false,
+            "reason": "Corrupts product factors and commands"
+          },
+          {
+            "id": "aligned-08",
+            "structurally_correct": false,
+            "reason": "Corrupted gamma function derivation"
+          },
+          {
+            "id": "aligned-09",
+            "structurally_correct": false,
+            "reason": "Corrupted Fourier transform derivation"
+          },
+          {
+            "id": "aligned-10",
+            "structurally_correct": false,
+            "reason": "Corrupted Laplacian derivation"
+          },
+          {
+            "id": "small-type-02",
+            "structurally_correct": false,
+            "reason": "Missing fraction command"
+          },
+          {
+            "id": "small-type-03",
+            "structurally_correct": false,
+            "reason": "Adds literal textstyle as mathematical letters"
+          },
+          {
+            "id": "small-type-04",
+            "structurally_correct": false,
+            "reason": "Adds a dangling multiplication dot"
+          },
+          {
+            "id": "dark-background-02",
+            "structurally_correct": false,
+            "reason": "Corrupted product-rule arguments and commands"
+          },
+          {
+            "id": "dark-background-03",
+            "structurally_correct": false,
+            "reason": "Adds unmatched closing parentheses"
+          }
+        ]
+      }
+    },
+    "hefferon-pdf": {
+      "baseline": {
+        "correct": 1,
+        "pending": 1,
+        "total": 6,
+        "provisional_confirmed_accuracy": 0.16666666666666666,
+        "warm_worker_p95_seconds": 1.3850285000007716,
+        "categories": {
+          "aligned": {
+            "correct": 1,
+            "incorrect": 4,
+            "pending": 1
+          }
+        },
+        "failed_cases": [
+          {
+            "id": "hefferon-02",
+            "structurally_correct": false,
+            "reason": "Corrupted or incomplete first system row"
+          },
+          {
+            "id": "hefferon-03",
+            "structurally_correct": false,
+            "reason": "Changes first constant 9 to 0 or corrupts symbols"
+          },
+          {
+            "id": "hefferon-04",
+            "structurally_correct": false,
+            "reason": "Loses variables, rows or constants"
+          },
+          {
+            "id": "hefferon-06",
+            "structurally_correct": false,
+            "reason": "Adds literal mathtt and duplicates constant 8"
+          }
+        ]
+      },
+      "ink-cap-36": {
+        "correct": 2,
+        "pending": 0,
+        "total": 6,
+        "provisional_confirmed_accuracy": 0.3333333333333333,
+        "warm_worker_p95_seconds": 1.4192974580000737,
+        "categories": {
+          "aligned": {
+            "correct": 2,
+            "incorrect": 4,
+            "pending": 0
+          }
+        },
+        "failed_cases": [
+          {
+            "id": "hefferon-02",
+            "structurally_correct": false,
+            "reason": "Corrupted or incomplete first system row"
+          },
+          {
+            "id": "hefferon-03",
+            "structurally_correct": false,
+            "reason": "Changes first constant 9 to 0 or corrupts symbols"
+          },
+          {
+            "id": "hefferon-04",
+            "structurally_correct": false,
+            "reason": "Loses variables, rows or constants"
+          },
+          {
+            "id": "hefferon-05",
+            "structurally_correct": false,
+            "reason": "Adds literal letters or changes a constant"
+          }
+        ]
+      },
+      "ink-cap-48": {
+        "correct": 2,
+        "pending": 0,
+        "total": 6,
+        "provisional_confirmed_accuracy": 0.3333333333333333,
+        "warm_worker_p95_seconds": 1.4257866249972722,
+        "categories": {
+          "aligned": {
+            "correct": 2,
+            "incorrect": 4,
+            "pending": 0
+          }
+        },
+        "failed_cases": [
+          {
+            "id": "hefferon-02",
+            "structurally_correct": false,
+            "reason": "Corrupted or incomplete first system row"
+          },
+          {
+            "id": "hefferon-04",
+            "structurally_correct": false,
+            "reason": "Loses variables, rows or constants"
+          },
+          {
+            "id": "hefferon-05",
+            "structurally_correct": false,
+            "reason": "Adds literal letters or changes a constant"
+          },
+          {
+            "id": "hefferon-06",
+            "structurally_correct": false,
+            "reason": "Adds literal mathtt and duplicates constant 8"
+          }
+        ]
+      }
+    }
+  }
+}

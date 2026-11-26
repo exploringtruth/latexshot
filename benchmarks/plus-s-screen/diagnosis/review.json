@@ -1,0 +1,46 @@
+{
+  "scope": "Provisional structural review of the fresh guarded worker outputs. All cases omitted from rejected are accepted.",
+  "rubric": "Allow equivalent LaTeX commands, grouping, spacing and punctuation. Preserve each mathematical symbol and row or column. Broken LaTeX syntax fails. KaTeX 0.19.1 display parsing was used to corroborate syntax failures.",
+  "wikipedia": {
+    "prediction_file_sha256": "e3c34e9b6f4f43e4ab9ae72a87871e52c9eda98859a90b9a293d833c37a603d9",
+    "correct": 41,
+    "total": 60,
+    "rejected": {
+      "fractions-01": "Splits a compound fraction and inserts a multiplication dot into a mixed number.",
+      "fractions-07": "Substitutes 3 for the first numerator 2.",
+      "fractions-08": "Replaces cancelled digits and exponents with calligraphic letters and primes.",
+      "roots-02": "Corrupts the if clauses in the piecewise expression.",
+      "roots-06": "Corrupts the summation limits and breaks brace grouping.",
+      "roots-09": "Malformed aligned environment.",
+      "roots-10": "Corrupts the continued fraction and breaks brace grouping.",
+      "matrices-03": "Drops the third entry, 2.",
+      "matrices-07": "Drops the fourth column.",
+      "matrices-08": "Replaces the three columns of the entrywise-sum matrix with one and inserts a plus.",
+      "aligned-04": "Malformed aligned rows and brace grouping.",
+      "aligned-05": "Adds an x and parentheses in the first continuation row.",
+      "aligned-07": "Malformed aligned rows and brace grouping.",
+      "aligned-10": "Corrupts angle bracket commands and changes operands.",
+      "small-type-02": "Malformed array close.",
+      "small-type-04": "Adds a trailing multiplication operator.",
+      "small-type-05": "Replaces the partial-derivative symbols with check and sigma tokens.",
+      "dark-background-01": "Changes several operands and operators.",
+      "dark-background-03": "Corrupts the closing delimiter command."
+    }
+  },
+  "hefferon-pdf": {
+    "prediction_file_sha256": "1e9c39a465a330aed1c803b062229f6e157e45a80bcc830023c1df7c7da7a841",
+    "correct": 1,
+    "total": 6,
+    "rejected": {
+      "hefferon-01": "Unclosed grouping within the aligned environment.",
+      "hefferon-02": "Malformed grouping and duplicates the first equals sign.",
+      "hefferon-03": "Malformed array close.",
+      "hefferon-04": "Corrupts x-y=0 and omits the plus between y and w.",
+      "hefferon-05": "Malformed array close."
+    }
+  },
+  "combined_correct": 42,
+  "combined_total": 66,
+  "required_correct": 63,
+  "passed": false
+}

@@ -1,0 +1,443 @@
+{
+  "model": "PP-FormulaNet-S",
+  "preprocessing": "baseline",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": "3.12.14",
+  "timing_scope": "Warm pipe round trip including PNG decoding and inference. Excludes capture, Swift PNG encoding and clipboard write.",
+  "results": [
+    {
+      "id": "root-1x-24px-light-2",
+      "image": "root-1x-24px-light-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "aad5ee55928c6e6a05428a1065f60e496f261ddee995c5c30e3aa8d8d19fffde",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12294816700159572,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-light-6",
+      "image": "root-1x-24px-light-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "d017a01624603738d401a2554f91964734828b1578f041dad1796eb27f27ab7b",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12319412500073668,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-light-16",
+      "image": "root-1x-24px-light-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "80fa9903bb18d59a25624fc07482ab65873c49ae36f878491fb40841260ce80e",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12274450000040815,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-light-30",
+      "image": "root-1x-24px-light-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "69eb114155501595345fa4913f833c18fc5b972031b3e0f64a970807dfab581a",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12365595899973414,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-2",
+      "image": "root-1x-36px-light-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "efa8d358f6996240ea36c75c2b65d59b67aa6e54b8c7096dfefa93fbfc24c74c",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1236929999977292,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-6",
+      "image": "root-1x-36px-light-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "3b8ee2128e5a0c1d3f4399ec12e5b2ce44af09f1a52d2f61c8cb504079fc1bd5",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12702083400290576,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-16",
+      "image": "root-1x-36px-light-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "a7e717e25a2313cc87501e08334bdec0022f46e2e739e40e2a5195d6f037f701",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12410525000086636,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-30",
+      "image": "root-1x-36px-light-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "bcd3ff26282ef6b558b0682e9e670c9c76d8ff82cbc8a4080df9c7f5359a260a",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12169562500275788,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-2",
+      "image": "root-1x-48px-light-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "c95abf715357a0f34efca0e5fc3f29a3b26d919828dd15bce35798d96b193644",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11870004199954565,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-6",
+      "image": "root-1x-48px-light-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "2400e47f53850bac1b48a9be1a8a232b651619c95a18960d08fabd0cfab17acf",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11893324999982724,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-16",
+      "image": "root-1x-48px-light-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "4ad553c559924cf6336ade95f554d38a8e7e229cdf8c47aa05b47f0e50bd0df7",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1198993750003865,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-30",
+      "image": "root-1x-48px-light-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "965ffd653366ee089abc341bcb8c64b01d5b7c5fb73c3514c805b3dfbf128d54",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12062433299797704,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-2",
+      "image": "root-1x-24px-dark-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "0e5960fe6d62835cd393428d8d2664a64cbe3b391534cc442d5c868881456e65",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12116633300320245,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-6",
+      "image": "root-1x-24px-dark-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "2ce4a03654f3d80a63b9f296299e8a3fe0dcd88a6667257b833865f73e6af868",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12247354099963559,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-16",
+      "image": "root-1x-24px-dark-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "1eeae6cfa48f3677a9f19deecb244b43c9d348f92a1524f106e5b1095f931b9e",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12169066599744838,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-30",
+      "image": "root-1x-24px-dark-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[3]{y}}\\ =1",
+      "sha256": "a61dad392ee4ca092a3f8911a5be2e101761bce009e091bb276f7f8759fb4899",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12167641699852538,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-2",
+      "image": "root-1x-36px-dark-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "ad08eea1845eb972055a537d4320869e97127b6832220a865aaf08c5eda7612c",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11974175000068499,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-6",
+      "image": "root-1x-36px-dark-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "81740f51b72d1ab4afd44246c004402c9eccdaf7705d54830bb13bec0d774786",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12097537500085309,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-16",
+      "image": "root-1x-36px-dark-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "deae1c97f05bd40d7cccae42756a73ca8a864cf6b584cd366b7143312b76a580",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11933187500108033,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-30",
+      "image": "root-1x-36px-dark-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "ee2f8bad7a832f237a719df04067ffa2c798c9b57fdf8cdd481fd109162b9241",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1186163749989646,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-2",
+      "image": "root-1x-48px-dark-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "dd176f641d32c8a56bd08511b267c13954dc2629ec6a0e18eb07e96de7ce85d7",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13478741599828936,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-6",
+      "image": "root-1x-48px-dark-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "68a13e043f21aa8302abdf8d43b10e5e0c87cb0f12efa62ff0c5fb9faf6a3a66",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13836391699805972,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-16",
+      "image": "root-1x-48px-dark-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "61e1cd5778caaaf1f065981125fa1715e90ecdc26412f19978c6b28defe364b0",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13331916699826252,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-30",
+      "image": "root-1x-48px-dark-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "2528ca4077a5c17b6346cd4fe57ab4eff63d8b9b562d1885d09cb72ea4343ec8",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13277025000206777,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-2",
+      "image": "root-2x-24px-light-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "ad9e9f383755acae68bdc9ec6ef40e2231086df1f6e79702b423fc824f1074e6",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11843724999926053,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-6",
+      "image": "root-2x-24px-light-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "5049ae96a3f8a2a304921918ccedb557dc35df035a233247a049a92deaded581",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.120337666998239,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-16",
+      "image": "root-2x-24px-light-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "cd23b48584a09185ece902e9a2c6633d7e655fe8a851f17e35c85ff76480fdcb",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11877470800027368,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-30",
+      "image": "root-2x-24px-light-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "e0066258ce8fe9e69ed6818233e6bcc42dffae99d8e195b4efe683e575a2c206",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1217175000019779,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-2",
+      "image": "root-2x-36px-light-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "224cdecb42bb553bb780542315166d47061c0ce5eb19c5af7d29627be8e287be",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11557349999930011,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-6",
+      "image": "root-2x-36px-light-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "1bbdf72c6995ab123813f569f305e9f80ab9eef01e7c93691ea2f630495edc2a",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11593070800154237,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-16",
+      "image": "root-2x-36px-light-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "70043a518ead79a1c1c1ebc6c219573a56a87393a153a2aec4be47439bb199cf",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11666504199820338,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-30",
+      "image": "root-2x-36px-light-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "50e971aee6dd9d43c586b4eada361b976130dac02e774ef8de54047f432f9b4b",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11676312499912456,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-2",
+      "image": "root-2x-48px-light-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "0acf259d0d42a4b7f17d87746e166806b81df894d12d839d4d2bace1e4503d7f",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11804387500160374,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-6",
+      "image": "root-2x-48px-light-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "d4611fe43f43798fc606c935a0ea284baf617356a757521e0177f800fe018c83",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11806087500008289,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-16",
+      "image": "root-2x-48px-light-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "b9e38a80854773c7867b17a156d91207bda91d233f31032e5f60145488772d7d",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1188255829983973,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-30",
+      "image": "root-2x-48px-light-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "85e056b74121b0ed16c3458e6e79b21087f0dc5ded66a5c61538adf0590f22aa",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11677695799880894,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-2",
+      "image": "root-2x-24px-dark-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "e14413116b2b91957c0ac7f526de8f8991bc0cbbd75cfb248739084498311aa0",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13233362500250223,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-6",
+      "image": "root-2x-24px-dark-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "9596dbcfbff10ee489f29ca453d31af113c0c6694429bbba2f0620e8d930a71c",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13146287499694154,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-16",
+      "image": "root-2x-24px-dark-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "be641c2a7a6201f3ef9dd863bac741461e6e2695d2a9f7db01639b516c0f63c2",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13168004200269934,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-30",
+      "image": "root-2x-24px-dark-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{\\mathrm{~y~}}}=1",
+      "sha256": "ef1f287ffc6b25b8401ae5104eddf028359e9d4700949a76dc70969bcb5f75c2",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.13223979200120084,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-2",
+      "image": "root-2x-36px-dark-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "b8d816ac672b2507580f85f812d04999b26ec4dde9691d90e12bc11d66f55ad5",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.12054983299822197,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-6",
+      "image": "root-2x-36px-dark-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "f093176ac54aae3fd0e83ec608175b54562bbc6bb3076b4e14c38c278d9da73c",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11874654200073564,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-16",
+      "image": "root-2x-36px-dark-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "b3988a21809a0e393a630904f6339962f8181e7be8c0285ac2a6f043f5588aa5",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1210553750024701,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-30",
+      "image": "root-2x-36px-dark-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt[y]{y\\}}=1",
+      "sha256": "1c2a0c1141fb6efc6c62a2a970a11bf5f90b7c02dc87489fd25a197b8c821501",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.1222822499985341,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-2",
+      "image": "root-2x-48px-dark-2.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "1a878b8e9b7eef5135a47f80565188622d8dfdce94ceecb3ecb9a43164a51994",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11884099999952014,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-6",
+      "image": "root-2x-48px-dark-6.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "ad2aa8fdcdb7ecdc79cf6989b5ff197fe064bfd8b81831e4dc3cbe1f32af43d7",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11994658299954608,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-16",
+      "image": "root-2x-48px-dark-16.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "8e44bbd71ba0ff31089d9a45c74b22d87938642bfbfbd2f5151f9122a9e62bf8",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11816458300017985,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-30",
+      "image": "root-2x-48px-dark-30.png",
+      "latex": "{\\sqrt{x+1}}\\ +{\\sqrt{y}}\\ =1",
+      "sha256": "518b91c8ef65fd11e427594b6ce61a29be6d101653b9645d199f64b77030c68b",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "worker_seconds": 0.11779366699920502,
+      "structurally_correct": null
+    }
+  ],
+  "release_gate": "PENDING_MANUAL_REVIEW_AND_END_TO_END_TIMING"
+}

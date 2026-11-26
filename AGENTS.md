@@ -21,30 +21,46 @@ The Mac app lead owns the app-side Sparkle menu binding and SwiftPM dependency d
 
 ### Mac app and integration
 
-- [ ] Build the menu bar app, global shortcut, screen selection, and permission handling.
-- [ ] Implement the Settings sidebar, clipboard wrappers, first-run hint, and Launch at Login.
-- [ ] Validate exact clipboard output and the rendered popup with a stub recognizer, then integrate the selected model and artwork.
-- [ ] Verify live capture and deliver a local `swift run` build for the user's trial.
+- [x] Build the menu bar app, global shortcut, screen selection, and permission handling.
+- [x] Implement the Settings sidebar, clipboard wrappers, first-run hint, and Launch at Login.
+- [x] Verify exact clipboard output and offline math rendering with a stub. Connect the development app to the real PP-FormulaNet-S runtime and test inference through the Swift interface.
+- [x] Verify live capture, Escape cancellation, and focus on the connected 2× display. Provide the local `swift run` trial in [benchmarks/README.md](benchmarks/README.md).
+- [x] Integrate the approved Split Beam app and menu bar artwork.
+- [x] Launch the isolated plus-S trial and verify live capture and clipboard write. Record the incorrect result in [HANDOFF.md](HANDOFF.md).
+- [x] Complete the local Pix2Text trial with Equation History and record the user's v1.0.0 approval.
+- [ ] Integrate a qualified recognizer. Verify physical mixed-scale displays, denied permission, shortcut reassignment, and popup focus.
 
 ### Offline recognition
 
-- [ ] Agree on the crop-to-LaTeX interface with the app lead.
-- [ ] Assemble the printed benchmark and evaluate the candidate models against the accuracy and latency targets.
-- [ ] Deliver the selected weights and inference code with benchmark evidence and offline verification.
+- [x] Agree on the crop-to-LaTeX interface with the app lead.
+- [x] Build 60 controlled printed fixtures and evaluate PP-FormulaNet-S, PP-FormulaNet-L, plus-S, and preprocessing variants. Preserve evidence in [benchmark results](benchmarks/summary.json); S, L, and preprocessing variants are rejected.
+- [x] Freeze a held-out benchmark with 60 website and six PDF crops and a separate 48-capture cube-root repeat suite.
+- [x] Diagnose the pinned PP-FormulaNet_plus-S output failure and rerun the frozen suites. [Results](benchmarks/plus-s-screen/diagnosis/README.md) record the failed accuracy and repeat gates.
+- [x] Evaluate the pinned Pix2Text v1.0.0 candidate on the frozen printed suite. The [review](benchmarks/pix2text-v1/README.md) records the accuracy failure.
+- [ ] Qualify the release recognizer on printed accuracy and the end-to-end mouse-up-to-clipboard timing gates.
+- [ ] Bundle the qualified model and relocatable runtime.
 - [ ] Add and verify handwriting support in the follow-up release.
 
 ### Icon design
 
-- [ ] Present five distinct concepts with app-size and light/dark menu bar previews.
-- [ ] Ask the user to choose a concept before finalizing.
-- [ ] Export the approved `.icns`, menu bar asset, and PNG using the same recognizable mark.
+- [x] Present five distinct concepts with app-size and light/dark menu bar previews.
+- [x] Ask the user to choose a concept before finalizing.
+- [x] Export the approved Split Beam `.icns`, menu bar PDF, and PNG.
 
 ### Packaging and distribution
 
-- [ ] Configure Sparkle, the manual check, the 24-hour schedule, and signed update assets in coordination with the app lead.
-- [ ] Set up versioned DMG and ZIP builds, the appcast, release scripts, and GitHub Actions.
-- [ ] Write the README and GitHub Pages site, including the unnotarized first-launch instructions and privacy details.
+- [x] Configure Sparkle, its manual check, and the 24-hour schedule. Test appcast signing and archive verification with a temporary key.
+- [x] Set up versioned DMG and ZIP builds, the appcast, release scripts, and GitHub Actions. Verify the local arm64 DMG, app signature, and ZIP.
+- [x] Write the README and GitHub Pages site, including the unnotarized first-launch instructions and privacy details.
+- [ ] Configure production Sparkle keys and generate signed release assets after the trial and benchmark gates pass.
 - [ ] Verify clean-account installation and a packaged Sparkle update. Publish after the user's trial and release checks pass, then verify the public links and assets.
+
+## Orchestrator delegation and completion
+
+- Delegate every in-scope implementation task to the worker or implementation chat that owns the affected track. This applies to follow-up fixes and checklist items discovered during verification. Give each assignment an owner, a bounded scope, and acceptance criteria. The orchestrator remains responsible for coordination, integration, and final verification.
+- Before dispatching, map the request to every applicable requirement in PLAN.md and AGENTS.md. Track each item through assignment, integration, and verification. Check the integrated result against both documents before giving a completion report.
+- Do not stop while any applicable item remains incomplete or unverified and there is an authorized next step. Follow up on unfinished assignments, retry or reassign failed work, and keep independent tracks moving while dependencies are blocked. A worker report is a checkpoint. Verify the result before marking the item complete.
+- Stop only when all applicable items are complete and verified, the user asks to stop, or no authorized next step remains. If blocked, report each unfinished item and its specific blocker. Honor the trial, approval, release, and follow-up milestones in PLAN.md.
 
 ## Subagent Effort Routing Rules
 

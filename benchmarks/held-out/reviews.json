@@ -1,0 +1,1026 @@
+{
+  "status": "Provisional Codex agent structural review; independent human review pending",
+  "rubric": "Allow equivalent notation, harmless grouping, spacing and terminal punctuation. Preserve every operand, operator, index, bound and row/column relationship. Use the existing relaxed equation-alignment rubric. Upright roman function names count as equivalent when content is unchanged. Malformed commands and added operators fail.",
+  "files": {
+    "baseline-wikipedia.json": {
+      "prediction_sha256": "63dc537d89bf4ab412359d075848879551075cc5c3b1e26e16958ce7e4891503",
+      "cases": [
+        {
+          "id": "fractions-01",
+          "structurally_correct": false,
+          "reason": "Corrupted nested fractions or malformed array"
+        },
+        {
+          "id": "fractions-02",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-08",
+          "structurally_correct": false,
+          "reason": "Cancellation annotations corrupted and math lost"
+        },
+        {
+          "id": "fractions-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-02",
+          "structurally_correct": false,
+          "reason": "Malformed cases and changed terms"
+        },
+        {
+          "id": "roots-03",
+          "structurally_correct": false,
+          "reason": "Adds an overline to x within the radical"
+        },
+        {
+          "id": "roots-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-09",
+          "structurally_correct": false,
+          "reason": "Changes continued-fraction denominator"
+        },
+        {
+          "id": "roots-10",
+          "structurally_correct": false,
+          "reason": "Adds a term or corrupts continued fraction"
+        },
+        {
+          "id": "matrices-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-02",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-01",
+          "structurally_correct": false,
+          "reason": "Loses denominator 2 of 7/2"
+        },
+        {
+          "id": "aligned-02",
+          "structurally_correct": false,
+          "reason": "Malformed grouping and lost derivative terms"
+        },
+        {
+          "id": "aligned-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-04",
+          "structurally_correct": false,
+          "reason": "Drops integral from the first right hand side"
+        },
+        {
+          "id": "aligned-05",
+          "structurally_correct": false,
+          "reason": "Corrupted logarithm or malformed commands"
+        },
+        {
+          "id": "aligned-06",
+          "structurally_correct": false,
+          "reason": "Corrupted arctangent, integrals or rows"
+        },
+        {
+          "id": "aligned-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-08",
+          "structurally_correct": false,
+          "reason": "Corrupted gamma function derivation"
+        },
+        {
+          "id": "aligned-09",
+          "structurally_correct": false,
+          "reason": "Corrupted Fourier transform derivation"
+        },
+        {
+          "id": "aligned-10",
+          "structurally_correct": false,
+          "reason": "Corrupted Laplacian derivation"
+        },
+        {
+          "id": "small-type-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-02",
+          "structurally_correct": false,
+          "reason": "Missing fraction command"
+        },
+        {
+          "id": "small-type-03",
+          "structurally_correct": false,
+          "reason": "Adds literal textstyle as mathematical letters"
+        },
+        {
+          "id": "small-type-04",
+          "structurally_correct": false,
+          "reason": "Adds a dangling multiplication dot"
+        },
+        {
+          "id": "small-type-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-02",
+          "structurally_correct": false,
+          "reason": "Corrupted product-rule arguments and commands"
+        },
+        {
+          "id": "dark-background-03",
+          "structurally_correct": false,
+          "reason": "Adds unmatched closing parentheses"
+        },
+        {
+          "id": "dark-background-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        }
+      ]
+    },
+    "baseline-hefferon-pdf.json": {
+      "prediction_sha256": "5b99d8dc21419041889a7f9e79a2c68c86625e6eba3be4722e390e9f740af2d8",
+      "cases": [
+        {
+          "id": "hefferon-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "hefferon-02",
+          "structurally_correct": false,
+          "reason": "Corrupted or incomplete first system row"
+        },
+        {
+          "id": "hefferon-03",
+          "structurally_correct": false,
+          "reason": "Changes first constant 9 to 0 or corrupts symbols"
+        },
+        {
+          "id": "hefferon-04",
+          "structurally_correct": false,
+          "reason": "Loses variables, rows or constants"
+        },
+        {
+          "id": "hefferon-05",
+          "structurally_correct": null,
+          "reason": "Pending review of array column mismatch. KaTeX renders with too-few-columns warning."
+        },
+        {
+          "id": "hefferon-06",
+          "structurally_correct": false,
+          "reason": "Adds literal mathtt and duplicates constant 8"
+        }
+      ]
+    },
+    "ink-cap-36-wikipedia.json": {
+      "prediction_sha256": "c86013435d984ed83338db1773bdede90f07b94d0722ea354237229e8d623e09",
+      "cases": [
+        {
+          "id": "fractions-01",
+          "structurally_correct": false,
+          "reason": "Corrupted nested fractions or malformed array"
+        },
+        {
+          "id": "fractions-02",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-08",
+          "structurally_correct": false,
+          "reason": "Cancellation annotations corrupted and math lost"
+        },
+        {
+          "id": "fractions-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-02",
+          "structurally_correct": false,
+          "reason": "Malformed cases and changed terms"
+        },
+        {
+          "id": "roots-03",
+          "structurally_correct": false,
+          "reason": "Adds an overline to x within the radical"
+        },
+        {
+          "id": "roots-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-06",
+          "structurally_correct": false,
+          "reason": "Changes summation lower bound from 0 to 9"
+        },
+        {
+          "id": "roots-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-09",
+          "structurally_correct": false,
+          "reason": "Changes continued-fraction denominator"
+        },
+        {
+          "id": "roots-10",
+          "structurally_correct": false,
+          "reason": "Adds a term or corrupts continued fraction"
+        },
+        {
+          "id": "matrices-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-02",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-06",
+          "structurally_correct": false,
+          "reason": "Corrupts subscripts and matrix delimiters"
+        },
+        {
+          "id": "matrices-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-01",
+          "structurally_correct": false,
+          "reason": "Loses denominator 2 of 7/2"
+        },
+        {
+          "id": "aligned-02",
+          "structurally_correct": false,
+          "reason": "Malformed grouping and lost derivative terms"
+        },
+        {
+          "id": "aligned-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-04",
+          "structurally_correct": false,
+          "reason": "Drops integral from the first right hand side"
+        },
+        {
+          "id": "aligned-05",
+          "structurally_correct": false,
+          "reason": "Corrupted logarithm or malformed commands"
+        },
+        {
+          "id": "aligned-06",
+          "structurally_correct": false,
+          "reason": "Corrupted arctangent, integrals or rows"
+        },
+        {
+          "id": "aligned-07",
+          "structurally_correct": false,
+          "reason": "Corrupts product factors and commands"
+        },
+        {
+          "id": "aligned-08",
+          "structurally_correct": false,
+          "reason": "Corrupted gamma function derivation"
+        },
+        {
+          "id": "aligned-09",
+          "structurally_correct": false,
+          "reason": "Corrupted Fourier transform derivation"
+        },
+        {
+          "id": "aligned-10",
+          "structurally_correct": false,
+          "reason": "Corrupted Laplacian derivation"
+        },
+        {
+          "id": "small-type-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-02",
+          "structurally_correct": false,
+          "reason": "Missing fraction command"
+        },
+        {
+          "id": "small-type-03",
+          "structurally_correct": false,
+          "reason": "Adds literal textstyle as mathematical letters"
+        },
+        {
+          "id": "small-type-04",
+          "structurally_correct": false,
+          "reason": "Adds a dangling multiplication dot"
+        },
+        {
+          "id": "small-type-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-02",
+          "structurally_correct": false,
+          "reason": "Corrupted product-rule arguments and commands"
+        },
+        {
+          "id": "dark-background-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        }
+      ]
+    },
+    "ink-cap-36-hefferon-pdf.json": {
+      "prediction_sha256": "bcc90e4c8680a889417b165179793430470dde69f2680feedeb8520920016ce0",
+      "cases": [
+        {
+          "id": "hefferon-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "hefferon-02",
+          "structurally_correct": false,
+          "reason": "Corrupted or incomplete first system row"
+        },
+        {
+          "id": "hefferon-03",
+          "structurally_correct": false,
+          "reason": "Changes first constant 9 to 0 or corrupts symbols"
+        },
+        {
+          "id": "hefferon-04",
+          "structurally_correct": false,
+          "reason": "Loses variables, rows or constants"
+        },
+        {
+          "id": "hefferon-05",
+          "structurally_correct": false,
+          "reason": "Adds literal letters or changes a constant"
+        },
+        {
+          "id": "hefferon-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        }
+      ]
+    },
+    "ink-cap-48-wikipedia.json": {
+      "prediction_sha256": "7e3b4152cb874b5fdd5077d056e2f91c1970eb4fb5e30da38dfe0663aa6ea025",
+      "cases": [
+        {
+          "id": "fractions-01",
+          "structurally_correct": false,
+          "reason": "Corrupted nested fractions or malformed array"
+        },
+        {
+          "id": "fractions-02",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-08",
+          "structurally_correct": false,
+          "reason": "Cancellation annotations corrupted and math lost"
+        },
+        {
+          "id": "fractions-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "fractions-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-02",
+          "structurally_correct": false,
+          "reason": "Malformed cases and changed terms"
+        },
+        {
+          "id": "roots-03",
+          "structurally_correct": false,
+          "reason": "Adds an overline to x within the radical"
+        },
+        {
+          "id": "roots-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "roots-09",
+          "structurally_correct": false,
+          "reason": "Changes continued-fraction denominator"
+        },
+        {
+          "id": "roots-10",
+          "structurally_correct": false,
+          "reason": "Adds a term or corrupts continued fraction"
+        },
+        {
+          "id": "matrices-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-02",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "matrices-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-01",
+          "structurally_correct": false,
+          "reason": "Loses denominator 2 of 7/2"
+        },
+        {
+          "id": "aligned-02",
+          "structurally_correct": false,
+          "reason": "Malformed grouping and lost derivative terms"
+        },
+        {
+          "id": "aligned-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "aligned-04",
+          "structurally_correct": false,
+          "reason": "Drops integral from the first right hand side"
+        },
+        {
+          "id": "aligned-05",
+          "structurally_correct": false,
+          "reason": "Corrupted logarithm or malformed commands"
+        },
+        {
+          "id": "aligned-06",
+          "structurally_correct": false,
+          "reason": "Corrupted arctangent, integrals or rows"
+        },
+        {
+          "id": "aligned-07",
+          "structurally_correct": false,
+          "reason": "Corrupts product factors and commands"
+        },
+        {
+          "id": "aligned-08",
+          "structurally_correct": false,
+          "reason": "Corrupted gamma function derivation"
+        },
+        {
+          "id": "aligned-09",
+          "structurally_correct": false,
+          "reason": "Corrupted Fourier transform derivation"
+        },
+        {
+          "id": "aligned-10",
+          "structurally_correct": false,
+          "reason": "Corrupted Laplacian derivation"
+        },
+        {
+          "id": "small-type-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-02",
+          "structurally_correct": false,
+          "reason": "Missing fraction command"
+        },
+        {
+          "id": "small-type-03",
+          "structurally_correct": false,
+          "reason": "Adds literal textstyle as mathematical letters"
+        },
+        {
+          "id": "small-type-04",
+          "structurally_correct": false,
+          "reason": "Adds a dangling multiplication dot"
+        },
+        {
+          "id": "small-type-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "small-type-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-02",
+          "structurally_correct": false,
+          "reason": "Corrupted product-rule arguments and commands"
+        },
+        {
+          "id": "dark-background-03",
+          "structurally_correct": false,
+          "reason": "Adds unmatched closing parentheses"
+        },
+        {
+          "id": "dark-background-04",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-05",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-06",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-07",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-08",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-09",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "dark-background-10",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        }
+      ]
+    },
+    "ink-cap-48-hefferon-pdf.json": {
+      "prediction_sha256": "87baca628946e7d831ba4e9cfccced46e8181801bf26ecdb95d4822b780e058b",
+      "cases": [
+        {
+          "id": "hefferon-01",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "hefferon-02",
+          "structurally_correct": false,
+          "reason": "Corrupted or incomplete first system row"
+        },
+        {
+          "id": "hefferon-03",
+          "structurally_correct": true,
+          "reason": "Content and mathematical structure preserved under stated rubric"
+        },
+        {
+          "id": "hefferon-04",
+          "structurally_correct": false,
+          "reason": "Loses variables, rows or constants"
+        },
+        {
+          "id": "hefferon-05",
+          "structurally_correct": false,
+          "reason": "Adds literal letters or changes a constant"
+        },
+        {
+          "id": "hefferon-06",
+          "structurally_correct": false,
+          "reason": "Adds literal mathtt and duplicates constant 8"
+        }
+      ]
+    }
+  }
+}

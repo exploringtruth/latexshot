@@ -1,0 +1,10 @@
+{
+  "model": "PP-FormulaNet-S",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "architecture": "arm64",
+  "network_policy": "sandbox-exec -p (version 1)(allow default)(deny network*)",
+  "completed_predictions": 60,
+  "errors": 0,
+  "warm_worker_p95_seconds": 0.1567429999995511,
+  "release_gate": "FAIL_ACCURACY_PENDING_END_TO_END_TIMING"
+}

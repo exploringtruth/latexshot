@@ -1,0 +1,13 @@
+{
+  "source_manifest_sha256": "8869d76f55a29c3fa2dc3e991dfd03a7eb93b73405f4b8325ecf1f4e693f1e9d",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.79",
+    "revision": "@6dc9bc3bdaea5c35ed6d41fceab2f7a3a2227c4f",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.43"
+  },
+  "mode": "Original archived Wikipedia page HTML with original native MathML",
+  "changes": "Scripts removed to prevent asynchronous layout changes. Base URL restored for linked styles. Light/dark and small-type style overrides recorded per case.",
+  "cases": 60
+}

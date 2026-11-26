@@ -1,0 +1,250 @@
+{
+  "reviewer": "Codex agent structural comparison",
+  "status": "provisional, independent human review pending",
+  "criteria": "Matrix outputs using binomial coefficients with spaced row contents fail the structural criterion. Integral upper bound splitting 10 into 1 and a 0 in the integrand fails the mathematical criterion.",
+  "correct": 49,
+  "total": 60,
+  "accuracy": 0.8166666666666667,
+  "decisions": [
+    {
+      "id": "fractions-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-01",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-02",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-03",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-04",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-05",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-06",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-07",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-08",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-09",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-10",
+      "structurally_correct": false
+    },
+    {
+      "id": "aligned-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-10",
+      "structurally_correct": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "fixture": "roots-01.png",
+  "geometry": "126 x 34 points at 2.0x",
+  "observedLaTeX": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1",
+  "warmSamples": 60,
+  "cold": {
+    "captureToCopyMs": 5540.613292,
+    "mouseUpToCaptureMs": 128.15975,
+    "mouseUpToCopyMs": 5668.773042
+  },
+  "warm": {
+    "captureToCopyMs": {
+      "median": 130.59868699999998,
+      "p95NearestRank": 139.933833,
+      "minimum": 127.904375,
+      "maximum": 169.50875
+    },
+    "mouseUpToCaptureMs": {
+      "median": 58.703813,
+      "p95NearestRank": 65.567416,
+      "minimum": 51.250875,
+      "maximum": 101.149625
+    },
+    "mouseUpToCopyMs": {
+      "median": 189.7103335,
+      "p95NearestRank": 208.766333,
+      "minimum": 180.732583,
+      "maximum": 233.065959
+    }
+  }
+}

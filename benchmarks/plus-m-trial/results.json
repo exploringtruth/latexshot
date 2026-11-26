@@ -1,0 +1,1981 @@
+{
+  "model": "PP-FormulaNet_plus-M",
+  "revision": "712e6e2e4c313b1ea163be5c350127b82662c58d",
+  "model_lock_sha256": "0c06c3cabc7a669b08dc6627fcc0e2671542f607e233571ac17ebf820f7c4a31",
+  "worker_sha256": "1dcb94110ca1445bb2133c176054b03bbfc8e25b7d275483a2d6be89a6986249",
+  "manifest_sha256": {
+    "wikipedia": "76660a8534916601283147237223062492a99348722fae3b9a9b4ddb9f9207e2",
+    "hefferon-pdf": "8733e9add51ed150f81ca69c6e5435d3a32948f6b7e2bcb79a89e2aa1d65fb66",
+    "repeat-root": "3a1a92dd9eedfd5a593b2f64ea350a45f06470306de6ca7b9b3a5ea97438549b"
+  },
+  "requirements_sha256": "daf0e826d6b6b7cd756c6ff3ce64fc24b0b4c9e3f35f424cd1a2c34e427dc342",
+  "started_utc": "2026-11-24T13:00:35.074731+00:00",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "hardware": [
+    "Mac17,2",
+    "Apple M5"
+  ],
+  "runtime": {
+    "paddlepaddle": "3.3.1",
+    "paddlex": "3.3.13",
+    "pillow": "13.0.0"
+  },
+  "python": "3.12.14",
+  "network_profile": "(version 1)(allow default)(deny network*)",
+  "timing_scope": "Cold from worker spawn to first complete response. Warm from request to response on the same worker. Capture, Swift encoding, clipboard writes and rendering are outside this measurement.",
+  "percentile_method": "Nearest rank over all completed requests in each group, including recoverable errors",
+  "expected_warm_requests": 119,
+  "status": "complete",
+  "results": [
+    {
+      "suite": "wikipedia",
+      "id": "fractions-01",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-01.png",
+      "input_sha256": "f9dcf56dfdc19635e9132ce6eb922549f2926e8018125101fe8fa31780f93e91",
+      "size_px": [
+        391,
+        129
+      ],
+      "expected_latex": "\\begin{align}\n\\frac{\\;\\!\\tfrac{1}{2}\\;\\!}{\\tfrac{1}{3}}\n&= \\frac{1}{2} \\div \\frac{1}{3}\n= \\frac{1}{2} \\times \\frac{3}{1}\n= \\frac{3}{2},\n\\qquad\n\\frac{\\;\\!\\tfrac{3}{2}\\;\\!}5\n= \\frac{3}{2} \\div 5\n= \\frac{3}{2}\\times\\frac{1}{5}\n= \\frac{3}{10},\n\\\\[5pt]\n\\frac{12\\tfrac{3}{4}}{26}\n&= \\frac{12 \\times 4 + 3}{4} \\div 26\n= \\frac{12 \\times 4 + 3}{4} \\times \\frac{1}{26}\n= \\frac{51}{104}.\n\\end{align}",
+      "response": {
+        "latex": "\\begin{aligned}\\frac{\\frac{1}{2}}{\\frac{1}{3}}&=\\frac{1}{2}\\div\\frac{1}{3}=\\frac{1}{2}\\times\\frac{3}{1}=\\frac{3}{2},\\quad\\frac{\\frac{3}{2}}{5}=\\frac{3}{2}\\div5=\\frac{3}{2}\\times\\frac{1}{5}=\\frac{3}{10},\\\\\\frac{12\\frac{3}{4}}{26}&=\\frac{12\\times4+3}{4}\\div26=\\frac{12\\times4+3}{4}\\times\\frac{1}{26}=\\frac{51}{104}.\\end{aligned}"
+      },
+      "warm_worker_seconds": 1.7755189580000206
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-02",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-02.png",
+      "input_sha256": "e47c42b489b6d741fe76a52de4a8a7a59e8cd4c0e96fb4eb278b70bb45b75513",
+      "size_px": [
+        158,
+        35
+      ],
+      "expected_latex": "\\frac{63}{462} = \\frac{63 \\div 21}{462 \\div 21}= \\frac{3}{22}.",
+      "response": {
+        "latex": "\\frac{63}{462}=\\frac{63\\div21}{462\\div21}=\\frac{3}{22}"
+      },
+      "warm_worker_seconds": 0.6155975830000102
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-03",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-03.png",
+      "input_sha256": "a81f5ff08afbbfb8030c8153bf716e63be0392d6d38fe72342766ddcd628425f",
+      "size_px": [
+        273,
+        35
+      ],
+      "expected_latex": "\\frac14 + \\frac13=\\frac{1\\times3}{4\\times3} + \\frac{1\\times4}{3\\times4}=\\frac3{12} + \\frac4{12}=\\frac7{12}.",
+      "response": {
+        "latex": "\\frac{1}{4}+\\frac{1}{3}=\\frac{1\\times3}{4\\times3}+\\frac{1\\times4}{3\\times4}=\\frac{3}{12}+\\frac{4}{12}=\\frac{7}{12}"
+      },
+      "warm_worker_seconds": 0.9295523750000143
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-04",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-04.png",
+      "input_sha256": "75c79acce3b9a939ec9052f7f0b3b723cee2f5be91203b307def063e6b13596f",
+      "size_px": [
+        152,
+        35
+      ],
+      "expected_latex": "\\frac9{15}+\\frac{10}{15}=\\frac{19}{15}=1\\frac4{15}.",
+      "response": {
+        "latex": "{\\frac{9}{15}}+{\\frac{10}{15}}={\\frac{19}{15}}=1{\\frac{4}{15}}."
+      },
+      "warm_worker_seconds": 0.9297307079999939
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-05",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-05.png",
+      "input_sha256": "ecab2a0ad406c77b1b67266ba88f0fef36a34d05da64555e9cf72bd803fd3182",
+      "size_px": [
+        127,
+        36
+      ],
+      "expected_latex": "\\frac{a}{b} + \\frac {c}{d} = \\frac{ad+cb}{bd}.",
+      "response": {
+        "latex": "\\frac{a}{b}+\\frac{c}{d}=\\frac{a d+c b}{b d}."
+      },
+      "warm_worker_seconds": 0.6102632080000205
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-06",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-06.png",
+      "input_sha256": "3017334d8fad4389cace9fb85b8d21083cbdd6b90b0310a7a21c7cb051150ac5",
+      "size_px": [
+        285,
+        81
+      ],
+      "expected_latex": "\\begin{alignat}{3}\n\\frac34 + \\frac56\n&= \\frac{3 \\cdot 6}{4 \\cdot 6} + \\frac{4 \\cdot 5}{4\\cdot 6}\n= \\frac{18}{24} + \\frac{20}{24}\n&&= \\frac{19}{12}\n\\\\[10mu]\n&=\\frac{3 \\cdot 3}{4 \\cdot 3} + \\frac{2 \\cdot 5}{2 \\cdot 6}\n= \\frac{9}{12} + \\frac{10}{12}\n&&=\\frac{19}{12}.\n\\end{alignat}",
+      "response": {
+        "latex": "{\\begin{aligned}{{\\frac{3}{4}}+{\\frac{5}{6}}}&{{}={\\frac{3\\cdot6}{4\\cdot6}}+{\\frac{4\\cdot5}{4\\cdot6}}={\\frac{18}{24}}+{\\frac{20}{24}}}&{={\\frac{19}{12}}}\\\\ {}&{{}={\\frac{3\\cdot3}{4\\cdot3}}+{\\frac{2\\cdot5}{2\\cdot6}}={\\frac{9}{12}}+{\\frac{10}{12}}}&{={\\frac{19}{12}}.}\\end{aligned}}"
+      },
+      "warm_worker_seconds": 3.221110792000019
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-07",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-07.png",
+      "input_sha256": "4c36e1ba549efce1441380720ae62a99f195fc1dd2bcc9a6b8b7e1af0304a462",
+      "size_px": [
+        88,
+        35
+      ],
+      "expected_latex": "\\frac{2}{3} \\times \\frac{3}{4} = \\frac{6}{12}.",
+      "response": {
+        "latex": "{\\frac{2}{3}}\\times{\\frac{3}{4}}={\\frac{6}{12}}."
+      },
+      "warm_worker_seconds": 0.7473924169999862
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-08",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-08.png",
+      "input_sha256": "9a36c7078bfb1d2438b199dc47fb54d56ea718005412e39c88548d92da24e603",
+      "size_px": [
+        225,
+        51
+      ],
+      "expected_latex": "\\frac{2}{3} \\times \\frac{3}{4}\n= \\frac{{\\color{RoyalBlue}\\cancel{\\color{Black}2}} ^{~1}}\n       {{\\color{RedOrange}\\cancel{\\color{Black}3}} ^{~1}} \\times\n  \\frac{{\\color{RedOrange}\\cancel{\\color{Black}3}} ^{~1}}\n       {{\\color{RoyalBlue}\\cancel{\\color{Black}4}} ^{~2}}\n= \\frac{1}{1} \\times \\frac{1}{2} = \\frac{1}{2}.",
+      "response": {
+        "latex": "\\frac{2}{3}\\times\\frac{3}{4}=\\frac{2^{1}}{3^{1}}\\times\\frac{3^{1}}{4^{2}}=\\frac{1}{1}\\times\\frac{1}{2}=\\frac{1}{2}."
+      },
+      "warm_worker_seconds": 1.2686154170000066
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-09",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-09.png",
+      "input_sha256": "4fcc7e139e4b0657b4a9795d15a1671818ea798c9d9a1bbe772d951a39b59694",
+      "size_px": [
+        241,
+        35
+      ],
+      "expected_latex": "3 \\times 2\\frac{3}{4} = \\frac31 \\times \\frac{2\\times 4 + 3}{4} = \\frac{33}{4} = 8\\frac{1}{4}.",
+      "response": {
+        "latex": "3\\times2\\frac{3}{4}=\\frac{3}{1}\\times\\frac{2\\times4+3}{4}=\\frac{33}{4}=8\\frac{1}{4}"
+      },
+      "warm_worker_seconds": 0.71250225
+    },
+    {
+      "suite": "wikipedia",
+      "id": "fractions-10",
+      "category": "fractions",
+      "image": "held-out/crops/fractions-10.png",
+      "input_sha256": "83dd389c00c25df463bf736f5eef4eaad77533be3d2ff3e976bdda9cf74cd742",
+      "size_px": [
+        257,
+        35
+      ],
+      "expected_latex": "3 \\times 2\\frac34 = 3 \\times 2 + 3 \\times \\frac34 = 6 + \\frac94 = 8\\frac14.",
+      "response": {
+        "latex": "3\\times2\\frac{3}{4}=3\\times2+3\\times\\frac{3}{4}=6+\\frac{9}{4}=8\\frac{1}{4}."
+      },
+      "warm_worker_seconds": 0.6978112909999936
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-01",
+      "category": "roots",
+      "image": "held-out/crops/roots-01.png",
+      "input_sha256": "c7ce666b895b96a2ee31b3671b73207fe0c793034950c4aece9c43182046b670",
+      "size_px": [
+        67,
+        38
+      ],
+      "expected_latex": "\\frac{\\sqrt{2}}{2} = \\frac{1}{\\sqrt{2}}",
+      "response": {
+        "latex": "\\begin{array}{r}{\\frac{\\sqrt{2}}{2}=\\frac{1}{\\sqrt{2}}}\\end{array}"
+      },
+      "warm_worker_seconds": 0.6889400410000235
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-02",
+      "category": "roots",
+      "image": "held-out/crops/roots-02.png",
+      "input_sha256": "bac0594e3f33739ebec70120eb891ed37a163369b48a11f0e481afd01bba2b09",
+      "size_px": [
+        218,
+        58
+      ],
+      "expected_latex": "\\sqrt{x^2} = \\left|x\\right| = \n\\begin{cases} \n  x,  & \\text{if }x \\ge 0 \\\\\n  -x, & \\text{if }x < 0. \n\\end{cases}",
+      "response": {
+        "latex": "{\\sqrt{x^{2}}}=|x|={\\begin{cases}{x,\\quad{\\mathrm{~i f~}}x\\geq0}\\\\ {-x,{\\mathrm{~i f~}}x<0.}\\end{cases}}"
+      },
+      "warm_worker_seconds": 1.0466480419999868
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-03",
+      "category": "roots",
+      "image": "held-out/crops/roots-03.png",
+      "input_sha256": "0e777a762eef9e15b543eec98ee5089caa655ac5bc0c59e1f940c3cd9467f0d0",
+      "size_px": [
+        125,
+        32
+      ],
+      "expected_latex": "\\sqrt{xy} = \\sqrt x \\sqrt y",
+      "response": {
+        "latex": "{\\sqrt{x y}}={\\sqrt{x}}{\\sqrt{y}}"
+      },
+      "warm_worker_seconds": 0.5048921670000084
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-04",
+      "category": "roots",
+      "image": "held-out/crops/roots-04.png",
+      "input_sha256": "05fc575bfa744f7f40401d407d37cd52ccfc83efde798b6bb224edb9d35dae56",
+      "size_px": [
+        95,
+        33
+      ],
+      "expected_latex": "\\sqrt x = x^{1/2}.",
+      "response": {
+        "latex": "{\\sqrt{x}}=x^{1/2}."
+      },
+      "warm_worker_seconds": 0.45744945799998504
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-05",
+      "category": "roots",
+      "image": "held-out/crops/roots-05.png",
+      "input_sha256": "7b3a1168a68cd04681c2f2730e9f0c0ff1586e267093eee56998e38c1cda01de",
+      "size_px": [
+        113,
+        52
+      ],
+      "expected_latex": "f'(x) = \\frac{1}{2\\sqrt x}.",
+      "response": {
+        "latex": "f^{'}(x)=\\frac{1}{2\\sqrt{x}}."
+      },
+      "warm_worker_seconds": 0.5205892500000004
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-06",
+      "category": "roots",
+      "image": "held-out/crops/roots-06.png",
+      "input_sha256": "bd2b2e08d3b14c06858653d5b31ccdc6b4f310b241bfaae4de78f2379460c9f3",
+      "size_px": [
+        519,
+        54
+      ],
+      "expected_latex": "\\sqrt{1 + x} = \\sum_{n=0}^\\infty \\frac{(-1)^n(2n)!}{(1-2n)(n!)^2(4^n)}x^n = 1 + \\frac{1}{2}x - \\frac{1}{8}x^2 + \\frac{1}{16} x^3 - \\frac{5}{128} x^4 + \\cdots,",
+      "response": {
+        "latex": "\\sqrt{1+x}=\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}(2n)!}{(1-2n)(n!)^{2}(4^{n})}x^{n}=1+\\frac{1}{2}x-\\frac{1}{8}x^{2}+\\frac{1}{16}x^{3}-\\frac{5}{128}x^{4}+\\cdots,"
+      },
+      "warm_worker_seconds": 1.2126779169999509
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-07",
+      "category": "roots",
+      "image": "held-out/crops/roots-07.png",
+      "input_sha256": "4348c8d80dba79d0aad7341f4daf757ce52eba0987cb83a950167e7e7adf973b",
+      "size_px": [
+        88,
+        24
+      ],
+      "expected_latex": "\\sqrt{p^{2k}} = p^k,",
+      "response": {
+        "latex": "{\\sqrt{p^{2k}}}=p^{k},"
+      },
+      "warm_worker_seconds": 0.4769820829999958
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-08",
+      "category": "roots",
+      "image": "held-out/crops/roots-08.png",
+      "input_sha256": "a20652447317f73811b2164269aeed133320ac6bf29388b1b4cb9220a9219928",
+      "size_px": [
+        401,
+        43
+      ],
+      "expected_latex": "\\sqrt{p_1^{2e_1+1} \\cdots p_k^{2e_k+1}p_{k+1}^{2e_{k+1}} \\dots p_n^{2e_n}} = p_1^{e_1} \\dots p_n^{e_n} \\sqrt{p_1\\dots p_k}.",
+      "response": {
+        "latex": "\\sqrt{p_{1}^{2e_{1}+1}\\cdots p_{k}^{2e_{k}+1}p_{k+1}^{2e_{k+1}}\\cdots p_{n}^{2e_{n}}}=p_{1}^{e_{1}}\\cdots p_{n}^{e_{n}}\\sqrt{p_{1}\\cdots p_{k}}\\mathrm{~.~}"
+      },
+      "warm_worker_seconds": 1.7151503750000074
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-09",
+      "category": "roots",
+      "image": "held-out/crops/roots-09.png",
+      "input_sha256": "0ba59b6c227adb649651979579b84d03d690b35c6fd6d5cfd44df141bf24788f",
+      "size_px": [
+        261,
+        124
+      ],
+      "expected_latex": "\\sqrt{11} = 3 + \\cfrac{1}{3 + \\cfrac{1}{6 + \\cfrac{1}{3 + \\cfrac{1}{6 + \\cfrac{1}{3 + \\ddots}}}}}",
+      "response": {
+        "latex": "{\\sqrt{11}}=3+{\\frac{1}{3+{\\cfrac{1}{6+{\\cfrac{1}{3+{\\cfrac{1}{6+{\\cfrac{1}{3+{\\ddots}}}}}}}}}}}."
+      },
+      "warm_worker_seconds": 1.1369347909999874
+    },
+    {
+      "suite": "wikipedia",
+      "id": "roots-10",
+      "category": "roots",
+      "image": "held-out/crops/roots-10.png",
+      "input_sha256": "858de300dcd78941ad44f6498e573b4d52dcf24957f6d49a1c7931d7164fb78b",
+      "size_px": [
+        551,
+        124
+      ],
+      "expected_latex": "\\sqrt{11} = 3 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\ddots}}}}} = 3 + \\cfrac{6}{20 - 1 - \\cfrac{1}{20 - \\cfrac{1}{20 - \\cfrac{1}{20 - \\cfrac{1}{20 - \\ddots}}}}}.",
+      "response": {
+        "latex": "{\\sqrt{11}}=3+{\\frac{2}{6+{\\cfrac{2}{6+{\\cfrac{2}{6+{\\cfrac{2}{6+{\\cfrac{\\ddots}{\\ddots}}}}}}}}}}=3+{\\cfrac{6}{20-1-{\\cfrac{1}{20-{\\cfrac{1}{20-{\\cfrac{1}{20-{\\cfrac{1}{20-{\\cfrac{\\ddots}{\\ddots}}}}}}}}}}}}."
+      },
+      "warm_worker_seconds": 2.156974041000012
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-01",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-01.png",
+      "input_sha256": "57182ee03dfef5506adda8c001b91d55e4eb7b1a8a63c2ae55007229ccecc6ef",
+      "size_px": [
+        120,
+        50
+      ],
+      "expected_latex": "\\begin{bmatrix}1 & 9 & -13 \\\\20 & 5 & -6 \\end{bmatrix}",
+      "response": {
+        "latex": "{\\left[\\begin{array}{l l l}{1}&{9}&{-13}\\\\ {20}&{5}&{-6}\\end{array}\\right]}."
+      },
+      "warm_worker_seconds": 0.813002541000003
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-02",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-02.png",
+      "input_sha256": "636c4b9e2896e74bbba93a06b7ea3a731ae473b0582960938b105f77c6023ae8",
+      "size_px": [
+        161,
+        69
+      ],
+      "expected_latex": "\\mathbf{A} = \\begin{bmatrix}\n-1.3 &  0.6 \\\\\n20.4 &  5.5 \\\\\n 9.7 & -6.2\n\\end{bmatrix}.",
+      "response": {
+        "latex": "\\mathbf{A}=\\left[\\begin{array}{c c}{-1.3}&{0.6}\\\\ {20.4}&{5.5}\\\\ {9.7}&{-6.2}\\end{array}\\right]."
+      },
+      "warm_worker_seconds": 1.046747666999977
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-03",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-03.png",
+      "input_sha256": "1b2761c6184f78e02a0019334ba04d04031ca98bc9551b1ff386cfb3bce954d5",
+      "size_px": [
+        85,
+        23
+      ],
+      "expected_latex": "\\begin{bmatrix}3 & 7 & 2 \\end{bmatrix}",
+      "response": {
+        "latex": "\\left[\\begin{array}{l l l}{3}&{7}&{2}\\end{array}\\right]"
+      },
+      "warm_worker_seconds": 0.5627030420000096
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-04",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-04.png",
+      "input_sha256": "5f3d9e3ccc7bdb205b8e7306fa6bf37eb4a38f229fca782ab2e4cc2c8bd9e434",
+      "size_px": [
+        43,
+        61
+      ],
+      "expected_latex": "\\begin{bmatrix}4 \\\\ 1 \\\\ 8 \\end{bmatrix}",
+      "response": {
+        "latex": "\\left[\\begin{array}{l}{4}\\\\ {1}\\\\ {8}\\end{array}\\right]"
+      },
+      "warm_worker_seconds": 0.560227832999999
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-05",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-05.png",
+      "input_sha256": "fe5dc2945fda49a5a038ab7e7af24c09a60f26ed61a05073cb1d89b8d978a955",
+      "size_px": [
+        93,
+        61
+      ],
+      "expected_latex": "\\begin{bmatrix}\n9 & 13 & 5 \\\\\n1 & 11 & 7 \\\\\n2 &  6 & 3\n\\end{bmatrix}",
+      "response": {
+        "latex": "\\left[\\begin{array}{c c c}{{9}}&{{13}}&{{5}}\\\\ {{1}}&{{11}}&{{7}}\\\\ {{2}}&{{6}}&{{3}}\\end{array}\\right]"
+      },
+      "warm_worker_seconds": 1.1321459589999563
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-06",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-06.png",
+      "input_sha256": "c9e6a95bca677a19569bde072bf4045248fab69fd0cc2b8b1d7c9048c6e65b50",
+      "size_px": [
+        394,
+        87
+      ],
+      "expected_latex": "\\mathbf{A} =\n\\begin{bmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{bmatrix} =\n\\begin{pmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{pmatrix}.",
+      "response": {
+        "latex": "\\mathbf{A}=\\left[\\begin{array}{c c c c}a_{11}&a_{12}&\\cdots&a_{1n}\\\\ a_{21}&a_{22}&\\cdots&a_{2n}\\\\ \\vdots&\\vdots&\\ddots&\\vdots\\\\ a_{m1}&a_{m2}&\\cdots&a_{m n}\\end{array}\\right]=\\left(\\begin{array}{c c c c}a_{11}&a_{12}&\\cdots&a_{1n}\\\\ a_{21}&a_{22}&\\cdots&a_{2n}\\\\ \\vdots&\\vdots&\\ddots&\\vdots\\\\ a_{m1}&a_{m2}&\\cdots&a_{m n}\\end{array}\\right)."
+      },
+      "warm_worker_seconds": 2.6938932500000305
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-07",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-07.png",
+      "input_sha256": "e4831e34e59b05a5666d36f39300227908c5a70fb7ce807c9234460f16ecccf5",
+      "size_px": [
+        181,
+        69
+      ],
+      "expected_latex": "\\mathbf A = \\begin{bmatrix}\n0 & -1 & -2 & -3\\\\\n1 &  0 & -1 & -2\\\\\n2 &  1 &  0 & -1\n\\end{bmatrix}",
+      "response": {
+        "latex": "\\mathbf{A}={\\left[\\begin{array}{l l l l}{0}&{-1}&{-2}&{-3}\\\\ {1}&{0}&{-1}&{-2}\\\\ {2}&{1}&{0}&{-1}\\end{array}\\right]}"
+      },
+      "warm_worker_seconds": 1.2207483330000173
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-08",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-08.png",
+      "input_sha256": "aaea6f21f2a01ba3dc6399de386dcbf233217952124d19695e574a2b6439a084",
+      "size_px": [
+        475,
+        50
+      ],
+      "expected_latex": "\\begin{bmatrix}\n1 & 3 & 1 \\\\\n1 & 0 & 0\n\\end{bmatrix}\n+\n\\begin{bmatrix}\n0 & 0 & 5 \\\\\n7 & 5 & 0\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1+0 & 3+0 & 1+5 \\\\\n1+7 & 0+5 & 0+0\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1 & 3 & 6 \\\\\n8 & 5 & 0\n\\end{bmatrix}",
+      "response": {
+        "latex": "{\\left[\\begin{array}{l l l}{1}&{3}&{1}\\\\ {1}&{0}&{0}\\end{array}\\right]}+{\\left[\\begin{array}{l l l}{0}&{0}&{5}\\\\ {7}&{5}&{0}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{1+0}&{3+0}&{1+5}\\\\ {1+7}&{0+5}&{0+0}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{1}&{3}&{6}\\\\ {8}&{5}&{0}\\end{array}\\right]}"
+      },
+      "warm_worker_seconds": 2.5924906660000033
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-09",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-09.png",
+      "input_sha256": "907cb7fde23259282a190be224ea363a034431c7f2ac4709ac2fba6326eb6887",
+      "size_px": [
+        451,
+        50
+      ],
+      "expected_latex": "2 \\cdot \\begin{bmatrix}\n1 &  8 & -3 \\\\\n4 & -2 &  5\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2 \\cdot 1 & 2\\cdot 8 & 2\\cdot -3 \\\\\n2\\cdot 4 & 2\\cdot -2 & 2\\cdot 5\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2 & 16 & -6 \\\\\n8 & -4 & 10\n\\end{bmatrix}",
+      "response": {
+        "latex": "2\\cdot{\\left[\\begin{array}{l l l}{1}&{8}&{-3}\\\\ {4}&{-2}&{5}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{2\\cdot1}&{2\\cdot8}&{2\\cdot-3}\\\\ {2\\cdot4}&{2\\cdot-2}&{2\\cdot5}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{2}&{16}&{-6}\\\\ {8}&{-4}&{10}\\end{array}\\right]}"
+      },
+      "warm_worker_seconds": 2.195485082999994
+    },
+    {
+      "suite": "wikipedia",
+      "id": "matrices-10",
+      "category": "matrices",
+      "image": "held-out/crops/matrices-10.png",
+      "input_sha256": "1190f9025fe47d5337dd38e47419e3be8e8241a4c385a455c5cbee6e90b807b1",
+      "size_px": [
+        204,
+        69
+      ],
+      "expected_latex": "\\begin{bmatrix}\n1 &  2 & 3 \\\\\n0 & -6 & 7\n\\end{bmatrix}^\\mathrm{T} =\n\\begin{bmatrix}\n1 &  0 \\\\\n2 & -6 \\\\\n3 &  7\n\\end{bmatrix}",
+      "response": {
+        "latex": "\\left[\\begin{array}{c c c}1&2&3\\\\ 0&-6&7\\end{array}\\right]^{\\mathrm{T}}=\\left[\\begin{array}{c c}1&0\\\\ 2&-6\\\\ 3&7\\end{array}\\right]"
+      },
+      "warm_worker_seconds": 1.000346167000032
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-01",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-01.png",
+      "input_sha256": "7e31b96d11a40f2d5b7437b0e22242ba3cc5d406b26d498a6f25841ed6bd7a2d",
+      "size_px": [
+        123,
+        64
+      ],
+      "expected_latex": "\\begin{align}\n3z+2=\\tfrac{7}{2}z+1\\\\ \\Rightarrow z=2\n\\end{align}",
+      "response": {
+        "latex": "\\begin{aligned}3z+2&=\\frac{7}{2}z+1\\\\&\\Rightarrow z=2\\end{aligned}"
+      },
+      "warm_worker_seconds": 0.5424821670000028
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-02",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-02.png",
+      "input_sha256": "1b987caf957fc579d23fd337faa1cc7ea42586a7ff50de1fa8b14af60402f849",
+      "size_px": [
+        428,
+        116
+      ],
+      "expected_latex": "\\begin{align}\n   \\int_a^b u(x) v'(x) \\, dx \n   & = \\Big[u(x) v(x)\\Big]_a^b - \\int_a^b u'(x) v(x) \\, dx\\\\\n   & = u(b) v(b) - u(a) v(a) - \\int_a^b u'(x) v(x) \\, dx.\n \\end{align}",
+      "response": {
+        "latex": "\\begin{align*}\\int_{a}^{b}u(x)v'(x)dx&=\\left[u(x)v(x)\\right]_{a}^{b}-\\int_{a}^{b}u'(x)v(x)dx\\\\&=u(b)v(b)-u(a)v(a)-\\int_{a}^{b}u'(x)v(x)dx.\\end{align*}"
+      },
+      "warm_worker_seconds": 1.1220823750000477
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-03",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-03.png",
+      "input_sha256": "669eb0cf2a9dd73277ce59c9708b4295c0736e9d3429d32a3f2f40d986f5476e",
+      "size_px": [
+        137,
+        62
+      ],
+      "expected_latex": "\\begin{align}\n  x(y) &= f(g^{-1}(y)) \\\\\n  y(x) &= g(f^{-1}(x))\n\\end{align}",
+      "response": {
+        "latex": "\\begin{aligned}x(y)&=f(g^{-1}(y)),\\\\y(x)&=g(f^{-1}(x)).\\end{aligned}"
+      },
+      "warm_worker_seconds": 0.5988737920000062
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-04",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-04.png",
+      "input_sha256": "f5db0223fb888c21cd4969dbac187f11b08f87e9fbe1df589ff535a5630a1a96",
+      "size_px": [
+        289,
+        170
+      ],
+      "expected_latex": "\\begin{align}\n  \\int x\\cos(x)\\,dx & = \\int u\\ dv \\\\\n  & = u\\cdot v - \\int v \\, du \\\\\n  & = x\\sin(x) - \\int \\sin(x)\\,dx \\\\\n  & = x\\sin(x) + \\cos(x) + C,\n \\end{align}",
+      "response": {
+        "latex": "\\begin{aligned}\\int x\\cos(x)dx&=\\int u dv\\\\&=u\\cdot v-\\int v du\\\\&=x\\sin(x)-\\int\\sin(x)dx\\\\&=x\\sin(x)+\\cos(x)+C,\\end{aligned}"
+      },
+      "warm_worker_seconds": 0.872169499999984
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-05",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-05.png",
+      "input_sha256": "3afdd412e85b4e0b0d7b24174dcc0818022a054965abb80836a0314b6d35e999",
+      "size_px": [
+        237,
+        147
+      ],
+      "expected_latex": "\\begin{align}\n\\int \\ln(x)\\,dx & = x\\ln(x) - \\int\\frac{x}{x}\\,dx \\\\\n& = x\\ln(x) - \\int 1\\,dx \\\\\n& = x\\ln(x) - x + C \\\\\n& = x(\\ln(x)-1)+C\n\\end{align}",
+      "response": {
+        "latex": "{\\begin{aligned}{\\int\\ln(x)d x}&{{}=x\\mathrm{l n}(x)-\\int{\\frac{x}{x}}d x}\\\\ {}&{{}=x\\mathrm{l n}(x)-\\int1d x}\\\\ {}&{{}=x\\mathrm{l n}(x)-x+C}\\\\ {}&{{}=x(\\mathrm{l n}(x)-1)+C}\\end{aligned}}"
+      },
+      "warm_worker_seconds": 1.9442339170000196
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-06",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-06.png",
+      "input_sha256": "17983b21ab6f4eb8ff18e45f0d3fbf5ad7386336effb3f66bdb8e98a47e34953",
+      "size_px": [
+        339,
+        105
+      ],
+      "expected_latex": "\\begin{align}\n\\int\\arctan(x)\\,dx\n& = x\\arctan(x) - \\int\\frac{x}{1+x^2}\\,dx \\\\[8pt]\n& = x\\arctan(x) - \\frac{\\ln(1+x^2)}{2} + C\n\\end{align}",
+      "response": {
+        "latex": "\\begin{aligned}\\int\\arctan(x)dx&=x\\arctan(x)-\\int\\frac{x}{1+x^2}dx\\\\&=x\\arctan(x)-\\frac{\\ln(1+x^2)}{2}+C.\\end{aligned}"
+      },
+      "warm_worker_seconds": 1.531876541000031
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-07",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-07.png",
+      "input_sha256": "681f33c3c696737b1ca4bbad7c7fa904fe87e00c9da837b9f8c8a4020212bc22",
+      "size_px": [
+        326,
+        104
+      ],
+      "expected_latex": "\\begin{align}\n\\frac{\\pi}{2} & = \\prod_{n=1}^\\infty \\frac{ 4n^2 }{ 4n^2 - 1 } = \\prod_{n=1}^\\infty \\left(\\frac{2n}{2n-1} \\cdot \\frac{2n}{2n+1}\\right) \\\\[6pt]\n& = \\Big(\\frac{2}{1} \\cdot \\frac{2}{3}\\Big) \\cdot \\Big(\\frac{4}{3} \\cdot \\frac{4}{5}\\Big) \\cdot \\Big(\\frac{6}{5} \\cdot \\frac{6}{7}\\Big) \\cdot \\Big(\\frac{8}{7} \\cdot \\frac{8}{9}\\Big) \\cdot \\; \\cdots\n\\end{align}",
+      "response": {
+        "latex": "{\\begin{aligned}{{\\frac{\\pi}{2}}}&{{}=\\prod_{n=1}^{\\infty}{\\frac{4n^{2}}{4n^{2}-1}}=\\prod_{n=1}^{\\infty}\\left({\\frac{2n}{2n-1}}\\cdot{\\frac{2n}{2n+1}}\\right)}\\\\ &{=\\left({\\frac{2}{1}}\\cdot{\\frac{2}{3}}\\right)\\cdot\\left({\\frac{4}{3}}\\cdot{\\frac{4}{5}}\\right)\\cdot\\left({\\frac{6}{5}}\\cdot{\\frac{6}{7}}\\right)\\cdot\\left({\\frac{8}{7}}\\cdot{\\frac{8}{9}}\\right)\\cdot\\cdots}\\end{aligned}}"
+      },
+      "warm_worker_seconds": 3.3851526249999893
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-08",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-08.png",
+      "input_sha256": "c7c203428acef11a81539e8a310bb3bc8b28a3e617e389e945f88eb528582ee5",
+      "size_px": [
+        314,
+        248
+      ],
+      "expected_latex": "\\begin{align}\n\\Gamma(z) & = \\int_0^\\infty e^{-x} x^{z-1} dx \\\\[6pt]\n & = - \\int_0^\\infty x^{z-1} \\, d\\left(e^{-x}\\right) \\\\[6pt]\n & = - \\Biggl[e^{-x} x^{z-1}\\Biggl]_0^\\infty + \\int_0^\\infty e^{-x} d\\left(x^{z-1}\\right) \\\\[6pt]\n & = 0 + \\int_0^\\infty \\left(z-1\\right) x^{z-2} e^{-x}  dx\\\\[6pt]\n & = (z-1)\\Gamma(z-1).\n\\end{align}",
+      "response": {
+        "latex": "\\begin{aligned}\\Gamma(z)&=\\int_{0}^{\\infty}e^{-x}x^{z-1}d x\\\\ &=-\\int_{0}^{\\infty}x^{z-1}d\\left(e^{-x}\\right)\\\\ &=-\\left[e^{-x}x^{z-1}\\right]_{0}^{\\infty}+\\int_{0}^{\\infty}e^{-x}d\\left(x^{z-1}\\right)\\\\ &=0+\\int_{0}^{\\infty}\\left(z-1\\right)x^{z-2}e^{-x}d x\\\\ &=(z-1)\\Gamma(z-1).\\end{aligned}"
+      },
+      "warm_worker_seconds": 2.4954712090000157
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-09",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-09.png",
+      "input_sha256": "423ac543cea964ec4f8a788c7a606b0e915384367457ffce10c0d527ed87d3ca",
+      "size_px": [
+        421,
+        188
+      ],
+      "expected_latex": "\\begin{align}\n(\\mathcal{F}f')(\\xi) &= \\int_{-\\infty}^\\infty e^{-2\\pi iy\\xi} f'(y)\\,dy \\\\\n&=\\left[e^{-2\\pi iy\\xi} f(y)\\right]_{-\\infty}^\\infty - \\int_{-\\infty}^\\infty (-2\\pi i\\xi e^{-2\\pi iy\\xi}) f(y)\\,dy \\\\[5pt]\n&=2\\pi i\\xi \\int_{-\\infty}^\\infty e^{-2\\pi iy\\xi} f(y)\\,dy \\\\[5pt]\n&=2\\pi i\\xi \\mathcal{F}f(\\xi).\n\\end{align}",
+      "response": {
+        "latex": "\\begin{align*}(\\mathcal{F}f^{'})(\\xi)&=\\int_{-\\infty}^{\\infty}e^{-2\\pi i y\\xi}f^{'}(y)dy\\\\&=\\left[e^{-2\\pi i y\\xi}f(y)\\right]_{-\\infty}^{\\infty}-\\int_{-\\infty}^{\\infty}(-2\\pi i\\xi e^{-2\\pi i y\\xi})f(y)dy\\\\&=2\\pi i\\xi\\int_{-\\infty}^{\\infty}e^{-2\\pi i y\\xi}f(y)dy\\\\&=2\\pi i\\xi\\mathcal{F}f(\\xi).\\end{align*}"
+      },
+      "warm_worker_seconds": 1.7537394999999947
+    },
+    {
+      "suite": "wikipedia",
+      "id": "aligned-10",
+      "category": "aligned",
+      "image": "held-out/crops/aligned-10.png",
+      "input_sha256": "340065a72668027633a2857db2f3f6c79287c402e85fca7b88023135c084e960",
+      "size_px": [
+        390,
+        164
+      ],
+      "expected_latex": "\\begin{align}\n\\langle -\\Delta f, f \\rangle_{L^2} &= -\\int_{-\\infty}^\\infty f''(x)\\overline{f(x)}\\,dx \\\\[5pt]\n&=-\\left[f'(x)\\overline{f(x)}\\right]_{-\\infty}^\\infty + \\int_{-\\infty}^\\infty f'(x)\\overline{f'(x)}\\,dx \\\\[5pt]\n&=\\int_{-\\infty}^\\infty \\vert f'(x)\\vert^2\\,dx \\geq 0.\n\\end{align}",
+      "response": {
+        "latex": "\\begin{align*}\\left\\langle-\\Delta f,f\\right\\rangle_{L^2}=&-\\int_{-\\infty}^{\\infty}f^{'}(x)\\overline{f(x)}dx\\\\=&-\\left[f^{'}(x)\\overline{f(x)}\\right]_{-\\infty}^{\\infty}+\\int_{-\\infty}^{\\infty}f^{'}(x)\\overline{f^{'}(x)}dx\\\\=&\\int_{-\\infty}^{\\infty}|f^{'}(x)|^2dx\\geq0.\\end{align*}"
+      },
+      "warm_worker_seconds": 1.5598254579999775
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-01",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-01.png",
+      "input_sha256": "70f7cb76fad99c012fe34104d68c38f6d7645579d8a3e24c839156c47baba735",
+      "size_px": [
+        134,
+        37
+      ],
+      "expected_latex": "\\int_{a}^{b} f'(t) \\, dt = f(b) - f(a)",
+      "response": {
+        "latex": "\\int_{a}^{b}f^{'}(t)dt=f(b)-f(a)"
+      },
+      "warm_worker_seconds": 0.5021109580000029
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-02",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-02.png",
+      "input_sha256": "6690d673386f70ffa9cf2ce24f24cdaba977a8e02019f37819fd0daa2e6c675b",
+      "size_px": [
+        71,
+        24
+      ],
+      "expected_latex": "\\frac{dy}{dx} = \\frac{d}{dx} f(x).",
+      "response": {
+        "latex": "\\begin{array}{r}{\\frac{d y}{d x}=\\frac{d}{d x}f(x).}\\end{array}"
+      },
+      "warm_worker_seconds": 0.633761375000006
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-03",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-03.png",
+      "input_sha256": "897a3ca81acc4b1293fa0a5967b89c84e3826f2c1e199535b8808744aa8498ca",
+      "size_px": [
+        101,
+        26
+      ],
+      "expected_latex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\Bigl(\\frac{d}{dx} f(x)\\Bigr).",
+      "response": {
+        "latex": "\\begin{array}{r}{\\frac{d^{2}y}{d x^{2}}=\\frac{d}{d x}\\Big(\\frac{d}{d x}f(x)\\Big).}\\end{array}"
+      },
+      "warm_worker_seconds": 1.0270807079999713
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-04",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-04.png",
+      "input_sha256": "fcf944411c8d4375fa87e2d2ede0917cffa21874091005c21a8b8f82f5dd6248",
+      "size_px": [
+        68,
+        24
+      ],
+      "expected_latex": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}.",
+      "response": {
+        "latex": "\\begin{array}{r}{\\frac{d y}{d x}=\\frac{d y}{d u}\\cdot\\frac{d u}{d x}.}\\end{array}"
+      },
+      "warm_worker_seconds": 0.7419335410000372
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-05",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-05.png",
+      "input_sha256": "4fa60a1843e2b49583077eb47c03f32366fa03737c497e22cc791cadea7f15a8",
+      "size_px": [
+        140,
+        26
+      ],
+      "expected_latex": "D_{xy} f(x,y) = \\frac{\\partial}{\\partial y} \\Bigl(\\frac{\\partial}{\\partial x} f(x,y) \\Bigr)",
+      "response": {
+        "latex": "\\begin{array}{r}{D_{x y}f(x,y)=\\frac{\\partial}{\\partial y}\\left(\\frac{\\partial}{\\partial x}f(x,y)\\right)}\\end{array}"
+      },
+      "warm_worker_seconds": 0.8774737919999893
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-06",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-06.png",
+      "input_sha256": "4fa9ce65bf71fa98c5381e9b402cf84c29798539a3a3ab0f615c5b7516003c4b",
+      "size_px": [
+        136,
+        24
+      ],
+      "expected_latex": "\\textstyle D_{x}^2 f(x,y) = \\frac{\\partial}{\\partial x} \\Bigl(\\frac{\\partial}{\\partial x} f(x,y) \\Bigr)",
+      "response": {
+        "latex": "D_{x}^{2}f(x,y)=\\frac{\\partial}{\\partial x}\\left(\\frac{\\partial}{\\partial x}f(x,y)\\right)"
+      },
+      "warm_worker_seconds": 0.5824986250000279
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-07",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-07.png",
+      "input_sha256": "a564d3f47f37346f25b2ce3b35851975f7dc08fb25ee34b9bfd8d8ab1c2697f7",
+      "size_px": [
+        79,
+        28
+      ],
+      "expected_latex": "\\frac{d}{dx}x^a = ax^{a-1}",
+      "response": {
+        "latex": "{\\frac{d}{d x}}x^{a}=a x^{a-1}"
+      },
+      "warm_worker_seconds": 0.54037654199999
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-08",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-08.png",
+      "input_sha256": "65b61c7303f3c7b4c1ed0b0b2c62f7618394ccb9aef8c71860f82c6d54ca111b",
+      "size_px": [
+        55,
+        28
+      ],
+      "expected_latex": "\\frac{d}{dx}e^x = e^x",
+      "response": {
+        "latex": "{\\frac{d}{d x}}e^{x}=e^{x}"
+      },
+      "warm_worker_seconds": 0.517518999999993
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-09",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-09.png",
+      "input_sha256": "c4b0d13b911cd0512bd7e55c41e4c385713d92e8dd483e9850cc9cc89fc61e9a",
+      "size_px": [
+        84,
+        28
+      ],
+      "expected_latex": "\\frac{d}{dx}a^x = a^x\\ln(a)",
+      "response": {
+        "latex": "{\\frac{d}{d x}}a^{x}=a^{x}\\ln(a),"
+      },
+      "warm_worker_seconds": 0.5505319170000007
+    },
+    {
+      "suite": "wikipedia",
+      "id": "small-type-10",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-10.png",
+      "input_sha256": "8ed6db204004843e8e84ac8f95b1ce25a4462d1c22f567ef13f595a4e1615cde",
+      "size_px": [
+        69,
+        28
+      ],
+      "expected_latex": "\\frac{d}{dx}\\ln(x) = \\frac{1}{x}",
+      "response": {
+        "latex": "\\frac{d}{d x}\\ln(x)=\\frac{1}{x},"
+      },
+      "warm_worker_seconds": 0.5214877079999951
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-01",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-01.png",
+      "input_sha256": "cf956038122a3ed7f6a50e5d960e2e0735442a9bec01d38ec302e32fb788eac1",
+      "size_px": [
+        186,
+        50
+      ],
+      "expected_latex": "\\int u \\, dv \\ =\\ uv - \\int v \\, du.",
+      "response": {
+        "latex": "\\int u d v=u v-\\int v d u."
+      },
+      "warm_worker_seconds": 0.43515691699997205
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-02",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-02.png",
+      "input_sha256": "383b960b75ea54a30992d5447a2a14b7ec4dee82c61a393651cbc7f74be9f957",
+      "size_px": [
+        266,
+        39
+      ],
+      "expected_latex": "\\Big(u(x)v(x)\\Big)'  = u'(x) v(x) + u(x) v'(x).",
+      "response": {
+        "latex": "\\left(u(x)v(x)\\right)^{\\prime}=u^{\\prime}(x)v(x)+u(x)v^{\\prime}(x)."
+      },
+      "warm_worker_seconds": 0.7432650410000292
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-03",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-03.png",
+      "input_sha256": "4e512ed6d9b687937eecba1129b08aaf75f670b2e89aeb83835cc1f02fa0a7cb",
+      "size_px": [
+        390,
+        50
+      ],
+      "expected_latex": "\\int \\Big(u(x)v(x)\\Big)'\\,dx  = \\int u'(x)v(x)\\,dx + \\int u(x)v'(x) \\,dx,",
+      "response": {
+        "latex": "\\int\\left(u(x)v(x)\\right)^{\\prime}d x=\\int u^{\\prime}(x)v(x)d x+\\int u(x)v^{\\prime}(x)d x,"
+      },
+      "warm_worker_seconds": 0.864189500000009
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-04",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-04.png",
+      "input_sha256": "09ecf500d68a010a6dd94e3b888dac78993f866e5d889859af46335a750e14e5",
+      "size_px": [
+        324,
+        50
+      ],
+      "expected_latex": "u(x)v(x)  = \\int u'(x)v(x)\\,dx + \\int u(x)v'(x)\\,dx,",
+      "response": {
+        "latex": "u(x)v(x)=\\int u^{'}(x)v(x)d x+\\int u(x)v^{'}(x)d x,"
+      },
+      "warm_worker_seconds": 0.7566731250000203
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-05",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-05.png",
+      "input_sha256": "2b364b6aebabb65fb610efc23fc3c027fade342bd57c9cadd9ea2f9ff6358ff7",
+      "size_px": [
+        324,
+        50
+      ],
+      "expected_latex": "\\int u(x)v'(x)\\,dx  = u(x)v(x) - \\int u'(x)v(x) \\,dx,",
+      "response": {
+        "latex": "\\int u(x)v^{'}(x)dx=u(x)v(x)-\\int u^{'}(x)v(x)dx,"
+      },
+      "warm_worker_seconds": 0.6763006660000315
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-06",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-06.png",
+      "input_sha256": "9d105964c5700f21561326e36001cfc7927a6be08a93e4c571792703b434162e",
+      "size_px": [
+        260,
+        50
+      ],
+      "expected_latex": "\\int u(x)\\,dv  = u(x)v(x) - \\int v(x)\\,du.",
+      "response": {
+        "latex": "\\int u(x)d v=u(x)v(x)-\\int v(x)d u."
+      },
+      "warm_worker_seconds": 0.5690505420000136
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-07",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-07.png",
+      "input_sha256": "95fce2a332c243fe01e1912f62eca5e8f2e9604110f6c708242005fc6f8f34cd",
+      "size_px": [
+        415,
+        56
+      ],
+      "expected_latex": "\\int_a^b u(x) v'(x) \\, dx \n    = u(b) v(b) - u(a) v(a) - \\int_a^b u'(x) v(x) \\, dx .",
+      "response": {
+        "latex": "\\int_{a}^{b}u(x)v^{\\prime}(x)d x=u(b)v(b)-u(a)v(a)-\\int_{a}^{b}u^{\\prime}(x)v(x)d x."
+      },
+      "warm_worker_seconds": 0.9832973329999959
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-08",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-08.png",
+      "input_sha256": "0c01f77b1ac7a3988c9d41f2de706fdf29b4aebe773790e324b1763567156818",
+      "size_px": [
+        181,
+        29
+      ],
+      "expected_latex": "u(x)= e^x/x^2, \\, v'(x) =e^{-x}",
+      "response": {
+        "latex": "u(x)=e^{x}/x^{2},v^{'}(x)=e^{-x}"
+      },
+      "warm_worker_seconds": 0.4975131659999761
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-09",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-09.png",
+      "input_sha256": "21aa1962c0ed80e895317f1c7873ee972c97e9b43fcd9a9c2792f57a164f3329",
+      "size_px": [
+        370,
+        53
+      ],
+      "expected_latex": "\\int_1^\\infty u(x)v'(x)\\,dx = \\Big[u(x)v(x)\\Big]_1^\\infty - \\int_1^\\infty u'(x)v(x)\\,dx",
+      "response": {
+        "latex": "\\int_{1}^{\\infty}u(x)v^{\\prime}(x)d x=\\left[u(x)v(x)\\right]_{1}^{\\infty}-\\int_{1}^{\\infty}u^{\\prime}(x)v(x)d x."
+      },
+      "warm_worker_seconds": 1.1063642500000128
+    },
+    {
+      "suite": "wikipedia",
+      "id": "dark-background-10",
+      "category": "dark-background",
+      "image": "held-out/crops/dark-background-10.png",
+      "input_sha256": "12bc6879477a63d187cca3ed9e8ffef7d2337eb1058f061857a51a7834b9767c",
+      "size_px": [
+        209,
+        29
+      ],
+      "expected_latex": "u(x)= e^{-x},\\, v'(x) =x^{-1}\\sin(x)",
+      "response": {
+        "latex": "u(x)=e^{-x},v'(x)=x^{-1}\\sin(x)"
+      },
+      "warm_worker_seconds": 0.5124709999999482
+    },
+    {
+      "suite": "hefferon-pdf",
+      "id": "hefferon-01",
+      "category": "aligned",
+      "image": "held-out/pdf/crops/hefferon-01.png",
+      "input_sha256": "23196ea4bddd76ffd49a85cb673ed53ae16dfffca4ffdb52cb937f1d50c98653",
+      "size_px": [
+        136,
+        57
+      ],
+      "expected_latex": "\\begin{aligned}3x_1+2x_2&=7\\\\-x_1+x_2&=6\\end{aligned}",
+      "response": {
+        "latex": "\\begin{aligned}3x_{1}+2x_{2}=7\\\\-x_{1}+x_{2}=6\\end{aligned}"
+      },
+      "warm_worker_seconds": 0.5848443339999676
+    },
+    {
+      "suite": "hefferon-pdf",
+      "id": "hefferon-02",
+      "category": "aligned",
+      "image": "held-out/pdf/crops/hefferon-02.png",
+      "input_sha256": "f35d1cdee2f36de2adc7303357cbc3f818952e8a1b4b76f71f5f8d30707ef1b7",
+      "size_px": [
+        155,
+        86
+      ],
+      "expected_latex": "\\begin{aligned}x+y&=0\\\\2x-y+3z&=3\\\\x-2y-z&=3\\end{aligned}",
+      "response": {
+        "latex": "\\begin{array}{r}{\\mathtt{x}+\\mathtt{y}=\\mathtt{0},}\\\\ {2\\mathtt{x}-\\mathtt{y}+3\\mathtt{}z=\\mathtt{}3,}\\\\ {\\mathtt{x}-2\\mathtt{y}-\\mathtt{}z=\\mathtt{}3.}\\end{array}"
+      },
+      "warm_worker_seconds": 1.2413804169999594
+    },
+    {
+      "suite": "hefferon-pdf",
+      "id": "hefferon-03",
+      "category": "aligned",
+      "image": "held-out/pdf/crops/hefferon-03.png",
+      "input_sha256": "4d498e1b7c257e15931a47fdca0025c7f1b0714269241d18bef4782d710e2bf5",
+      "size_px": [
+        155,
+        85
+      ],
+      "expected_latex": "\\begin{aligned}x+y+z&=9\\\\2x+4y-3z&=1\\\\3x+6y-5z&=0\\end{aligned}",
+      "response": {
+        "latex": "\\begin{array}{r}{\\mathsf{x}+\\mathsf{y}+\\mathsf{z}=\\mathsf{9}}\\\\ {2\\mathsf{x}+4\\mathsf{y}-3\\mathsf{z}=\\mathsf{1}}\\\\ {3\\mathsf{x}+6\\mathsf{y}-5\\mathsf{z}=\\mathsf{0}}\\end{array}"
+      },
+      "warm_worker_seconds": 1.3415006669999912
+    },
+    {
+      "suite": "hefferon-pdf",
+      "id": "hefferon-04",
+      "category": "aligned",
+      "image": "held-out/pdf/crops/hefferon-04.png",
+      "input_sha256": "00c7fdee718f3dec066e6df4caa4003f25d594db9607b339555e228851954cc8",
+      "size_px": [
+        206,
+        110
+      ],
+      "expected_latex": "\\begin{aligned}x-y&=0\\\\2x-2y+z+2w&=4\\\\y+w&=0\\\\2z+w&=5\\end{aligned}",
+      "response": {
+        "latex": "\\begin{aligned}\\mathsf{x}-\\mathsf{y}&=\\mathsf{0}\\\\2\\mathsf{x}-2\\mathsf{y}+\\mathsf{\\Delta}z+2\\mathsf{w}&=4\\\\\\mathsf{y}+\\mathsf{\\Delta}\\mathsf{w}&=\\mathsf{0}\\\\2\\mathsf{z}+\\mathsf{\\Delta}\\mathsf{w}&=5\\end{aligned}"
+      },
+      "warm_worker_seconds": 1.1173330420000411
+    },
+    {
+      "suite": "hefferon-pdf",
+      "id": "hefferon-05",
+      "category": "aligned",
+      "image": "held-out/pdf/crops/hefferon-05.png",
+      "input_sha256": "8b12401ba50c1abcc2ae8d9c3af6d2420c960d88c5da73ef0658db89d257f982",
+      "size_px": [
+        127,
+        86
+      ],
+      "expected_latex": "\\begin{aligned}x+3y&=1\\\\2x+y&=-3\\\\2x+2y&=-2\\end{aligned}",
+      "response": {
+        "latex": "\\begin{array}{r}{\\mathtt{x}+\\mathtt{3y}=\\mathtt{\\Delta}\\mathtt{1}}\\\\ {\\mathtt{2x}+\\mathtt{\\Delta}\\mathtt{y}=-\\mathtt{3}}\\\\ {\\mathtt{2x}+\\mathtt{2y}=-\\mathtt{2}}\\end{array}"
+      },
+      "warm_worker_seconds": 1.2875922499999888
+    },
+    {
+      "suite": "hefferon-pdf",
+      "id": "hefferon-06",
+      "category": "aligned",
+      "image": "held-out/pdf/crops/hefferon-06.png",
+      "input_sha256": "6105fc32a8f96885a344ff9fe8fcdec2e14c0a24db684716782137d7d8e339ab",
+      "size_px": [
+        112,
+        58
+      ],
+      "expected_latex": "\\begin{aligned}x+2y&=8\\\\2x+4y&=8\\end{aligned}",
+      "response": {
+        "latex": "\\begin{array}{r}{x+2y=8}\\\\ {2x+4y=8}\\end{array}"
+      },
+      "warm_worker_seconds": 0.570814041999995
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-light-2.png",
+      "input_sha256": "aad5ee55928c6e6a05428a1065f60e496f261ddee995c5c30e3aa8d8d19fffde",
+      "size_px": [
+        200,
+        39
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5180657079999946
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-light-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-light-6.png",
+      "input_sha256": "d017a01624603738d401a2554f91964734828b1578f041dad1796eb27f27ab7b",
+      "size_px": [
+        206,
+        45
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5275525420000235
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-light-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-light-16.png",
+      "input_sha256": "80fa9903bb18d59a25624fc07482ab65873c49ae36f878491fb40841260ce80e",
+      "size_px": [
+        221,
+        60
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5223451660000364
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-light-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-light-30.png",
+      "input_sha256": "69eb114155501595345fa4913f833c18fc5b972031b3e0f64a970807dfab581a",
+      "size_px": [
+        242,
+        81
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5228077500000268
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-light-2.png",
+      "input_sha256": "efa8d358f6996240ea36c75c2b65d59b67aa6e54b8c7096dfefa93fbfc24c74c",
+      "size_px": [
+        297,
+        56
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5225687920000155
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-light-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-light-6.png",
+      "input_sha256": "3b8ee2128e5a0c1d3f4399ec12e5b2ce44af09f1a52d2f61c8cb504079fc1bd5",
+      "size_px": [
+        303,
+        62
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5217157920000091
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-light-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-light-16.png",
+      "input_sha256": "a7e717e25a2313cc87501e08334bdec0022f46e2e739e40e2a5195d6f037f701",
+      "size_px": [
+        318,
+        77
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5221287920000464
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-light-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-light-30.png",
+      "input_sha256": "bcd3ff26282ef6b558b0682e9e670c9c76d8ff82cbc8a4080df9c7f5359a260a",
+      "size_px": [
+        339,
+        98
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5809179999999969
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-light-2.png",
+      "input_sha256": "c95abf715357a0f34efca0e5fc3f29a3b26d919828dd15bce35798d96b193644",
+      "size_px": [
+        394,
+        71
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.48251341700000694
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-light-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-light-6.png",
+      "input_sha256": "2400e47f53850bac1b48a9be1a8a232b651619c95a18960d08fabd0cfab17acf",
+      "size_px": [
+        400,
+        77
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.6577618750000056
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-light-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-light-16.png",
+      "input_sha256": "4ad553c559924cf6336ade95f554d38a8e7e229cdf8c47aa05b47f0e50bd0df7",
+      "size_px": [
+        415,
+        92
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 1.0970237500000053
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-light-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-light-30.png",
+      "input_sha256": "965ffd653366ee089abc341bcb8c64b01d5b7c5fb73c3514c805b3dfbf128d54",
+      "size_px": [
+        436,
+        105
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4597803749999798
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-dark-2.png",
+      "input_sha256": "0e5960fe6d62835cd393428d8d2664a64cbe3b391534cc442d5c868881456e65",
+      "size_px": [
+        200,
+        39
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5124852499999974
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-dark-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-dark-6.png",
+      "input_sha256": "2ce4a03654f3d80a63b9f296299e8a3fe0dcd88a6667257b833865f73e6af868",
+      "size_px": [
+        206,
+        45
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5318215419999888
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-dark-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-dark-16.png",
+      "input_sha256": "1eeae6cfa48f3677a9f19deecb244b43c9d348f92a1524f106e5b1095f931b9e",
+      "size_px": [
+        221,
+        60
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5227254160000143
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-24px-dark-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-dark-30.png",
+      "input_sha256": "a61dad392ee4ca092a3f8911a5be2e101761bce009e091bb276f7f8759fb4899",
+      "size_px": [
+        242,
+        81
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5418920000000185
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-dark-2.png",
+      "input_sha256": "ad08eea1845eb972055a537d4320869e97127b6832220a865aaf08c5eda7612c",
+      "size_px": [
+        297,
+        56
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5532763749999958
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-dark-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-dark-6.png",
+      "input_sha256": "81740f51b72d1ab4afd44246c004402c9eccdaf7705d54830bb13bec0d774786",
+      "size_px": [
+        303,
+        62
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5391223749999767
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-dark-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-dark-16.png",
+      "input_sha256": "deae1c97f05bd40d7cccae42756a73ca8a864cf6b584cd366b7143312b76a580",
+      "size_px": [
+        318,
+        77
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5446246249999831
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-36px-dark-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-36px-dark-30.png",
+      "input_sha256": "ee2f8bad7a832f237a719df04067ffa2c798c9b57fdf8cdd481fd109162b9241",
+      "size_px": [
+        339,
+        98
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5270770829999947
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-dark-2.png",
+      "input_sha256": "dd176f641d32c8a56bd08511b267c13954dc2629ec6a0e18eb07e96de7ce85d7",
+      "size_px": [
+        394,
+        71
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.456921833000024
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-dark-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-dark-6.png",
+      "input_sha256": "68a13e043f21aa8302abdf8d43b10e5e0c87cb0f12efa62ff0c5fb9faf6a3a66",
+      "size_px": [
+        400,
+        77
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4708009159999733
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-dark-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-dark-16.png",
+      "input_sha256": "61e1cd5778caaaf1f065981125fa1715e90ecdc26412f19978c6b28defe364b0",
+      "size_px": [
+        415,
+        92
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.45177862499997445
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-1x-48px-dark-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-48px-dark-30.png",
+      "input_sha256": "2528ca4077a5c17b6346cd4fe57ab4eff63d8b9b562d1885d09cb72ea4343ec8",
+      "size_px": [
+        436,
+        105
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.43592591700002004
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-light-2.png",
+      "input_sha256": "ad9e9f383755acae68bdc9ec6ef40e2231086df1f6e79702b423fc824f1074e6",
+      "size_px": [
+        399,
+        76
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4502820420000262
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-light-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-light-6.png",
+      "input_sha256": "5049ae96a3f8a2a304921918ccedb557dc35df035a233247a049a92deaded581",
+      "size_px": [
+        411,
+        88
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.44817137500001536
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-light-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-light-16.png",
+      "input_sha256": "cd23b48584a09185ece902e9a2c6633d7e655fe8a851f17e35c85ff76480fdcb",
+      "size_px": [
+        441,
+        118
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.45882545800003527
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-light-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-light-30.png",
+      "input_sha256": "e0066258ce8fe9e69ed6818233e6bcc42dffae99d8e195b4efe683e575a2c206",
+      "size_px": [
+        483,
+        160
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.45644845900000064
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-light-2.png",
+      "input_sha256": "224cdecb42bb553bb780542315166d47061c0ce5eb19c5af7d29627be8e287be",
+      "size_px": [
+        592,
+        110
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4414765409999859
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-light-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-light-6.png",
+      "input_sha256": "1bbdf72c6995ab123813f569f305e9f80ab9eef01e7c93691ea2f630495edc2a",
+      "size_px": [
+        604,
+        122
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4402515419999986
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-light-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-light-16.png",
+      "input_sha256": "70043a518ead79a1c1c1ebc6c219573a56a87393a153a2aec4be47439bb199cf",
+      "size_px": [
+        634,
+        152
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.49100350000003345
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-light-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-light-30.png",
+      "input_sha256": "50e971aee6dd9d43c586b4eada361b976130dac02e774ef8de54047f432f9b4b",
+      "size_px": [
+        676,
+        194
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.5213320830000043
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-light-2.png",
+      "input_sha256": "0acf259d0d42a4b7f17d87746e166806b81df894d12d839d4d2bace1e4503d7f",
+      "size_px": [
+        785,
+        144
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4527820420000239
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-light-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-light-6.png",
+      "input_sha256": "d4611fe43f43798fc606c935a0ea284baf617356a757521e0177f800fe018c83",
+      "size_px": [
+        797,
+        156
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.43534262499997567
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-light-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-light-16.png",
+      "input_sha256": "b9e38a80854773c7867b17a156d91207bda91d233f31032e5f60145488772d7d",
+      "size_px": [
+        827,
+        186
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4380492919999597
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-light-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-light-30.png",
+      "input_sha256": "85e056b74121b0ed16c3458e6e79b21087f0dc5ded66a5c61538adf0590f22aa",
+      "size_px": [
+        869,
+        212
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.45084350000001905
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-dark-2.png",
+      "input_sha256": "e14413116b2b91957c0ac7f526de8f8991bc0cbbd75cfb248739084498311aa0",
+      "size_px": [
+        399,
+        76
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.48670533400002114
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-dark-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-dark-6.png",
+      "input_sha256": "9596dbcfbff10ee489f29ca453d31af113c0c6694429bbba2f0620e8d930a71c",
+      "size_px": [
+        411,
+        88
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.44559945900005005
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-dark-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-dark-16.png",
+      "input_sha256": "be641c2a7a6201f3ef9dd863bac741461e6e2695d2a9f7db01639b516c0f63c2",
+      "size_px": [
+        441,
+        118
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.45276404099996626
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-24px-dark-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-24px-dark-30.png",
+      "input_sha256": "ef1f287ffc6b25b8401ae5104eddf028359e9d4700949a76dc70969bcb5f75c2",
+      "size_px": [
+        483,
+        160
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.43517845799999577
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-dark-2.png",
+      "input_sha256": "b8d816ac672b2507580f85f812d04999b26ec4dde9691d90e12bc11d66f55ad5",
+      "size_px": [
+        592,
+        110
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.44071612499999446
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-dark-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-dark-6.png",
+      "input_sha256": "f093176ac54aae3fd0e83ec608175b54562bbc6bb3076b4e14c38c278d9da73c",
+      "size_px": [
+        604,
+        122
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.44604420799998934
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-dark-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-dark-16.png",
+      "input_sha256": "b3988a21809a0e393a630904f6339962f8181e7be8c0285ac2a6f043f5588aa5",
+      "size_px": [
+        634,
+        152
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.6481494170000133
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-36px-dark-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-36px-dark-30.png",
+      "input_sha256": "1c2a0c1141fb6efc6c62a2a970a11bf5f90b7c02dc87489fd25a197b8c821501",
+      "size_px": [
+        676,
+        194
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.6013905410000007
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-dark-2.png",
+      "input_sha256": "1a878b8e9b7eef5135a47f80565188622d8dfdce94ceecb3ecb9a43164a51994",
+      "size_px": [
+        785,
+        144
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.45081029099998204
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-dark-6",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-dark-6.png",
+      "input_sha256": "ad2aa8fdcdb7ecdc79cf6989b5ff197fe064bfd8b81831e4dc3cbe1f32af43d7",
+      "size_px": [
+        797,
+        156
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.4682765839999661
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-dark-16",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-dark-16.png",
+      "input_sha256": "8e44bbd71ba0ff31089d9a45c74b22d87938642bfbfbd2f5151f9122a9e62bf8",
+      "size_px": [
+        827,
+        186
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.44809858300004635
+    },
+    {
+      "suite": "repeat-root",
+      "id": "root-2x-48px-dark-30",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-2x-48px-dark-30.png",
+      "input_sha256": "518b91c8ef65fd11e427594b6ce61a29be6d101653b9645d199f64b77030c68b",
+      "size_px": [
+        869,
+        212
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.43353791700002375
+    },
+    {
+      "suite": "upscale-2x",
+      "id": "small-type-02",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-02.png",
+      "input_sha256": "1a641884901d7feeb10dc64793f6bc278caeb000a74f44313c798975f80e3a68",
+      "size_px": [
+        142,
+        48
+      ],
+      "expected_latex": "\\frac{dy}{dx} = \\frac{d}{dx} f(x).",
+      "baseline_suite": "wikipedia",
+      "response": {
+        "latex": "\\begin{array}{l}\\frac{d y}{d x}=\\frac{d}{d x}f(x).\\end{array}"
+      },
+      "warm_worker_seconds": 0.6063579580000464
+    },
+    {
+      "suite": "upscale-2x",
+      "id": "small-type-04",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-04.png",
+      "input_sha256": "6d1b108c7f6a04839c08a506e9858f9ed72443926d26be202da55cb7d84c3de1",
+      "size_px": [
+        136,
+        48
+      ],
+      "expected_latex": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}.",
+      "baseline_suite": "wikipedia",
+      "response": {
+        "latex": "\\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx}"
+      },
+      "warm_worker_seconds": 0.49485487499998726
+    },
+    {
+      "suite": "upscale-2x",
+      "id": "small-type-06",
+      "category": "small-type",
+      "image": "held-out/crops/small-type-06.png",
+      "input_sha256": "10b764b356d6538034da4bab39a8d690f431d98a8386df36b5905ec458132e92",
+      "size_px": [
+        272,
+        48
+      ],
+      "expected_latex": "\\textstyle D_{x}^2 f(x,y) = \\frac{\\partial}{\\partial x} \\Bigl(\\frac{\\partial}{\\partial x} f(x,y) \\Bigr)",
+      "baseline_suite": "wikipedia",
+      "response": {
+        "latex": "D_{x}^{2}f(x,y)=\\frac{\\partial}{\\partial x}\\left(\\frac{\\partial}{\\partial x}f(x,y)\\right)."
+      },
+      "warm_worker_seconds": 0.6141805410000529
+    },
+    {
+      "suite": "upscale-2x",
+      "id": "root-1x-24px-light-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-light-2.png",
+      "input_sha256": "ae54f88a39b8d41c2f80f125111509e86a263d73ae84dbed7acf288e82179d3b",
+      "size_px": [
+        400,
+        78
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "baseline_suite": "repeat-root",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 0.5486545420000084
+    },
+    {
+      "suite": "upscale-2x",
+      "id": "root-1x-24px-dark-2",
+      "category": "repeat-root",
+      "image": "preprocessing-study/recaptures/root-1x-24px-dark-2.png",
+      "input_sha256": "636f74a1096693ae691bb6de7516a558dfe1e50892768f0e96e19e47ba101035",
+      "size_px": [
+        400,
+        78
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "baseline_suite": "repeat-root",
+      "response": {
+        "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1"
+      },
+      "warm_worker_seconds": 0.5199145000000271
+    }
+  ],
+  "summary": {
+    "printed": {
+      "measured": 66,
+      "warm_p95_seconds": 2.5924906660000033,
+      "worker_errors": 0
+    },
+    "small-type": {
+      "measured": 10,
+      "warm_p95_seconds": 1.0270807079999713,
+      "worker_errors": 0
+    },
+    "wikipedia": {
+      "measured": 60,
+      "warm_p95_seconds": 2.5924906660000033,
+      "worker_errors": 0
+    },
+    "hefferon-pdf": {
+      "measured": 6,
+      "warm_p95_seconds": 1.3415006669999912,
+      "worker_errors": 0
+    },
+    "repeat-root": {
+      "measured": 48,
+      "warm_p95_seconds": 0.6481494170000133,
+      "worker_errors": 0,
+      "exact_matches": 32
+    },
+    "upscale-2x": {
+      "measured": 5,
+      "warm_p95_seconds": 0.6141805410000529,
+      "worker_errors": 0
+    }
+  },
+  "cold_first_response": {
+    "suite": "wikipedia",
+    "id": "fractions-01",
+    "seconds": 38.779437625000014,
+    "response": {
+      "latex": "\\begin{aligned}\\frac{\\frac{1}{2}}{\\frac{1}{3}}&=\\frac{1}{2}\\div\\frac{1}{3}=\\frac{1}{2}\\times\\frac{3}{1}=\\frac{3}{2},\\quad\\frac{\\frac{3}{2}}{5}=\\frac{3}{2}\\div5=\\frac{3}{2}\\times\\frac{1}{5}=\\frac{3}{10},\\\\\\frac{12\\frac{3}{4}}{26}&=\\frac{12\\times4+3}{4}\\div26=\\frac{12\\times4+3}{4}\\times\\frac{1}{26}=\\frac{51}{104}.\\end{aligned}"
+    }
+  }
+}

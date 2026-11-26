@@ -1,0 +1,232 @@
+{
+  "source_page": "plus-m-app-trial/.build/plus-m-trial/equations.html",
+  "source_page_sha256": "86f8b47d9e8965e8f7ebefcc6e3162ed37e755b826a66eaa73434bf42ea41b95",
+  "browser": "Headless Chrome 158.0.8127.88",
+  "device_scale_factor": 2,
+  "crop_css_px": {
+    "width": 254,
+    "height": 98
+  },
+  "border_css": "1px solid #ddd; border-radius: 6px",
+  "variants": {
+    "bordered": "#ddd",
+    "borderless": "transparent"
+  },
+  "diff_edge": "Outer 2 physical pixels and the four 12-by-12 pixel rounded corner regions",
+  "limitations": "Synthetic full-frame crops. Captions and neighboring content are excluded. Original drag coordinates, border coverage and browser/display rasterization are unknown.",
+  "cases": [
+    {
+      "id": "fraction-13px-bordered",
+      "formula": "fraction",
+      "latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "font_size_css_px": 13,
+      "variant": "bordered",
+      "image": "png/fraction-13px-bordered.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "be4a8393abfa40b2c928f548427d97e78e5c0e9ae8a6bc92c68ab65b1fdc1ab9"
+    },
+    {
+      "id": "fraction-13px-borderless",
+      "formula": "fraction",
+      "latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "font_size_css_px": 13,
+      "variant": "borderless",
+      "image": "png/fraction-13px-borderless.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "5617ed71873cb783f058133ce545d389e012f4614d7576ebb4ba05b7f9389941"
+    },
+    {
+      "id": "fraction-24px-bordered",
+      "formula": "fraction",
+      "latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "font_size_css_px": 24,
+      "variant": "bordered",
+      "image": "png/fraction-24px-bordered.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "613d5bcea05adee10444cf545da44b601f9534bc26d89667cc836aa6dedc9eae"
+    },
+    {
+      "id": "fraction-24px-borderless",
+      "formula": "fraction",
+      "latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "font_size_css_px": 24,
+      "variant": "borderless",
+      "image": "png/fraction-24px-borderless.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "dc895db6def35678fb935a6447e8e96df2c50a98a07db6c6b9c1c40cb76dd9fb"
+    },
+    {
+      "id": "root-fraction-13px-bordered",
+      "formula": "root-fraction",
+      "latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "font_size_css_px": 13,
+      "variant": "bordered",
+      "image": "png/root-fraction-13px-bordered.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "48ac696938b01f21afa6fd911a17de1e51ae85cbe1fe46513f7ef2b976030f72"
+    },
+    {
+      "id": "root-fraction-13px-borderless",
+      "formula": "root-fraction",
+      "latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "font_size_css_px": 13,
+      "variant": "borderless",
+      "image": "png/root-fraction-13px-borderless.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "1f83c579943dee9107be5bdea55bc26a88159d85c1f4e7540c5e435a3305104b"
+    },
+    {
+      "id": "root-fraction-24px-bordered",
+      "formula": "root-fraction",
+      "latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "font_size_css_px": 24,
+      "variant": "bordered",
+      "image": "png/root-fraction-24px-bordered.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "41f6600ed6697985c5a99bd0a4a2a5e332809549576955d6a0b2e90f4253b677"
+    },
+    {
+      "id": "root-fraction-24px-borderless",
+      "formula": "root-fraction",
+      "latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "font_size_css_px": 24,
+      "variant": "borderless",
+      "image": "png/root-fraction-24px-borderless.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "fe2ea14004feae04a04ea07e2a5634e1d1e763bf456fb64615be4cb3b2885636"
+    },
+    {
+      "id": "cube-root-13px-bordered",
+      "formula": "cube-root",
+      "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "font_size_css_px": 13,
+      "variant": "bordered",
+      "image": "png/cube-root-13px-bordered.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "61ee13abfb446df39dde4da0e2bd19f91a5fc251e552f9774c82dc7f84142a08"
+    },
+    {
+      "id": "cube-root-13px-borderless",
+      "formula": "cube-root",
+      "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "font_size_css_px": 13,
+      "variant": "borderless",
+      "image": "png/cube-root-13px-borderless.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "470d933124cbecb91a6d79fd45abaee5edcb24b3755832e0ca45d345282eb562"
+    },
+    {
+      "id": "cube-root-24px-bordered",
+      "formula": "cube-root",
+      "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "font_size_css_px": 24,
+      "variant": "bordered",
+      "image": "png/cube-root-24px-bordered.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "1f30f98713b8ca1001e278c689235d4c63de039debba78f9ad651eb2c7e09162"
+    },
+    {
+      "id": "cube-root-24px-borderless",
+      "formula": "cube-root",
+      "latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "font_size_css_px": 24,
+      "variant": "borderless",
+      "image": "png/cube-root-24px-borderless.png",
+      "width_px": 508,
+      "height_px": 196,
+      "sha256": "f6482805b880e63bdbaefda2f46a406d99f0aba6dd411b9e433fce16cabcc55c"
+    }
+  ],
+  "pairs": [
+    {
+      "formula": "fraction",
+      "font_size_css_px": 13,
+      "changed_pixels": 2824,
+      "off_edge_changed_pixels": 0,
+      "ink_pixels": 1031,
+      "ink_bounds_xyxy_inclusive": [
+        198,
+        70,
+        309,
+        124
+      ]
+    },
+    {
+      "formula": "fraction",
+      "font_size_css_px": 24,
+      "changed_pixels": 2824,
+      "off_edge_changed_pixels": 0,
+      "ink_pixels": 2778,
+      "ink_bounds_xyxy_inclusive": [
+        150,
+        71,
+        357,
+        170
+      ]
+    },
+    {
+      "formula": "root-fraction",
+      "font_size_css_px": 13,
+      "changed_pixels": 2824,
+      "off_edge_changed_pixels": 0,
+      "ink_pixels": 1377,
+      "ink_bounds_xyxy_inclusive": [
+        162,
+        70,
+        348,
+        127
+      ]
+    },
+    {
+      "formula": "root-fraction",
+      "font_size_css_px": 24,
+      "changed_pixels": 2824,
+      "off_edge_changed_pixels": 0,
+      "ink_pixels": 3735,
+      "ink_bounds_xyxy_inclusive": [
+        84,
+        75,
+        429,
+        183
+      ]
+    },
+    {
+      "formula": "cube-root",
+      "font_size_css_px": 13,
+      "changed_pixels": 2824,
+      "off_edge_changed_pixels": 0,
+      "ink_pixels": 971,
+      "ink_bounds_xyxy_inclusive": [
+        158,
+        82,
+        349,
+        111
+      ]
+    },
+    {
+      "formula": "cube-root",
+      "font_size_css_px": 24,
+      "changed_pixels": 2824,
+      "off_edge_changed_pixels": 0,
+      "ink_pixels": 2944,
+      "ink_bounds_xyxy_inclusive": [
+        77,
+        75,
+        431,
+        131
+      ]
+    }
+  ],
+  "katex": "0.19.1"
+}

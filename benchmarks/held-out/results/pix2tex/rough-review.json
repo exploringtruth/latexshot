@@ -1,0 +1,367 @@
+{
+  "correct": 22,
+  "total": 60,
+  "accuracy": 0.36666666666666664,
+  "cases": [
+    {
+      "id": "fractions-01",
+      "ok": false,
+      "reason": "fail-0.42",
+      "pred": "\\frac{\\frac{1}{2}}{\\frac{1}{2}}=\\frac{1}{2}\\div\\frac{1}{3}=\\frac{1}{2}\\times\\frac{3}{2}=\\frac{3}{2}\\div5=\\frac{3}{2}\\times\\frac{1}{5}=\\frac{3}{2}\\div\\frac{1}{5}=\\frac{3}{10},"
+    },
+    {
+      "id": "fractions-02",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{63}{462}}={\\frac{63\\div21}{462\\div21}}={\\frac{3}{22}}\\,."
+    },
+    {
+      "id": "fractions-03",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{1}{4}}+{\\frac{1}{3}}={\\frac{1\\times3}{4\\times3}}+{\\frac{1\\times4}{3\\times4}}={\\frac{3}{12}}+{\\frac{4}{12}}={\\frac{7}{12}}\\,."
+    },
+    {
+      "id": "fractions-04",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{9}{15}}+{\\frac{10}{15}}={\\frac{19}{15}}=1{\\frac{4}{15}}\\,."
+    },
+    {
+      "id": "fractions-05",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "\\frac{a}{b}+\\frac{c}{d}=\\frac{a d+c b}{b d}\\,."
+    },
+    {
+      "id": "fractions-06",
+      "ok": false,
+      "reason": "fail-0.75",
+      "pred": "\\begin{array}{r l}{{\\frac{3}{4}}+{\\frac{5}{6}}={\\frac{3\\cdot6}{4\\cdot6}}+{\\frac{4\\cdot5}{4\\cdot6}}={\\frac{18}{24}}+{\\frac{20}{12}}}&{{}={\\frac{19}{12}}}\\\\ {\\,\\,={\\frac{3\\cdot3}{4\\cdot3}}+{\\frac{2\\cdot5}{2\\cdot6}}={\\frac{9}{12}}+{\\frac{10}{12}}}&{{}={\\frac{19}{12}}.}\\end{array}"
+    },
+    {
+      "id": "fractions-07",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{2}{3}}\\times{\\frac{3}{4}}={\\frac{6}{12}}."
+    },
+    {
+      "id": "fractions-08",
+      "ok": false,
+      "reason": "fail-0.64",
+      "pred": "{\\frac{2}{3}}\\times{\\frac{3}{4}}={\\frac{X^{1}}{3^{1}}}\\times{\\frac{3^{1}}{A^{2}}}={\\frac{1}{1}}\\times{\\frac{1}{2}}={\\frac{1}{2}}\\,."
+    },
+    {
+      "id": "fractions-09",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "3\\times2{\\frac{3}{4}}={\\frac{3}{1}}\\times{\\frac{2\\times4+3}{4}}={\\frac{33}{4}}=8{\\frac{1}{4}}."
+    },
+    {
+      "id": "fractions-10",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "3\\times2{\\frac{3}{4}}=3\\times2+3\\times{\\frac{3}{4}}=6+{\\frac{9}{4}}=8{\\frac{1}{4}}."
+    },
+    {
+      "id": "roots-01",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{\\sqrt{2}}{2}}={\\frac{1}{\\sqrt{2}}}"
+    },
+    {
+      "id": "roots-02",
+      "ok": false,
+      "reason": "fail-0.50",
+      "pred": "\\sqrt{x^{2}}\\ =|x|=\\left\\{x,\\ \\ \\mathrm{if}\\,x\\geq0"
+    },
+    {
+      "id": "roots-03",
+      "ok": false,
+      "reason": "fail-0.50",
+      "pred": "\\sqrt{x y}\\ =\\sqrt{\\vec{x}}\\ \\sqrt{y}"
+    },
+    {
+      "id": "roots-04",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\sqrt{x}}\\ =x^{1/2}\\,."
+    },
+    {
+      "id": "roots-05",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "f^{'}(x)={\\frac{1}{2{\\sqrt{x}}}}\\,."
+    },
+    {
+      "id": "roots-06",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "\\sqrt{1+x}\\ =\\ \\sum_{n=0}^{\\infty}\\frac{(-1)^{n}(2n)!}{(1-2n)(n)^{2}(4^{n})}x^{n}=1+\\frac{1}{2}x-\\frac{1}{8}x^{2}+\\frac{1}{16}x^{3}-\\frac{5}{128}x^{4}+\\ \\cdots,"
+    },
+    {
+      "id": "roots-07",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\sqrt{p^{2k}}}\\ =p^{k},"
+    },
+    {
+      "id": "roots-08",
+      "ok": false,
+      "reason": "fail-0.70",
+      "pred": "\\sqrt{p_{1}^{j_{l}+1}\\dots p_{k}^{j_{l}+1}p_{k+1}^{j_{l}}\\dots\\vartheta_{n}^{j_{l}}}=p_{1}^{i_{1}}\\dots\\vartheta_{n}^{\\theta_{n}}\\sqrt{p_{1}\\dots\\vartheta_{k}}~."
+    },
+    {
+      "id": "roots-09",
+      "ok": false,
+      "reason": "fail-0.86",
+      "pred": "\\sqrt{11}\\;=3+\\frac{1}{3+\\frac{1}{6+\\frac{1}{3+\\frac{1}{6+\\frac{1}{3+\\ddots}}}}}"
+    },
+    {
+      "id": "roots-10",
+      "ok": false,
+      "reason": "fail-0.56",
+      "pred": "\\sqrt{11}\\;=3+\\frac{2}{6+\\displaystyle\\frac{2}{6+\\displaystyle\\frac{2}{6+\\displaystyle\\frac{2}{6+\\displaystyle\\frac{2}{6+\\displaystyle\\frac{2}{6+\\displaystyle\\frac{1}{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\sqrt{\\cot{\\frac{2}}}}}}}}}}}}}}}}}}}}}}}"
+    },
+    {
+      "id": "matrices-01",
+      "ok": false,
+      "reason": "fail-0.71",
+      "pred": "\\left[\\begin{array}{l l l}{1}&{9}&{-13}\\\\ {20}&{5}&{-6}\\end{array}\\right]"
+    },
+    {
+      "id": "matrices-02",
+      "ok": false,
+      "reason": "fail-0.85",
+      "pred": "\\mathbf{A}={\\left[\\begin{array}{l l}{-1.3}&{0.6}\\\\ {20.4}&{5.5}\\\\ {9.7}&{-6.2}\\end{array}\\right]}."
+    },
+    {
+      "id": "matrices-03",
+      "ok": false,
+      "reason": "fail-0.60",
+      "pred": "\\left[\\begin{array}{l l l}{3}&{7}&{2}\\end{array}\\right]"
+    },
+    {
+      "id": "matrices-04",
+      "ok": false,
+      "reason": "fail-0.00",
+      "pred": "\\left\\lfloor{\\frac{4}{s}}\\right\\rfloor"
+    },
+    {
+      "id": "matrices-05",
+      "ok": false,
+      "reason": "fail-0.78",
+      "pred": "\\left[\\begin{array}{l l l}{9}&{13}&{5}\\\\ {1}&{11}&{7}\\\\ {2}&{6}&{3}\\end{array}\\right]"
+    },
+    {
+      "id": "matrices-06",
+      "ok": false,
+      "reason": "fail-0.74",
+      "pred": "{\\bf A}=\\left[\\begin{array}{c c c c}{{a_{11}}}&{{a_{12}}}&{{\\cdots}}&{{a_{1n}}}\\\\ {{a_{21}}}&{{a_{22}}}&{{\\cdots}}&{{a_{2n}}}\\\\ {{\\vdots}}&{{\\vdots}}&{{\\ddots}}&{{\\vdots}}\\\\ {{a_{m1}}}&{{a_{m2}}}&{{\\cdots}}&{{a_{m n}}}\\end{array}\\right]=\\left(\\begin{array}{c c c c}{{a_{11}}}&{{a_{12}}}&{{\\cdots}}&{{a_{1n}}}\\\\ {{a_{21}}}&{{a_{m2}}}&{{\\cdots}}&{{\\vdots}}\\\\ {{\\vdots}}&{{\\vdots}}&{{\\cdots}}&{{a_{m n}}}\\end{array}\\right)."
+    },
+    {
+      "id": "matrices-07",
+      "ok": false,
+      "reason": "fail-0.75",
+      "pred": "\\mathbf{A}={\\left[\\begin{array}{l l l l}{0}&{-1}&{-2}&{-3}\\\\ {1}&{0}&{-1}&{-2}\\\\ {2}&{1}&{0}&{-1}\\end{array}\\right]}"
+    },
+    {
+      "id": "matrices-08",
+      "ok": false,
+      "reason": "fail-0.82",
+      "pred": "{\\left[\\begin{array}{l l l}{1}&{3}&{1}\\\\ {1}&{0}&{0}\\end{array}\\right]}+{\\left[\\begin{array}{l l l}{0}&{0}&{5}\\\\ {7}&{5}&{0}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{1+0}&{3+0}&{1+5}\\\\ {1+7}&{0+5}&{0+0}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{1}&{3}&{6}\\\\ {8}&{5}&{0}\\end{array}\\right]}"
+    },
+    {
+      "id": "matrices-09",
+      "ok": false,
+      "reason": "fail-0.79",
+      "pred": "2\\cdot{\\left[\\begin{array}{l l l}{1}&{8}&{-3}\\\\ {4}&{-2}&{5}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{2\\cdot1}&{2\\cdot8}&{2\\cdot-3}\\\\ {2\\cdot4}&{2\\cdot-2}&{2\\cdot5}\\end{array}\\right]}={\\left[\\begin{array}{l l l}{2}&{16}&{-6}\\\\ {8}&{-4}&{10}\\end{array}\\right]}"
+    },
+    {
+      "id": "matrices-10",
+      "ok": false,
+      "reason": "fail-0.80",
+      "pred": "\\left[\\begin{array}{c c c}{{1}}&{{2}}&{{3}}\\\\ {{0}}&{{-6}}&{{7}}\\end{array}\\right]^{\\mathrm{T}}=\\left[\\begin{array}{c c}{{1}}&{{0}}\\\\ {{2}}&{{-6}}\\\\ {{3}}&{{7}}\\end{array}\\right]"
+    },
+    {
+      "id": "aligned-01",
+      "ok": false,
+      "reason": "corrupted conclusion z=2=2",
+      "pred": "\\begin{array}{r}{3z+2={\\frac{7}{2}}z+1}\\\\ {\\Rightarrow z=2=2}\\end{array}"
+    },
+    {
+      "id": "aligned-02",
+      "ok": false,
+      "reason": "fail-0.73",
+      "pred": "\\begin{array}{l}{{\\displaystyle\\int_{a}^{b}u(x)v^{\\prime}(x)\\,d x=\\left[\\,u(x)v(x)\\,\\right]_{a}^{b}-\\int_{a}^{b}u^{\\prime}(x)v(x)\\,d x}}\\\\ {{}}&{{=u(b)v(b)-u(a)v(a)-\\displaystyle\\int_{a}^{b}u^{\\prime}(x)v(x)\\,d x\\,.}}\\end{array}"
+    },
+    {
+      "id": "aligned-03",
+      "ok": false,
+      "reason": "fail-0.71",
+      "pred": "\\begin{array}{c}{{x(y)=f(g^{-1}(y))}}\\\\ {{y(x)=g(f^{-1}(x))}}\\end{array}"
+    },
+    {
+      "id": "aligned-04",
+      "ok": false,
+      "reason": "fail-0.82",
+      "pred": "\\begin{array}{r l}{\\int x\\cos(x)\\,d x=\\int u\\,d v}&{{}}\\\\ {\\,\\,\\,\\,\\,\\,\\,\\,=u\\cdot v-\\int v\\,d u}\\\\ {\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,=x\\sin(x)-\\int\\sin(x)\\,d x}\\\\ {\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,=x\\sin(x)+\\cos(x)+C,}\\end{array}"
+    },
+    {
+      "id": "aligned-05",
+      "ok": false,
+      "reason": "fail-0.80",
+      "pred": "\\begin{array}{r l}{\\int\\ln(x)\\,d x=x\\ln(x)-\\,\\int{\\frac{x}{x}}\\,d x}\\\\ {\\,\\,}&{{}=x\\ln(x)-\\,\\int1\\,d x}\\\\ {\\,\\,}&{{}=x\\ln(x)-\\,x+C}\\\\ {\\,\\,}&{{}=x(\\ln(x)-1)+C}\\end{array}"
+    },
+    {
+      "id": "aligned-06",
+      "ok": false,
+      "reason": "fail-0.55",
+      "pred": "\\begin{array}{r}{\\int\\arctan(x)\\,d x=x\\mathrm{arctan}(x)-\\displaystyle\\int{\\frac{x}{1+x^{2}}}\\,d x}\\\\ {\\displaystyle=x\\arctan(x)-{\\frac{\\ln(1+x^{2})}{2}}+C}\\end{array}"
+    },
+    {
+      "id": "aligned-07",
+      "ok": false,
+      "reason": "fail-0.54",
+      "pred": "\\begin{array}{c}{{\\pi=\\displaystyle\\prod_{n=1}^{\\infty}\\displaystyle\\frac{4n^{2}}{4n^{2}-1}=\\displaystyle\\prod_{n=1}^{\\infty}\\displaystyle\\left(\\frac{2n}{2n-1}\\cdot\\frac{2n}{2n+1}\\right)}}\\\\ {{=\\left(\\displaystyle\\frac{2}{1}\\cdot\\frac{2}{3}\\right)\\cdot\\left(\\frac{4}{3}\\cdot\\frac{4}{5}\\right)\\cdot\\left(\\frac{6}{5}\\cdot\\frac{8}{9}\\right)\\cdot\\;\\;\\cdots}}\\end{array}"
+    },
+    {
+      "id": "aligned-08",
+      "ok": false,
+      "reason": "fail-0.33",
+      "pred": "\\begin{array}{r}{\\Gamma(x)=\\int_{a}^{n}\\epsilon^{n}x^{n-1}d x}\\\\ {=\\left.=\\,-\\int_{a}^{n}x^{n-1}d(\\epsilon^{n})\\,}\\\\ {=\\,-\\int_{a}^{n}\\left(x^{n-1}\\right)_{x}^{n}+\\int_{a}^{n}\\epsilon^{n}d(x^{n-1})}\\\\ {=\\,(t-1)\\Gamma(2-1).\\,}\\end{array}"
+    },
+    {
+      "id": "aligned-09",
+      "ok": false,
+      "reason": "fail-0.00",
+      "pred": "\\begin{array}{c}{{\\frac{t}{|s|}\\hat{\\mathrm{y}}}}\\\\ {{\\left|\\begin{array}{c}{{t}}\\\\ {{\\left|\\begin{array}{c}{{\\left|\\mathbf{v}^{i}\\right|}}\\\\ {{\\left|\\mathbf{v}^{i}\\right|}}\\end{array}\\right|}}}\\end{array}"
+    },
+    {
+      "id": "aligned-10",
+      "ok": false,
+      "reason": "fail-0.58",
+      "pred": "\\begin{array}{l l}{{\\langle-\\Delta f.f\\rangle_{L^{2}}=-\\int_{-\\infty}^{\\infty}\\ f^{\\prime}(x)\\overline{{{f(x)}}}\\,d x}}\\\\ {{}}&{{=-\\left[f^{\\prime}(x)\\overline{{{f(x)}}}\\right]_{-\\infty}^{\\infty}+\\int_{-\\infty}^{\\infty}\\ f^{\\prime}(x)\\overline{{{f^{\\prime}(x)}}}\\,d x}}\\end{array}"
+    },
+    {
+      "id": "small-type-01",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "\\int_{a}^{b}f^{\\prime}(t)\\,d t=f(b)-f(a)"
+    },
+    {
+      "id": "small-type-02",
+      "ok": false,
+      "reason": "fail-0.33",
+      "pred": "\\textstyle{\\frac{\\partial}{\\partial x}}={\\frac{a}{a}}f(x)\\,."
+    },
+    {
+      "id": "small-type-03",
+      "ok": false,
+      "reason": "fail-0.71",
+      "pred": "{\\frac{d^{2}y}{d x^{2}}}={\\frac{d}{d x}}\\Big({\\frac{d}{d x}}f(x)\\Big)\\;."
+    },
+    {
+      "id": "small-type-04",
+      "ok": false,
+      "reason": "fail-0.00",
+      "pred": "{\\frac{a y}{a x}}={\\frac{a y}{d u}}\\cdot{\\frac{a u}{d x}}."
+    },
+    {
+      "id": "small-type-05",
+      "ok": false,
+      "reason": "fail-0.43",
+      "pred": "D_{s v}f(x,y)={\\frac{s}{s_{v}}}{\\binom{s}{s_{x}}}f(x,y){\\Big)}"
+    },
+    {
+      "id": "small-type-06",
+      "ok": false,
+      "reason": "fail-0.50",
+      "pred": "D_{x}^{2}f(x,y)={\\frac{s}{\\sin}}\\left({\\frac{s}{\\alpha}}f(x,y)\\right)"
+    },
+    {
+      "id": "small-type-07",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{d}{d x}}x^{a}=a x^{a-1}"
+    },
+    {
+      "id": "small-type-08",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "{\\frac{d}{d x}}e^{x}=e^{x}"
+    },
+    {
+      "id": "small-type-09",
+      "ok": false,
+      "reason": "fail-0.75",
+      "pred": "{\\frac{d}{d x}}\\alpha^{x}=a^{x}\\ln(a)"
+    },
+    {
+      "id": "small-type-10",
+      "ok": false,
+      "reason": "fail-0.75",
+      "pred": "{\\frac{d}{d x}}\\mathrm{ln}(x)={\\frac{1}{x}}"
+    },
+    {
+      "id": "dark-background-01",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "\\int u\\,d v=u v-\\int v\\,d u."
+    },
+    {
+      "id": "dark-background-02",
+      "ok": false,
+      "reason": "fail-0.75",
+      "pred": "\\left(u(x)v(x)\\right)^{\\prime}=u^{\\prime}(x)v(x)+u(x)v^{\\prime}(x)."
+    },
+    {
+      "id": "dark-background-03",
+      "ok": false,
+      "reason": "fail-0.71",
+      "pred": "\\int\\left(u(x)v(x)\\right)^{\\prime}d x=\\int u^{\\prime}(x)v(x)\\,d x+\\int u(x)v^{\\prime}(x)\\,d x,"
+    },
+    {
+      "id": "dark-background-04",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "u(x)v(x)=\\int u^{'}(x)v(x)\\,d x+\\int u(x)v^{'}(x)\\,d x,"
+    },
+    {
+      "id": "dark-background-05",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "\\int u(x)v^{\\prime}(x)\\,d x=u(x)v(x)-\\int u^{\\prime}(x)v(x)\\,d x,"
+    },
+    {
+      "id": "dark-background-06",
+      "ok": true,
+      "reason": "norm-match",
+      "pred": "\\int u(x)\\,d v=u(x)v(x)-\\int v(x)\\,d u\\,."
+    },
+    {
+      "id": "dark-background-07",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "\\int_{a}^{b}u(x)v^{\\prime}(x)\\,d x=u(b)v(b)-u(a)v(a)-\\int_{a}^{b}u^{\\prime}(x)v(x)\\,d x\\,."
+    },
+    {
+      "id": "dark-background-08",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "u(x)=e^{x}/x^{2},\\;v(x)=e^{-x}"
+    },
+    {
+      "id": "dark-background-09",
+      "ok": false,
+      "reason": "fail-0.89",
+      "pred": "\\int_{1}^{\\infty}u(x)v^{*}(x)\\,d x=\\left[u(x)v(x)\\right]_{1}^{\\infty}-\\int_{1}^{\\infty}u^{*}(x)v(x)\\,d x"
+    },
+    {
+      "id": "dark-background-10",
+      "ok": true,
+      "reason": "overlap-1.00",
+      "pred": "u(x)=e^{-x},\\,v\\left(x\\right)=x^{-1}\\sin(x)"
+    }
+  ]
+}

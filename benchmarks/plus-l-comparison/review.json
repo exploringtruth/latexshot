@@ -1,0 +1,116 @@
+{
+  "sha256": {
+    "benchmarks/plus-l-comparison/results-plus-l.json": "133c7a8a0bfd955eb291db9326d64c3fea53ba464b93eb51e925fa0e8c21574b",
+    "benchmarks/plus-m-trial/results.json": "01b8af6bababc59596122940f6fba7c56f21d1cdef21cccda4fdef7765101398",
+    "benchmarks/plus-l-comparison/controls-plus-m.json": "0a44181c51008a8c0cee66548123141f371d1cc017057a5235c3c8fbf9e23848"
+  },
+  "rubric": "Allow equivalent LaTeX, grouping, fonts, spacing, alignment and cosmetic punctuation. Require the same math symbols, operations, scripts, bounds, delimiters, equation rows and matrix entries. Record false presentation wrappers separately.",
+  "syntax": {
+    "renderer": "Bundled KaTeX 0.19.1, display mode and throwOnError enabled",
+    "plus_l_valid": 126,
+    "plus_m_control_valid": 12
+  },
+  "printed": {
+    "required_correct": 63,
+    "plus_l": {
+      "correct": 58,
+      "total": 66,
+      "wikipedia_correct": 54,
+      "pdf_correct": 4,
+      "small_type_correct": 8,
+      "rejected": {
+        "wikipedia": {
+          "fractions-01": "Turns the mixed number 12 3/4 into a power.",
+          "fractions-08": "Drops cancellation marks, adds primes to struck factors and omits three replacement ones.",
+          "roots-10": "Omits one fraction level from each continued fraction.",
+          "aligned-10": "Changes the first integrand from a second derivative to a first derivative.",
+          "small-type-03": "Adds a parallel superscript to the outer single-row array.",
+          "small-type-04": "Adds a double vertical bar in a superscript."
+        },
+        "hefferon-pdf": {
+          "hefferon-02": "Returns only the second of three equations.",
+          "hefferon-04": "Returns only the second of four equations."
+        }
+      },
+      "independent_review_agreed": true
+    },
+    "plus_m": {
+      "archived_correct": 62,
+      "reviewed_correct": 61,
+      "total": 66,
+      "wikipedia_correct": 57,
+      "pdf_correct": 4,
+      "small_type_correct": 10,
+      "additional_rejection": {
+        "aligned-10": "Changes the first integrand from a second derivative to a first derivative. The frozen crop shows two primes."
+      }
+    }
+  },
+  "repeat_root": {
+    "plus_l": {
+      "structurally_correct": 48,
+      "total": 48,
+      "exact_matches": 0,
+      "outputs": {
+        "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1": 48
+      }
+    },
+    "plus_m": {
+      "structurally_correct": 48,
+      "total": 48,
+      "exact_matches": 32,
+      "outputs": {
+        "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1": 16,
+        "\\sqrt{x+1}+\\sqrt[3]{y}=1": 32
+      }
+    }
+  },
+  "crop_controls": {
+    "byte_identical_cross_model": true,
+    "plus_l": {
+      "structurally_correct": 12,
+      "total": 12,
+      "exact_matches": 4,
+      "identical_border_pairs": 6,
+      "false_boxes": 0,
+      "false_empty_arrays": 0
+    },
+    "plus_m": {
+      "structurally_correct": 12,
+      "total": 12,
+      "exact_matches": 0,
+      "identical_border_pairs": 6,
+      "false_boxes": 0,
+      "false_empty_arrays": 0
+    },
+    "plus_l_added_period": [
+      "root-fraction-24px-bordered",
+      "root-fraction-24px-borderless"
+    ]
+  },
+  "print_presentation": {
+    "plus_l_unnecessary_single_row_array": [
+      "small-type-02",
+      "small-type-03",
+      "small-type-05",
+      "small-type-06"
+    ],
+    "plus_m_unnecessary_single_row_array": [
+      "roots-01",
+      "small-type-02",
+      "small-type-03",
+      "small-type-04",
+      "small-type-05"
+    ],
+    "plus_l_additional_notes": {
+      "aligned-01": "Uses a right-aligned array for the two derivation lines and adds a terminal period.",
+      "aligned-03": "Moves the alignment to the start of the lines and adds a trailing row separator. KaTeX renders the two intended rows."
+    }
+  },
+  "timing_context": {
+    "plus_l_trial_launch_utc": "2026-11-24T17:38:49Z",
+    "synthetic_warmup_complete_by_utc": "2026-11-24T17:39:21Z",
+    "plus_l_results_complete_utc": "2026-11-24T17:50:34Z",
+    "scope": "Observational worker timing. The trial app stayed available for user input. No physical mouse-up-to-clipboard measurement."
+  }
+}

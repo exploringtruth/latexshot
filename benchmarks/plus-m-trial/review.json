@@ -1,0 +1,56 @@
+{
+  "results_sha256": "01b8af6bababc59596122940f6fba7c56f21d1cdef21cccda4fdef7765101398",
+  "scope": "Compare with frozen reference LaTeX and visible notation. Baseline cases absent from rejected passed structural review. The independent review agreed on all four rejects and the root and upscale counts.",
+  "rubric": "Allow equivalent syntax, grouping, spacing, cosmetic punctuation, delimiter sizes and layout wrappers. Require mathematical symbols, operators, group boundaries, scripts, conditions and row and column structure to survive. Reject malformed LaTeX, recognition errors and mathematical changes.",
+  "syntax_check": {
+    "renderer": "Bundled KaTeX 0.19.1 in display mode with throwOnError enabled",
+    "valid_predictions": 119,
+    "prediction_count": 119
+  },
+  "printed": {
+    "structurally_correct": 62,
+    "total": 66,
+    "required_correct": 63,
+    "passed": false,
+    "wikipedia": {
+      "structurally_correct": 58,
+      "total": 60,
+      "rejected": {
+        "fractions-08": "Drops the cancellation marks. The digits printed above the struck factors become ordinary exponents and change the meaning.",
+        "roots-10": "Replaces the last numerator of each continued fraction with an ellipsis and drops the last 6+ and 20− terms from their denominators."
+      }
+    },
+    "hefferon-pdf": {
+      "structurally_correct": 4,
+      "total": 6,
+      "rejected": {
+        "hefferon-04": "Inserts capital delta before z in the second row and before w in the third and fourth rows.",
+        "hefferon-05": "Inserts capital delta before 1 in the first row and before y in the second."
+      }
+    },
+    "small-type": {
+      "structurally_correct": 10,
+      "total": 10
+    }
+  },
+  "repeat-root": {
+    "total": 48,
+    "structurally_correct": 48,
+    "exact_matches": 32,
+    "exact_gate_passed": false,
+    "equivalent_variant": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1",
+    "equivalent_variant_count": 16
+  },
+  "upscale-2x": {
+    "total_pairs": 5,
+    "structurally_correct_before": 5,
+    "structurally_correct_after": 5,
+    "cases": {
+      "small-type-02": "Same expression with different array alignment and grouping.",
+      "small-type-04": "Same expression with the array wrapper and spacing removed.",
+      "small-type-06": "Same expression with added terminal punctuation.",
+      "root-1x-24px-light-2": "Unchanged, with equivalent braces around the radicals.",
+      "root-1x-24px-dark-2": "Equivalent braces removed, yielding a literal match."
+    }
+  }
+}

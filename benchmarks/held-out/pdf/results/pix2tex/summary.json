@@ -1,0 +1,76 @@
+{
+  "model": "pix2tex/LatexOCR",
+  "model_package_version": "0.1.4",
+  "suite": "held-out 66-crop audit",
+  "wikipedia": "benchmarks/held-out/results/pix2tex/rough-review.json",
+  "wikipedia_rough_correct": 22,
+  "wikipedia_rough_total": 60,
+  "wikipedia_review_status": "rough heuristic/agent review, not independent",
+  "pdf_correct": 0,
+  "pdf_total": 6,
+  "pdf_review_status": "explicit manual structural review",
+  "pdf_repeat_exact_count": 3,
+  "pdf_repeat_total": 6,
+  "pdf_repeat_exact_accuracy": 0.5,
+  "repeat_worker_p95_seconds": 15.599511541004176,
+  "release_latency_gate_under_0.8_seconds": false,
+  "timing_scope": "Local in-process image-to-LaTeX; excludes crop capture and clipboard write",
+  "combined_rough_accuracy": 0.3333333333333333,
+  "release_gate": "FAIL",
+  "cases": [
+    {
+      "id": "hefferon-01",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 0.4904738329933025,
+      "worker_seconds_run_2": 1.0731572500080802,
+      "structurally_correct": false,
+      "reason": "row structure retained partially, but negative first coefficient and second row are corrupted"
+    },
+    {
+      "id": "hefferon-02",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 0.7446739580045687,
+      "worker_seconds_run_2": 1.3475460839981679,
+      "structurally_correct": false,
+      "reason": "first row and coefficients/variables are garbled"
+    },
+    {
+      "id": "hefferon-03",
+      "exact_repeat": false,
+      "worker_seconds_run_1": 0.9464838749991031,
+      "worker_seconds_run_2": 1.654076790990075,
+      "structurally_correct": false,
+      "reason": "first constant 9 and row structure are corrupted"
+    },
+    {
+      "id": "hefferon-04",
+      "exact_repeat": false,
+      "worker_seconds_run_1": 1.1270528330060188,
+      "worker_seconds_run_2": 15.599511541004176,
+      "structurally_correct": false,
+      "reason": "multiple rows/constants lost or garbled"
+    },
+    {
+      "id": "hefferon-05",
+      "exact_repeat": false,
+      "worker_seconds_run_1": 0.8377608750015497,
+      "worker_seconds_run_2": 0.5131269170087762,
+      "structurally_correct": false,
+      "reason": "first and second equations and signs/constants are corrupted"
+    },
+    {
+      "id": "hefferon-06",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 0.42774608300533146,
+      "worker_seconds_run_2": 0.5527361660060706,
+      "structurally_correct": false,
+      "reason": "second row has x instead of 2x"
+    }
+  ],
+  "evidence": {
+    "run_1": "benchmarks/held-out/pdf/results/pix2tex/baseline-hefferon-pdf.json",
+    "run_2": "benchmarks/held-out/pdf/results/pix2tex/baseline-hefferon-pdf-repeat-2.json",
+    "wikipedia_predictions": "benchmarks/held-out/results/pix2tex/baseline-wikipedia.json",
+    "wikipedia_rough_review": "benchmarks/held-out/results/pix2tex/rough-review.json"
+  }
+}

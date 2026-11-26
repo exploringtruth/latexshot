@@ -1,0 +1,291 @@
+{
+  "model": "PP-FormulaNet_plus-M",
+  "revision": "712e6e2e4c313b1ea163be5c350127b82662c58d",
+  "model_lock_sha256": "0c06c3cabc7a669b08dc6627fcc0e2671542f607e233571ac17ebf820f7c4a31",
+  "worker_sha256": "0cd39c621f195a25b4eec58ae76d08c99b6871fb0e753f8e9cebb4ca1fbe4f35",
+  "manifest_sha256": {
+    "crop-controls": "a37d82ed00cf5da6e24bdd4482b1746d51bb36ff33343cfa51510a1c46592c5d"
+  },
+  "requirements_sha256": "daf0e826d6b6b7cd756c6ff3ce64fc24b0b4c9e3f35f424cd1a2c34e427dc342",
+  "started_utc": "2026-11-24T17:32:21.261096+00:00",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "hardware": [
+    "Mac17,2",
+    "Apple M5"
+  ],
+  "runtime": {
+    "paddlepaddle": "3.3.1",
+    "paddlex": "3.3.13",
+    "pillow": "13.0.0"
+  },
+  "python": "3.12.14",
+  "network_profile": "(version 1)(allow default)(deny network*)",
+  "timing_scope": "Cold from worker spawn to first complete response. Warm from request to response on the same worker. Capture, Swift encoding, clipboard writes and rendering are outside this measurement.",
+  "percentile_method": "Nearest rank over all completed requests in each group, including recoverable errors",
+  "expected_warm_requests": 12,
+  "status": "complete",
+  "results": [
+    {
+      "suite": "crop-controls",
+      "id": "fraction-13px-bordered",
+      "category": "fraction",
+      "variant": "bordered",
+      "font_size_css_px": 13,
+      "image": "png/fraction-13px-bordered.png",
+      "input_sha256": "be4a8393abfa40b2c928f548427d97e78e5c0e9ae8a6bc92c68ab65b1fdc1ab9",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "response": {
+        "latex": "{\\frac{x+1}{x-1}}={\\frac{3}{2}}"
+      },
+      "warm_worker_seconds": 0.9258434170005785
+    },
+    {
+      "suite": "crop-controls",
+      "id": "fraction-13px-borderless",
+      "category": "fraction",
+      "variant": "borderless",
+      "font_size_css_px": 13,
+      "image": "png/fraction-13px-borderless.png",
+      "input_sha256": "5617ed71873cb783f058133ce545d389e012f4614d7576ebb4ba05b7f9389941",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "response": {
+        "latex": "{\\frac{x+1}{x-1}}={\\frac{3}{2}}"
+      },
+      "warm_worker_seconds": 0.9923263750024489
+    },
+    {
+      "suite": "crop-controls",
+      "id": "fraction-24px-bordered",
+      "category": "fraction",
+      "variant": "bordered",
+      "font_size_css_px": 24,
+      "image": "png/fraction-24px-bordered.png",
+      "input_sha256": "613d5bcea05adee10444cf545da44b601f9534bc26d89667cc836aa6dedc9eae",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "response": {
+        "latex": "{\\frac{x+1}{x-1}}={\\frac{3}{2}}"
+      },
+      "warm_worker_seconds": 1.0817672079974727
+    },
+    {
+      "suite": "crop-controls",
+      "id": "fraction-24px-borderless",
+      "category": "fraction",
+      "variant": "borderless",
+      "font_size_css_px": 24,
+      "image": "png/fraction-24px-borderless.png",
+      "input_sha256": "dc895db6def35678fb935a6447e8e96df2c50a98a07db6c6b9c1c40cb76dd9fb",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{x+1}{x-1}=\\frac{3}{2}",
+      "response": {
+        "latex": "{\\frac{x+1}{x-1}}={\\frac{3}{2}}"
+      },
+      "warm_worker_seconds": 1.0392308749978838
+    },
+    {
+      "suite": "crop-controls",
+      "id": "root-fraction-13px-bordered",
+      "category": "root-fraction",
+      "variant": "bordered",
+      "font_size_css_px": 13,
+      "image": "png/root-fraction-13px-bordered.png",
+      "input_sha256": "48ac696938b01f21afa6fd911a17de1e51ae85cbe1fe46513f7ef2b976030f72",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "response": {
+        "latex": "\\frac{1+\\sqrt{x^{2}+4}}{2}=y"
+      },
+      "warm_worker_seconds": 0.9592550829984248
+    },
+    {
+      "suite": "crop-controls",
+      "id": "root-fraction-13px-borderless",
+      "category": "root-fraction",
+      "variant": "borderless",
+      "font_size_css_px": 13,
+      "image": "png/root-fraction-13px-borderless.png",
+      "input_sha256": "1f83c579943dee9107be5bdea55bc26a88159d85c1f4e7540c5e435a3305104b",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "response": {
+        "latex": "\\frac{1+\\sqrt{x^{2}+4}}{2}=y"
+      },
+      "warm_worker_seconds": 0.8096858330027317
+    },
+    {
+      "suite": "crop-controls",
+      "id": "root-fraction-24px-bordered",
+      "category": "root-fraction",
+      "variant": "bordered",
+      "font_size_css_px": 24,
+      "image": "png/root-fraction-24px-bordered.png",
+      "input_sha256": "41f6600ed6697985c5a99bd0a4a2a5e332809549576955d6a0b2e90f4253b677",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "response": {
+        "latex": "\\frac{1+\\sqrt{x^{2}+4}}{2}=y"
+      },
+      "warm_worker_seconds": 0.7997359159999178
+    },
+    {
+      "suite": "crop-controls",
+      "id": "root-fraction-24px-borderless",
+      "category": "root-fraction",
+      "variant": "borderless",
+      "font_size_css_px": 24,
+      "image": "png/root-fraction-24px-borderless.png",
+      "input_sha256": "fe2ea14004feae04a04ea07e2a5634e1d1e763bf456fb64615be4cb3b2885636",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\frac{1+\\sqrt{x^2+4}}{2}=y",
+      "response": {
+        "latex": "\\frac{1+\\sqrt{x^{2}+4}}{2}=y"
+      },
+      "warm_worker_seconds": 0.777938291997998
+    },
+    {
+      "suite": "crop-controls",
+      "id": "cube-root-13px-bordered",
+      "category": "cube-root",
+      "variant": "bordered",
+      "font_size_css_px": 13,
+      "image": "png/cube-root-13px-bordered.png",
+      "input_sha256": "61ee13abfb446df39dde4da0e2bd19f91a5fc251e552f9774c82dc7f84142a08",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 1.0239750420005294
+    },
+    {
+      "suite": "crop-controls",
+      "id": "cube-root-13px-borderless",
+      "category": "cube-root",
+      "variant": "borderless",
+      "font_size_css_px": 13,
+      "image": "png/cube-root-13px-borderless.png",
+      "input_sha256": "470d933124cbecb91a6d79fd45abaee5edcb24b3755832e0ca45d345282eb562",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 1.1001990830009163
+    },
+    {
+      "suite": "crop-controls",
+      "id": "cube-root-24px-bordered",
+      "category": "cube-root",
+      "variant": "bordered",
+      "font_size_css_px": 24,
+      "image": "png/cube-root-24px-bordered.png",
+      "input_sha256": "1f30f98713b8ca1001e278c689235d4c63de039debba78f9ad651eb2c7e09162",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 1.958459875000699
+    },
+    {
+      "suite": "crop-controls",
+      "id": "cube-root-24px-borderless",
+      "category": "cube-root",
+      "variant": "borderless",
+      "font_size_css_px": 24,
+      "image": "png/cube-root-24px-borderless.png",
+      "input_sha256": "f6482805b880e63bdbaefda2f46a406d99f0aba6dd411b9e433fce16cabcc55c",
+      "size_px": [
+        508,
+        196
+      ],
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "response": {
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1"
+      },
+      "warm_worker_seconds": 1.946514749997732
+    }
+  ],
+  "summary": {
+    "printed": {
+      "measured": 0,
+      "warm_p95_seconds": null,
+      "worker_errors": 0
+    },
+    "small-type": {
+      "measured": 0,
+      "warm_p95_seconds": null,
+      "worker_errors": 0
+    },
+    "wikipedia": {
+      "measured": 0,
+      "warm_p95_seconds": null,
+      "worker_errors": 0
+    },
+    "hefferon-pdf": {
+      "measured": 0,
+      "warm_p95_seconds": null,
+      "worker_errors": 0
+    },
+    "repeat-root": {
+      "measured": 0,
+      "warm_p95_seconds": null,
+      "worker_errors": 0,
+      "exact_matches": 0
+    },
+    "upscale-2x": {
+      "measured": 0,
+      "warm_p95_seconds": null,
+      "worker_errors": 0
+    },
+    "crop-controls": {
+      "measured": 12,
+      "warm_p95_seconds": 1.958459875000699,
+      "worker_errors": 0
+    }
+  },
+  "cold_first_response": {
+    "suite": "crop-controls",
+    "id": "fraction-13px-bordered",
+    "seconds": 12.26509979200273,
+    "response": {
+      "latex": "{\\frac{x+1}{x-1}}={\\frac{3}{2}}"
+    }
+  }
+}

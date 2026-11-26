@@ -1,0 +1,494 @@
+{
+  "model": "PP-FormulaNet_plus-S",
+  "revision": "3d46f557e3a1752f4bf81202395af3b5ecfadfd2",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "cold_first_prediction_seconds": 5.308182291002595,
+  "cold_first_prediction_case": "root-1x-24px-light-2",
+  "cold_first_prediction": {
+    "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1"
+  },
+  "results": [
+    {
+      "id": "root-1x-24px-light-2",
+      "category": "repeat-root",
+      "image": "root-1x-24px-light-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11543408300349256,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-light-6",
+      "category": "repeat-root",
+      "image": "root-1x-24px-light-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11320033399533713,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-light-16",
+      "category": "repeat-root",
+      "image": "root-1x-24px-light-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11457541699928697,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-light-30",
+      "category": "repeat-root",
+      "image": "root-1x-24px-light-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11554683300346369,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-2",
+      "category": "repeat-root",
+      "image": "root-1x-36px-light-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11449504199845251,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-6",
+      "category": "repeat-root",
+      "image": "root-1x-36px-light-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11316125000303145,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-16",
+      "category": "repeat-root",
+      "image": "root-1x-36px-light-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11451616700651357,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-light-30",
+      "category": "repeat-root",
+      "image": "root-1x-36px-light-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11479099999996834,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-2",
+      "category": "repeat-root",
+      "image": "root-1x-48px-light-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11732170900359051,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-6",
+      "category": "repeat-root",
+      "image": "root-1x-48px-light-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1139960830041673,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-16",
+      "category": "repeat-root",
+      "image": "root-1x-48px-light-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11422587500419468,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-light-30",
+      "category": "repeat-root",
+      "image": "root-1x-48px-light-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1146160830030567,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-2",
+      "category": "repeat-root",
+      "image": "root-1x-24px-dark-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1141483339961269,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-6",
+      "category": "repeat-root",
+      "image": "root-1x-24px-dark-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1144832089994452,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-16",
+      "category": "repeat-root",
+      "image": "root-1x-24px-dark-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11465020900504896,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-24px-dark-30",
+      "category": "repeat-root",
+      "image": "root-1x-24px-dark-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11453558300127042,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-2",
+      "category": "repeat-root",
+      "image": "root-1x-36px-dark-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11472062500251923,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-6",
+      "category": "repeat-root",
+      "image": "root-1x-36px-dark-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11426808300166158,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-16",
+      "category": "repeat-root",
+      "image": "root-1x-36px-dark-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11297466699761571,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-36px-dark-30",
+      "category": "repeat-root",
+      "image": "root-1x-36px-dark-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11599800000112737,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-2",
+      "category": "repeat-root",
+      "image": "root-1x-48px-dark-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11524562499835156,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-6",
+      "category": "repeat-root",
+      "image": "root-1x-48px-dark-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11621408400242217,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-16",
+      "category": "repeat-root",
+      "image": "root-1x-48px-dark-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1157004170017899,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-1x-48px-dark-30",
+      "category": "repeat-root",
+      "image": "root-1x-48px-dark-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.11627250000310596,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-2",
+      "category": "repeat-root",
+      "image": "root-2x-24px-light-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1155983750068117,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-6",
+      "category": "repeat-root",
+      "image": "root-2x-24px-light-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1312850000031176,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-16",
+      "category": "repeat-root",
+      "image": "root-2x-24px-light-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.26944762500352226,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-light-30",
+      "category": "repeat-root",
+      "image": "root-2x-24px-light-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.18656070799625013,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-2",
+      "category": "repeat-root",
+      "image": "root-2x-36px-light-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12513804199988954,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-6",
+      "category": "repeat-root",
+      "image": "root-2x-36px-light-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12037495800177567,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-16",
+      "category": "repeat-root",
+      "image": "root-2x-36px-light-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1244772499994724,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-light-30",
+      "category": "repeat-root",
+      "image": "root-2x-36px-light-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12393341599818086,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-2",
+      "category": "repeat-root",
+      "image": "root-2x-48px-light-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12131354200391797,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-6",
+      "category": "repeat-root",
+      "image": "root-2x-48px-light-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13253112499660347,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-16",
+      "category": "repeat-root",
+      "image": "root-2x-48px-light-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.1300647080061026,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-light-30",
+      "category": "repeat-root",
+      "image": "root-2x-48px-light-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13142270800017286,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-2",
+      "category": "repeat-root",
+      "image": "root-2x-24px-dark-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12584237499686424,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-6",
+      "category": "repeat-root",
+      "image": "root-2x-24px-dark-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12277637499937555,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-16",
+      "category": "repeat-root",
+      "image": "root-2x-24px-dark-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12256383299973095,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-24px-dark-30",
+      "category": "repeat-root",
+      "image": "root-2x-24px-dark-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13044704200001433,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-2",
+      "category": "repeat-root",
+      "image": "root-2x-36px-dark-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.12452399999892805,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-6",
+      "category": "repeat-root",
+      "image": "root-2x-36px-dark-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13058887499937555,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-16",
+      "category": "repeat-root",
+      "image": "root-2x-36px-dark-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13685295799950836,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-36px-dark-30",
+      "category": "repeat-root",
+      "image": "root-2x-36px-dark-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13309920900064753,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-2",
+      "category": "repeat-root",
+      "image": "root-2x-48px-dark-2.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.15341429199906997,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-6",
+      "category": "repeat-root",
+      "image": "root-2x-48px-dark-6.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.13546849999693222,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-16",
+      "category": "repeat-root",
+      "image": "root-2x-48px-dark-16.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.15412895799818216,
+      "structurally_correct": null
+    },
+    {
+      "id": "root-2x-48px-dark-30",
+      "category": "repeat-root",
+      "image": "root-2x-48px-dark-30.png",
+      "expected_latex": "\\sqrt{x+1}+\\sqrt[3]{y}=1",
+      "latex": "\\sqrt{x+1}+\\sqrt[[object Object]]{y}=1",
+      "error": null,
+      "warm_worker_seconds": 0.14854599999671336,
+      "structurally_correct": null
+    }
+  ],
+  "release_approved": false
+}

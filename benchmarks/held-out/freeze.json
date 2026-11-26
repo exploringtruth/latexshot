@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "76660a8534916601283147237223062492a99348722fae3b9a9b4ddb9f9207e2",
+  "frozen_utc": "2026-11-23T14:57:32.345514+00:00",
+  "cases": 60,
+  "distinct_source_latex": 60,
+  "ground_truth_verification": "Exact source data-mw.body.extsrc comparison for every captured MathML node. Visual capture QA completed before inference.",
+  "holdout_scope": "New to development evaluation; training exclusion unknown",
+  "pdf_cases": 0
+}

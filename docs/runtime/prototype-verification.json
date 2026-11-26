@@ -1,0 +1,396 @@
+{
+  "status": "PROTOTYPE_ONLY",
+  "release_qualified": false,
+  "runtime": "/private/tmp/LaTeXShot Runtime Staging.ptf_i16o/LaTeXShot.app/Contents/Resources/RecognitionRuntime",
+  "assembly": {
+    "status": "PROTOTYPE_NOT_RELEASE_QUALIFIED",
+    "build_prefix": "/private/tmp/latexshot-runtime-proof.5qtn4imq/reproduction/RecognitionRuntime",
+    "lock_sha256": "5afea685dfa26000cb1e5f5508f1798e67df194326f122d8cb5af16f58eb7c6b",
+    "python_artifact_sha256": "2f11b8aa3726bdbd87dd9eb76568412faddf4f47e26913fa45d6a2e424972acd",
+    "wheel_count": 85,
+    "wheel_bytes": 272137960
+  },
+  "worker_sha256": "40f58a94816a0e53d980172365451af37505f9083a7aff26338619004a2c601b",
+  "model_revision": "0572450e501be9eb1b1cdb7e00fccf4b22fab4df",
+  "native_audit": {
+    "files": 19796,
+    "bytes": 1001048248,
+    "mach_o_files": 471,
+    "absolute_non_system_loads": [
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/liblapack.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/libgfortran.5.dylib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/liblapack.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/libgomp.1.dylib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/liblapack.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/libquadmath.0.dylib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libblas.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/libgfortran.5.dylib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libblas.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/libgomp.1.dylib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libblas.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/libquadmath.0.dylib"
+      }
+    ],
+    "absolute_non_system_rpaths": [
+      {
+        "file": "lib/python3.12/site-packages/shapely/_geos.cpython-312-darwin.so",
+        "path": "/Users/runner/work/_temp/geos-3.14.1/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/cv2/cv2.abi3.so",
+        "path": "/Users/xperience/GHA-Actions-OpenCV/_work/opencv-python/opencv-python/_skbuild/macosx-11.0-arm64-3.9/cmake-install/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/cv2/cv2.abi3.so",
+        "path": "/usr/local/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/_isotonic.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/_cyutility.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/liblapack.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/gcc/aarch64-apple-darwin23/13"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/liblapack.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/gcc"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/liblapack.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libpir.dylib",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/common"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libphi_core.dylib",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/common"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libgfortran.5.dylib",
+        "path": "/private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f756t59wps/croot/gfortran_impl_osx-arm64_1665498432570/work/build_conda/gcc"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libblas.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/gcc/aarch64-apple-darwin23/13"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libblas.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current/gcc"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libblas.dylib",
+        "path": "/opt/homebrew/opt/gcc/lib/gcc/current"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libphi.dylib",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/phi"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libphi.dylib",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/common"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/libs/libquadmath.0.dylib",
+        "path": "/private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f756t59wps/croot/gfortran_impl_osx-arm64_1665498432570/work/build_conda/gcc"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/base/libpaddle.so",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/pir"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/base/libpaddle.so",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/phi"
+      },
+      {
+        "file": "lib/python3.12/site-packages/paddle/base/libpaddle.so",
+        "path": "/Users/paddle/xly/workspace/0198e482-31c4-4db1-bbd3-f442cc30e680/Paddle/build/paddle/common"
+      },
+      {
+        "file": "lib/python3.12/site-packages/PIL/.dylibs/libjpeg.62.4.0.dylib",
+        "path": "/Users/runner/work/Pillow/Pillow/build/deps/darwin/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/tree/_criterion.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/tree/_tree.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/tree/_partitioner.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/tree/_splitter.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/tree/_utils.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/metrics/_dist_metrics.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/ensemble/_gradient_boosting.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/cluster/_hierarchical_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/cluster/_dbscan_inner.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/__check_build/_check_build.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/linear_model/_cd_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/linear_model/_sgd_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/linear_model/_sag_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/arrayfuncs.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_typedefs.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/murmurhash.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_seq_dataset.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_cython_blas.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_weight_vector.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/sparsefuncs_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_fast_dict.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_isfinite.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_heap.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_sorting.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_bitset.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_vector_sentinel.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/utils/_random.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/svm/_libsvm_sparse.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/svm/_libsvm.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/svm/_liblinear.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/svm/_newrand.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/manifold/_utils.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/preprocessing/_target_encoder_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/decomposition/_online_lda_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/neighbors/_partition_nodes.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/neighbors/_quad_tree.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/neighbors/_ball_tree.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/neighbors/_kd_tree.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_middle_term_computer.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_datasets_pair.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/common.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/cluster/_hdbscan/_tree.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/cluster/_hdbscan/_linkage.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/sklearn/cluster/_hdbscan/_reachability.cpython-312-darwin.so",
+        "path": "/Users/runner/micromamba/envs/build/lib"
+      },
+      {
+        "file": "lib/python3.12/site-packages/scipy/linalg/_fblas.cpython-312-darwin.so",
+        "path": "/opt/homebrew/Cellar/gcc@13/13.4.0/lib/gcc/13/gcc/aarch64-apple-darwin23/13"
+      },
+      {
+        "file": "lib/python3.12/site-packages/scipy/linalg/_fblas.cpython-312-darwin.so",
+        "path": "/opt/homebrew/Cellar/gcc@13/13.4.0/lib/gcc/13/gcc"
+      },
+      {
+        "file": "lib/python3.12/site-packages/scipy/linalg/_fblas.cpython-312-darwin.so",
+        "path": "/opt/homebrew/Cellar/gcc@13/13.4.0/lib/gcc/13"
+      }
+    ]
+  },
+  "sandbox_policy": "(version 1)(allow default)(deny network*)(deny file-read* (subpath \"/opt/homebrew\")(subpath \"/usr/local\")(subpath \"/private/tmp/latexshot-recognition-venv\")(subpath \"/private/tmp/latexshot-runtime-proof.5qtn4imq/reproduction\"))",
+  "probe_directory": "/private/tmp/latexshot-runtime-verification.rwhrxwd_",
+  "verification": {
+    "python": "3.12.16 (main, Nov 11 2026, 00:09:12) [Clang 23.1.3 ]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit",
+    "executable": "/private/tmp/LaTeXShot Runtime Staging.ptf_i16o/LaTeXShot.app/Contents/Resources/RecognitionRuntime/bin/python3",
+    "prefix": "/private/tmp/LaTeXShot Runtime Staging.ptf_i16o/LaTeXShot.app/Contents/Resources/RecognitionRuntime",
+    "isolated": 1,
+    "predictions": [
+      {
+        "id": "fractions-01",
+        "latex": "\\ {\\\\fracfrac{x x^{1}+1}{y+1}}={\\frac{1}{2}}",
+        "seconds": 11.423038417000498
+      },
+      {
+        "id": "roots-01",
+        "latex": "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1",
+        "seconds": 0.1236775419965852
+      },
+      {
+        "id": "matrices-01",
+        "latex": "A={\\left(\\begin{matrix}{1}&{2}\\\\ {3}&{4}\\end{matrix}\\right)}",
+        "seconds": 0.14782020800339524
+      },
+      {
+        "id": "aligned-01",
+        "latex": "\\begin{array}{c}{+=11}\\\\ {x-y=2}\\end{array}",
+        "seconds": 0.12548804200196173
+      },
+      {
+        "id": "small-type-01",
+        "latex": "\\sum_{k=1}^{11}k^{2}={\\frac{n(n+1)(2n+1)}{6}}",
+        "seconds": 0.16192195899930084
+      },
+      {
+        "id": "dark-background-01",
+        "latex": "\\int_{0}^{1}x^{2}\\,d x={\\frac{1^{3}}{3}}",
+        "seconds": 0.14888679199793842
+      }
+    ],
+    "network_canary_errno": 1,
+    "network_denied": true,
+    "invalid_image_rejected": true,
+    "same_worker_recovered": true,
+    "worker_returncode": 0
+  },
+  "strict_native_audit_passed": false,
+  "source_commit": "f005f89",
+  "observed_date": "2026-11-23",
+  "staged_app_adhoc_signature_verified": true,
+  "missing_runtime_staging_rejected": true,
+  "runtime_archive": {
+    "bytes": 290407583,
+    "sha256": "4983370988236cff6a489b5e237acf4c3ad37a2e0f23dbabab8ab7793215d85e",
+    "note": "Experimental tar.gz outside Git; timestamps are not deterministic."
+  }
+}

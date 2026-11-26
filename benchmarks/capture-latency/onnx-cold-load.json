@@ -1,0 +1,324 @@
+{
+  "available_providers": [
+    "CPUExecutionProvider"
+  ],
+  "cold_plus_first_runs_at_or_over_gate": [],
+  "cold_plus_first_seconds": {
+    "maximum": 0.421871,
+    "median": 0.350569,
+    "minimum": 0.319803,
+    "p95_nearest_rank": 0.421871
+  },
+  "conservative_first_capture_e2e_p95_seconds": 0.630671,
+  "coreml_ep_status": "FAIL compile: MaxPool ceil_mode must be False when pad_type is same",
+  "coremltools9_onnx": "unsupported (source onnx removed)",
+  "end_to_end_gate_seconds": 0.8,
+  "existing_native_warm_e2e_p95_seconds": 0.2088,
+  "first_inference_seconds": {
+    "maximum": 0.114059,
+    "median": 0.105252,
+    "minimum": 0.080023,
+    "p95_nearest_rank": 0.114059
+  },
+  "image": "/private/tmp/latexshot-tracks.O5guQbgA/mac-app/benchmarks/fixtures/roots-01.png",
+  "image_sha256": "202444f17f60f3756d67589fcbf2c1fb8a1124d32558c4d1a357963ae0c902f4",
+  "input_shape": [
+    1,
+    1,
+    384,
+    384
+  ],
+  "measured_native_end_to_end": {
+    "cold_median_seconds": 0.779687,
+    "cold_p95_nearest_rank_seconds": 0.849723,
+    "cold_pass_under_0.8_seconds": false,
+    "cold_sample_count": 7,
+    "warm_median_seconds": 0.234275,
+    "warm_p95_nearest_rank_seconds": 0.289501,
+    "warm_pass_under_0.8_seconds": true,
+    "warm_sample_count": 60
+  },
+  "model": "/private/tmp/latexshot-native.sc4v8V/formulanet-s.onnx",
+  "model_sha256": "6d24333f86478d765fe6fa6fc3bd8061c52044433aafda18399f49cde3fe4d6a",
+  "model_size_bytes": 308743097,
+  "notes": "CPU-only 294 MB ONNX benchmark used a real 252 x 68 fixture crop with the production margin crop, 384-pixel resize/pad, UniMERNet normalization, and grayscale formatting. Seven fresh sessions measured session load plus first inference. The native Swift benchmark measured seven cold captures and 60 warm captures through ScreenCaptureKit and a private pasteboard. Warm end-to-end passed under 0.8 seconds; measured cold end-to-end nearest-rank p95 failed under 0.8 seconds.",
+  "ort_version": "1.32.0",
+  "output_names": [
+    "fetch_name_0"
+  ],
+  "output_shapes": [
+    [
+      1,
+      45
+    ]
+  ],
+  "preprocess_seconds": {
+    "maximum": 0.065901,
+    "median": 0.051073,
+    "minimum": 0.046733,
+    "p95_nearest_rank": 0.065901
+  },
+  "provider": "CPUExecutionProvider",
+  "repeat_count": 7,
+  "repeat_results": [
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.319803,
+      "first_inference_seconds": 0.080023,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.048798,
+      "session_load_seconds": 0.23978,
+      "warm_median_seconds": 0.087107,
+      "warm_p95_seconds": 0.092612,
+      "warm_times_seconds": [
+        0.077177,
+        0.087107,
+        0.091094,
+        0.092612,
+        0.08153
+      ]
+    },
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.358906,
+      "first_inference_seconds": 0.105252,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.051073,
+      "session_load_seconds": 0.253654,
+      "warm_median_seconds": 0.070648,
+      "warm_p95_seconds": 0.103892,
+      "warm_times_seconds": [
+        0.082256,
+        0.103892,
+        0.070648,
+        0.06881,
+        0.069264
+      ]
+    },
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.335365,
+      "first_inference_seconds": 0.084881,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.046733,
+      "session_load_seconds": 0.250484,
+      "warm_median_seconds": 0.083334,
+      "warm_p95_seconds": 0.103774,
+      "warm_times_seconds": [
+        0.083334,
+        0.08071,
+        0.078632,
+        0.095793,
+        0.103774
+      ]
+    },
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.421871,
+      "first_inference_seconds": 0.105279,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.065901,
+      "session_load_seconds": 0.316592,
+      "warm_median_seconds": 0.105695,
+      "warm_p95_seconds": 0.128025,
+      "warm_times_seconds": [
+        0.094142,
+        0.104648,
+        0.105695,
+        0.126566,
+        0.128025
+      ]
+    },
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.337341,
+      "first_inference_seconds": 0.093017,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.056263,
+      "session_load_seconds": 0.244324,
+      "warm_median_seconds": 0.076468,
+      "warm_p95_seconds": 0.081876,
+      "warm_times_seconds": [
+        0.079878,
+        0.076468,
+        0.069129,
+        0.073482,
+        0.081876
+      ]
+    },
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.399128,
+      "first_inference_seconds": 0.114059,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.056367,
+      "session_load_seconds": 0.285069,
+      "warm_median_seconds": 0.101323,
+      "warm_p95_seconds": 0.135815,
+      "warm_times_seconds": [
+        0.118305,
+        0.135815,
+        0.078545,
+        0.101323,
+        0.082684
+      ]
+    },
+    {
+      "available_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cold_plus_first_seconds": 0.350569,
+      "first_inference_seconds": 0.106886,
+      "input_name": "x",
+      "input_shape": [
+        1,
+        1,
+        384,
+        384
+      ],
+      "ort_version": "1.32.0",
+      "output_names": [
+        "fetch_name_0"
+      ],
+      "output_shapes": [
+        [
+          1,
+          45
+        ]
+      ],
+      "preprocess_seconds": 0.04821,
+      "session_load_seconds": 0.243683,
+      "warm_median_seconds": 0.08454,
+      "warm_p95_seconds": 0.098696,
+      "warm_times_seconds": [
+        0.08454,
+        0.071309,
+        0.088899,
+        0.098696,
+        0.082196
+      ]
+    }
+  ],
+  "session_load_seconds": {
+    "maximum": 0.316592,
+    "median": 0.250484,
+    "minimum": 0.23978,
+    "p95_nearest_rank": 0.316592
+  },
+  "viable_for_0.8s_gate": false,
+  "warm_p95_seconds": {
+    "maximum": 0.135815,
+    "median": 0.103774,
+    "minimum": 0.081876,
+    "p95_nearest_rank": 0.135815
+  },
+  "warm_runs_per_repeat": 5
+}

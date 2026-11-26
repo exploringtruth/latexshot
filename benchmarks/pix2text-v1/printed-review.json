@@ -1,0 +1,280 @@
+{
+  "prediction_sha256": "7fa4960f3a16dd7ae02773f5bba22eca6d33fb5c38dbafba2d897565f131674a",
+  "review_status": "Single structural review",
+  "method": "Compared all formula predictions with frozen reference markup. Accepted equivalent delimiters, font choices, row alignment and spacing that did not change mathematical content.",
+  "results": [
+    {
+      "id": "fractions-01",
+      "structurally_correct": false,
+      "reason": "The first quotient is transcribed as addition."
+    },
+    {
+      "id": "fractions-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-08",
+      "structurally_correct": false,
+      "reason": "Cancellation numerals are misidentified as calligraphic letters."
+    },
+    {
+      "id": "fractions-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "fractions-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "roots-10",
+      "structurally_correct": false,
+      "reason": "The first radical contains T1 instead of 11."
+    },
+    {
+      "id": "matrices-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "matrices-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-08",
+      "structurally_correct": false,
+      "reason": "A closing evaluation bracket and its limits move into the following integral and next row."
+    },
+    {
+      "id": "aligned-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "aligned-10",
+      "structurally_correct": false,
+      "reason": "The first integral loses the second derivative of f."
+    },
+    {
+      "id": "small-type-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "small-type-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-04",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-06",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-07",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-08",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-09",
+      "structurally_correct": true
+    },
+    {
+      "id": "dark-background-10",
+      "structurally_correct": true
+    },
+    {
+      "id": "hefferon-01",
+      "structurally_correct": true
+    },
+    {
+      "id": "hefferon-02",
+      "structurally_correct": true
+    },
+    {
+      "id": "hefferon-03",
+      "structurally_correct": true
+    },
+    {
+      "id": "hefferon-04",
+      "structurally_correct": false,
+      "reason": "Two rows lose their equals signs and right-hand sides."
+    },
+    {
+      "id": "hefferon-05",
+      "structurally_correct": true
+    },
+    {
+      "id": "hefferon-06",
+      "structurally_correct": true
+    }
+  ],
+  "correct": 60,
+  "total": 66,
+  "required_correct": 63
+}

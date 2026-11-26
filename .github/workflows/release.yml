@@ -1,0 +1,97 @@
+name: Build and publish LaTeXShot
+on:
+  push:
+    tags:
+      - 'v*'
+      - '!v1.0.0' # This version is published manually.
+permissions:
+  contents: write
+concurrency:
+  group: latexshot-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: macos-15
+    environment: release
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+      SPARKLE_PUBLIC_ED_KEY: ${{ vars.SPARKLE_PUBLIC_ED_KEY }}
+      RECOGNITION_RUNTIME_URL: ${{ vars.RECOGNITION_RUNTIME_URL }}
+      RECOGNITION_RUNTIME_SHA256: ${{ vars.RECOGNITION_RUNTIME_SHA256 }}
+      RECOGNITION_MODEL_URL: ${{ vars.RECOGNITION_MODEL_URL }}
+      RECOGNITION_MODEL_SHA256: ${{ vars.RECOGNITION_MODEL_SHA256 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Check release gates and signing configuration before building
+        env:
+          SPARKLE_PRIVATE_ED_KEY: ${{ secrets.SPARKLE_PRIVATE_ED_KEY }}
+        run: |
+          set -euo pipefail
+          for name in SPARKLE_PUBLIC_ED_KEY SPARKLE_PRIVATE_ED_KEY RECOGNITION_RUNTIME_URL RECOGNITION_RUNTIME_SHA256 RECOGNITION_MODEL_URL RECOGNITION_MODEL_SHA256; do
+            [[ -n "${!name}" ]] || { echo "Missing release setting: $name" >&2; exit 1; }
+          done
+          python3 scripts/release-readiness.py "${GITHUB_REF_NAME#v}" --check-archive-configuration
+          [[ "$(uname -m)" == arm64 ]] || { echo 'An Apple silicon runner is required' >&2; exit 1; }
+      - name: Test pinned source and packaging checks
+        run: |
+          swift test --disable-automatic-resolution
+          python3 scripts/test-release-tools.py
+          for script in scripts/*.sh; do bash -n "$script" || exit; done
+          plutil -lint Info.plist
+      - name: Fetch pinned recognition assets
+        run: |
+          if [[ "$GITHUB_REF_NAME" == v1.0.0 ]]; then
+            bash scripts/fetch-recognition-assets.sh "$RUNNER_TEMP/recognition-assets" --archives-only
+          else
+            bash scripts/fetch-recognition-assets.sh "$RUNNER_TEMP/recognition-assets"
+          fi
+      - name: Build immutable package
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}" \
+          RECOGNITION_ASSET_DIR="$RUNNER_TEMP/recognition-assets" \
+          RECOGNITION_RUNTIME_DIR="$RUNNER_TEMP/recognition-assets/runtime" \
+          RECOGNITION_MODEL_DIR="$RUNNER_TEMP/recognition-assets/model" \
+          bash scripts/build-dmg.sh --release
+      - name: Sign and verify update archive
+        env:
+          SPARKLE_PRIVATE_ED_KEY: ${{ secrets.SPARKLE_PRIVATE_ED_KEY }}
+        run: VERSION="${GITHUB_REF_NAME#v}" bash scripts/prepare-appcast.sh
+      - name: Stage release assets as a draft then publish together
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo 'Release already exists; inspect it using docs/UPDATER.md recovery steps. Never overwrite published artifacts.' >&2
+            exit 1
+          fi
+          OUT=".build/dist/--release/${GITHUB_REF_NAME#v}"
+          gh release create "$GITHUB_REF_NAME" --verify-tag --draft \
+            --title "LaTeXShot $GITHUB_REF_NAME" \
+            --notes-file ".github/release-notes/$GITHUB_REF_NAME.md" \
+            "$OUT/LaTeXShot-${GITHUB_REF_NAME#v}.dmg" "$OUT/LaTeXShot.dmg" \
+            "$OUT/LaTeXShot-${GITHUB_REF_NAME#v}.zip" "$OUT/appcast.xml" "$OUT/SHA256SUMS"
+          gh release edit "$GITHUB_REF_NAME" --draft=false --latest
+      - name: Verify published assets against local checksums
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME#v}"
+          OUT="$PWD/.build/dist/--release/$VERSION"
+          VERIFY="$RUNNER_TEMP/public-verification"
+          mkdir -p "$VERIFY"
+          cd "$VERIFY"
+          for asset in "LaTeXShot-$VERSION.dmg" LaTeXShot.dmg "LaTeXShot-$VERSION.zip" appcast.xml SHA256SUMS; do
+            curl --fail --location --proto '=https' --retry 5 --retry-all-errors \
+              "https://github.com/exploringtruth/latexshot/releases/download/$GITHUB_REF_NAME/$asset" -o "$asset"
+          done
+          cmp SHA256SUMS "$OUT/SHA256SUMS"
+          shasum -a 256 -c SHA256SUMS
+          curl --fail --location --proto '=https' --retry 5 --retry-all-errors \
+            https://github.com/exploringtruth/latexshot/releases/latest/download/appcast.xml -o latest.xml
+          cmp appcast.xml latest.xml
+          curl --fail --location --proto '=https' --retry 5 --retry-all-errors \
+            https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg -o latest.dmg
+          cmp LaTeXShot.dmg latest.dmg

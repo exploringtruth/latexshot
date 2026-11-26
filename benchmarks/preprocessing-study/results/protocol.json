@@ -1,0 +1,16 @@
+{
+  "production_worker_sha256": "40f58a94816a0e53d980172365451af37505f9083a7aff26338619004a2c601b",
+  "model_lock_sha256": "e4ff75c11b8a97fd8f9ece5535a8a5a606fb9b9366594b56b3ffcba35984c57a",
+  "variants": [
+    "baseline",
+    "ink-cap-36",
+    "ink-cap-48"
+  ],
+  "hypothesis": "Crop-margin normalization reduces drag variance. A 48px cap may retain stacked-symbol detail lost by 36px downsampling.",
+  "selection_rule": "Reject promotion if any previously correct structure regresses. Both product accuracy and end-to-end latency gates plus independent corpus validation remain required.",
+  "evaluation_sets": {
+    "recaptures": 48,
+    "fixtures": 60
+  },
+  "limitations": "Recaptures repeat one equation. Existing fixtures have ten related templates per category. These sets cannot establish independent generalization."
+}

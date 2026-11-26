@@ -1,0 +1,55 @@
+{
+  "audit_utc": "2026-11-23",
+  "held_out_total": 66,
+  "release_accuracy_gate": 0.95,
+  "release_warm_p95_seconds_gate": 0.8,
+  "PP-FormulaNet-L": {
+    "wikipedia_correct": 54,
+    "wikipedia_total": 60,
+    "pdf_correct": 3,
+    "pdf_total": 6,
+    "combined_confirmed_or_reviewed_correct": 57,
+    "combined_confirmed_or_reviewed_total": 66,
+    "combined_accuracy": 0.8636363636363636,
+    "accuracy_gate": false,
+    "repeat_pdf_exact_count": 6,
+    "repeat_pdf_total": 6,
+    "repeat_gate_exact": true,
+    "warm_worker_p95_seconds": 6.188502666991553,
+    "pdf_warm_worker_p95_seconds": 10.55908408400137,
+    "latency_gate": false,
+    "end_to_end_mouse_up_to_clipboard_measured": false,
+    "verdict": "FAIL"
+  },
+  "pix2tex": {
+    "wikipedia_rough_correct": 22,
+    "wikipedia_rough_total": 60,
+    "pdf_manual_correct": 0,
+    "pdf_manual_total": 6,
+    "combined_rough_plus_manual_correct": 22,
+    "combined_rough_plus_manual_total": 66,
+    "combined_accuracy": 0.3333333333333333,
+    "accuracy_gate": false,
+    "repeat_pdf_exact_count": 3,
+    "repeat_pdf_total": 6,
+    "repeat_gate_exact": false,
+    "repeat_worker_p95_seconds": 15.599511541004176,
+    "latency_gate": false,
+    "end_to_end_mouse_up_to_clipboard_measured": false,
+    "verdict": "FAIL"
+  },
+  "answer": {
+    "all_66_evaluated_pp_l": true,
+    "all_66_evaluated_pix2tex": true,
+    "candidate_meeting_95_plus_repeat": null,
+    "overall_verdict": "FAIL"
+  },
+  "evidence": {
+    "PP-FormulaNet-L": "benchmarks/held-out/results/large/summary.json",
+    "PP-FormulaNet-L_pdf": "benchmarks/held-out/pdf/results/large/reviews-hefferon-pdf.json",
+    "PP-FormulaNet-L_repeat": "benchmarks/held-out/pdf/results/large-repeat-summary.json",
+    "pix2tex_wikipedia": "benchmarks/held-out/results/pix2tex/baseline-wikipedia.json",
+    "pix2tex_wikipedia_rough_review": "benchmarks/held-out/results/pix2tex/rough-review.json",
+    "pix2tex_pdf": "benchmarks/held-out/pdf/results/pix2tex/summary.json"
+  }
+}

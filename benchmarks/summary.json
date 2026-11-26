@@ -1,0 +1,23 @@
+{
+  "chip": "Apple M5",
+  "corpus": "60 controlled synthetic printed crops; independent PDF/website capture coverage pending",
+  "timing_scope": "Warm worker pipe round trip, excludes capture, Swift encoding, clipboard write",
+  "models": [
+    {
+      "model": "PP-FormulaNet-S",
+      "predictions": 60,
+      "provisional_correct": 37,
+      "provisional_accuracy": 0.6166666666666667,
+      "warm_worker_p95_seconds": 0.20803737500318675,
+      "release_approved": false
+    },
+    {
+      "model": "PP-FormulaNet-L",
+      "predictions": 60,
+      "provisional_correct": 49,
+      "provisional_accuracy": 0.8166666666666667,
+      "warm_worker_p95_seconds": 3.8696595419969526,
+      "release_approved": false
+    }
+  ]
+}

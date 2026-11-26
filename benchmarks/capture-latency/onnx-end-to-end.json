@@ -1,0 +1,344 @@
+{
+  "cold" : [
+    {
+      "captureToCopyMs" : 586.566542,
+      "mouseUpToCaptureMs" : 229.258458,
+      "mouseUpToCopyMs" : 815.825
+    },
+    {
+      "captureToCopyMs" : 662.543417,
+      "mouseUpToCaptureMs" : 104.889042,
+      "mouseUpToCopyMs" : 767.432459
+    },
+    {
+      "captureToCopyMs" : 680.433666,
+      "mouseUpToCaptureMs" : 99.253542,
+      "mouseUpToCopyMs" : 779.687208
+    },
+    {
+      "captureToCopyMs" : 612.528334,
+      "mouseUpToCaptureMs" : 110.564875,
+      "mouseUpToCopyMs" : 723.093209
+    },
+    {
+      "captureToCopyMs" : 721.62475,
+      "mouseUpToCaptureMs" : 106.398542,
+      "mouseUpToCopyMs" : 828.023292
+    },
+    {
+      "captureToCopyMs" : 718.564333,
+      "mouseUpToCaptureMs" : 131.158292,
+      "mouseUpToCopyMs" : 849.722625
+    },
+    {
+      "captureToCopyMs" : 645.88,
+      "mouseUpToCaptureMs" : 115.23075,
+      "mouseUpToCopyMs" : 761.11075
+    }
+  ],
+  "fixture" : "roots-01.png",
+  "geometry" : "126 x 34 points at 2.0x",
+  "observedLaTeX" : "{\\sqrt{x+1}}+{\\sqrt[3]{y}}=1",
+  "warm" : [
+    {
+      "captureToCopyMs" : 179.04275,
+      "mouseUpToCaptureMs" : 100.748916,
+      "mouseUpToCopyMs" : 279.791666
+    },
+    {
+      "captureToCopyMs" : 150.13125,
+      "mouseUpToCaptureMs" : 116.849,
+      "mouseUpToCopyMs" : 266.98025
+    },
+    {
+      "captureToCopyMs" : 138.244417,
+      "mouseUpToCaptureMs" : 113.255166,
+      "mouseUpToCopyMs" : 251.499583
+    },
+    {
+      "captureToCopyMs" : 114.277875,
+      "mouseUpToCaptureMs" : 106.968167,
+      "mouseUpToCopyMs" : 221.246042
+    },
+    {
+      "captureToCopyMs" : 100.481875,
+      "mouseUpToCaptureMs" : 97.515875,
+      "mouseUpToCopyMs" : 197.99775
+    },
+    {
+      "captureToCopyMs" : 90.396083,
+      "mouseUpToCaptureMs" : 94.493083,
+      "mouseUpToCopyMs" : 184.889166
+    },
+    {
+      "captureToCopyMs" : 94.364083,
+      "mouseUpToCaptureMs" : 85.792167,
+      "mouseUpToCopyMs" : 180.15625
+    },
+    {
+      "captureToCopyMs" : 126.97075,
+      "mouseUpToCaptureMs" : 107.144584,
+      "mouseUpToCopyMs" : 234.115334
+    },
+    {
+      "captureToCopyMs" : 106.236833,
+      "mouseUpToCaptureMs" : 101.468583,
+      "mouseUpToCopyMs" : 207.705416
+    },
+    {
+      "captureToCopyMs" : 106.710459,
+      "mouseUpToCaptureMs" : 94.898375,
+      "mouseUpToCopyMs" : 201.608834
+    },
+    {
+      "captureToCopyMs" : 101.84675,
+      "mouseUpToCaptureMs" : 96.195166,
+      "mouseUpToCopyMs" : 198.041916
+    },
+    {
+      "captureToCopyMs" : 102.229417,
+      "mouseUpToCaptureMs" : 97.867083,
+      "mouseUpToCopyMs" : 200.0965
+    },
+    {
+      "captureToCopyMs" : 102.29575,
+      "mouseUpToCaptureMs" : 101.435875,
+      "mouseUpToCopyMs" : 203.731625
+    },
+    {
+      "captureToCopyMs" : 124.172792,
+      "mouseUpToCaptureMs" : 103.51075,
+      "mouseUpToCopyMs" : 227.683542
+    },
+    {
+      "captureToCopyMs" : 111.936959,
+      "mouseUpToCaptureMs" : 98.484916,
+      "mouseUpToCopyMs" : 210.421875
+    },
+    {
+      "captureToCopyMs" : 162.646959,
+      "mouseUpToCaptureMs" : 132.583333,
+      "mouseUpToCopyMs" : 295.230292
+    },
+    {
+      "captureToCopyMs" : 130.601167,
+      "mouseUpToCaptureMs" : 103.832708,
+      "mouseUpToCopyMs" : 234.433875
+    },
+    {
+      "captureToCopyMs" : 106.366334,
+      "mouseUpToCaptureMs" : 95.763833,
+      "mouseUpToCopyMs" : 202.130167
+    },
+    {
+      "captureToCopyMs" : 91.1845,
+      "mouseUpToCaptureMs" : 104.3215,
+      "mouseUpToCopyMs" : 195.506
+    },
+    {
+      "captureToCopyMs" : 105.793291,
+      "mouseUpToCaptureMs" : 97.504125,
+      "mouseUpToCopyMs" : 203.297416
+    },
+    {
+      "captureToCopyMs" : 158.515417,
+      "mouseUpToCaptureMs" : 103.121041,
+      "mouseUpToCopyMs" : 261.636458
+    },
+    {
+      "captureToCopyMs" : 169.307083,
+      "mouseUpToCaptureMs" : 118.96525,
+      "mouseUpToCopyMs" : 288.272333
+    },
+    {
+      "captureToCopyMs" : 120.11475,
+      "mouseUpToCaptureMs" : 129.175166,
+      "mouseUpToCopyMs" : 249.289916
+    },
+    {
+      "captureToCopyMs" : 125.852084,
+      "mouseUpToCaptureMs" : 119.070416,
+      "mouseUpToCopyMs" : 244.9225
+    },
+    {
+      "captureToCopyMs" : 152.66325,
+      "mouseUpToCaptureMs" : 127.877708,
+      "mouseUpToCopyMs" : 280.540958
+    },
+    {
+      "captureToCopyMs" : 118.3255,
+      "mouseUpToCaptureMs" : 108.880917,
+      "mouseUpToCopyMs" : 227.206417
+    },
+    {
+      "captureToCopyMs" : 138.387208,
+      "mouseUpToCaptureMs" : 136.578875,
+      "mouseUpToCopyMs" : 274.966083
+    },
+    {
+      "captureToCopyMs" : 113.264166,
+      "mouseUpToCaptureMs" : 106.272375,
+      "mouseUpToCopyMs" : 219.536541
+    },
+    {
+      "captureToCopyMs" : 104.355333,
+      "mouseUpToCaptureMs" : 97.016542,
+      "mouseUpToCopyMs" : 201.371875
+    },
+    {
+      "captureToCopyMs" : 95.540541,
+      "mouseUpToCaptureMs" : 95.540834,
+      "mouseUpToCopyMs" : 191.081375
+    },
+    {
+      "captureToCopyMs" : 85.315,
+      "mouseUpToCaptureMs" : 88.176167,
+      "mouseUpToCopyMs" : 173.491167
+    },
+    {
+      "captureToCopyMs" : 124.779291,
+      "mouseUpToCaptureMs" : 88.79225,
+      "mouseUpToCopyMs" : 213.571541
+    },
+    {
+      "captureToCopyMs" : 227.327208,
+      "mouseUpToCaptureMs" : 101.520417,
+      "mouseUpToCopyMs" : 328.847625
+    },
+    {
+      "captureToCopyMs" : 117.453667,
+      "mouseUpToCaptureMs" : 109.526333,
+      "mouseUpToCopyMs" : 226.98
+    },
+    {
+      "captureToCopyMs" : 147.291416,
+      "mouseUpToCaptureMs" : 108.975667,
+      "mouseUpToCopyMs" : 256.267083
+    },
+    {
+      "captureToCopyMs" : 113.256458,
+      "mouseUpToCaptureMs" : 102.810208,
+      "mouseUpToCopyMs" : 216.066666
+    },
+    {
+      "captureToCopyMs" : 108.502875,
+      "mouseUpToCaptureMs" : 147.714709,
+      "mouseUpToCopyMs" : 256.217584
+    },
+    {
+      "captureToCopyMs" : 137.230083,
+      "mouseUpToCaptureMs" : 147.003334,
+      "mouseUpToCopyMs" : 284.233417
+    },
+    {
+      "captureToCopyMs" : 134.277708,
+      "mouseUpToCaptureMs" : 127.007792,
+      "mouseUpToCopyMs" : 261.2855
+    },
+    {
+      "captureToCopyMs" : 122.52775,
+      "mouseUpToCaptureMs" : 109.36075,
+      "mouseUpToCopyMs" : 231.8885
+    },
+    {
+      "captureToCopyMs" : 118.684125,
+      "mouseUpToCaptureMs" : 105.442208,
+      "mouseUpToCopyMs" : 224.126333
+    },
+    {
+      "captureToCopyMs" : 116.488708,
+      "mouseUpToCaptureMs" : 102.387042,
+      "mouseUpToCopyMs" : 218.87575
+    },
+    {
+      "captureToCopyMs" : 135.282167,
+      "mouseUpToCaptureMs" : 103.5665,
+      "mouseUpToCopyMs" : 238.848667
+    },
+    {
+      "captureToCopyMs" : 149.787958,
+      "mouseUpToCaptureMs" : 116.402917,
+      "mouseUpToCopyMs" : 266.190875
+    },
+    {
+      "captureToCopyMs" : 122.91625,
+      "mouseUpToCaptureMs" : 115.269375,
+      "mouseUpToCopyMs" : 238.185625
+    },
+    {
+      "captureToCopyMs" : 173.595292,
+      "mouseUpToCaptureMs" : 100.640625,
+      "mouseUpToCopyMs" : 274.235917
+    },
+    {
+      "captureToCopyMs" : 174.370125,
+      "mouseUpToCaptureMs" : 102.230166,
+      "mouseUpToCopyMs" : 276.600291
+    },
+    {
+      "captureToCopyMs" : 113.917542,
+      "mouseUpToCaptureMs" : 142.197542,
+      "mouseUpToCopyMs" : 256.115084
+    },
+    {
+      "captureToCopyMs" : 121.711583,
+      "mouseUpToCaptureMs" : 105.62875,
+      "mouseUpToCopyMs" : 227.340333
+    },
+    {
+      "captureToCopyMs" : 95.523417,
+      "mouseUpToCaptureMs" : 104.056708,
+      "mouseUpToCopyMs" : 199.580125
+    },
+    {
+      "captureToCopyMs" : 135.412125,
+      "mouseUpToCaptureMs" : 106.013709,
+      "mouseUpToCopyMs" : 241.425834
+    },
+    {
+      "captureToCopyMs" : 168.039709,
+      "mouseUpToCaptureMs" : 124.814125,
+      "mouseUpToCopyMs" : 292.853834
+    },
+    {
+      "captureToCopyMs" : 163.216875,
+      "mouseUpToCaptureMs" : 122.775792,
+      "mouseUpToCopyMs" : 285.992667
+    },
+    {
+      "captureToCopyMs" : 133.605791,
+      "mouseUpToCaptureMs" : 122.847917,
+      "mouseUpToCopyMs" : 256.453708
+    },
+    {
+      "captureToCopyMs" : 154.059834,
+      "mouseUpToCaptureMs" : 111.896625,
+      "mouseUpToCopyMs" : 265.956459
+    },
+    {
+      "captureToCopyMs" : 142.948459,
+      "mouseUpToCaptureMs" : 118.72525,
+      "mouseUpToCopyMs" : 261.673709
+    },
+    {
+      "captureToCopyMs" : 116.236625,
+      "mouseUpToCaptureMs" : 173.264458,
+      "mouseUpToCopyMs" : 289.501083
+    },
+    {
+      "captureToCopyMs" : 132.260833,
+      "mouseUpToCaptureMs" : 105.7705,
+      "mouseUpToCopyMs" : 238.031333
+    },
+    {
+      "captureToCopyMs" : 109.775834,
+      "mouseUpToCaptureMs" : 99.126958,
+      "mouseUpToCopyMs" : 208.902792
+    },
+    {
+      "captureToCopyMs" : 115.037958,
+      "mouseUpToCaptureMs" : 111.398,
+      "mouseUpToCopyMs" : 226.435958
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "model": "PP-FormulaNet_plus-M",
+  "revision": "712e6e2e4c313b1ea163be5c350127b82662c58d",
+  "model_lock_sha256": "0c06c3cabc7a669b08dc6627fcc0e2671542f607e233571ac17ebf820f7c4a31",
+  "verified_artifacts": 5,
+  "worker_sha256": "1dcb94110ca1445bb2133c176054b03bbfc8e25b7d275483a2d6be89a6986249",
+  "requirements_sha256": "daf0e826d6b6b7cd756c6ff3ce64fc24b0b4c9e3f35f424cd1a2c34e427dc342",
+  "python": "3.12.14",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "paddlepaddle": "3.3.1",
+  "paddlex": "3.3.13",
+  "device": "cpu",
+  "network_policy": "sandbox-exec -p (version 1)(allow default)(deny network*)",
+  "official_sample_sha256": "7885d4a349edcdfbfbc439305b8b554c2500f095949bc53d14835656b902dbcc",
+  "raw_worker_response": {
+    "latex": "\\zeta_{0}(\\nu)=-\\frac{\\nu\\varrho^{-2\\nu}}{\\pi}\\int_{\\mu}^{\\infty}d\\omega\\int_{C_{+}}d z\\frac{2z^{2}}{(z^{2}+\\omega^{2})^{\\nu+1}}\\breve{\\Psi}(\\omega;z)e^{i\\epsilon z}\\quad,"
+  },
+  "model_card_exact_match": true,
+  "model_card_whitespace_normalized_match": true,
+  "plus_m_rejected_with_only_plus_s_flag": true,
+  "worker_process_total_seconds": 46.01250883299508,
+  "timing_scope": "Fresh worker spawn, single framed prediction and worker shutdown. Excludes screen capture, Swift PNG encoding and clipboard write."
+}

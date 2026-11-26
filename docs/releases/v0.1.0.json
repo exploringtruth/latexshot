@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "distribution_signing": "adhoc-unnotarized",
+  "icon_selected": {"passed": true, "evidence": "Assets/Icon/LaTeXShot.png"},
+  "user_trial_passed": {"passed": false, "evidence": ""},
+  "clean_account_install_passed": {"passed": false, "evidence": ""},
+  "login_both_states_passed": {"passed": false, "evidence": ""},
+  "manual_update_passed": {"passed": false, "evidence": ""},
+  "scheduled_update_passed": {"passed": false, "evidence": ""},
+  "packaged_update_relaunch_passed": {"passed": false, "evidence": ""},
+  "offline_runtime_verified": {"passed": false, "evidence": ""},
+  "benchmark": {
+    "model": "",
+    "printed_crops": 0,
+    "correct_fraction": 0,
+    "warm_p95_seconds": 0,
+    "first_capture_seconds": 0,
+    "first_capture_evidence": "",
+    "cold_start_ready_seconds": 0,
+    "cold_start_evidence": "",
+    "timing_scope": "mouse-up-to-clipboard-including-readiness-wait",
+    "evidence": ""
+  }
+}

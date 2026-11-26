@@ -1,0 +1,58 @@
+{
+  "model": "PP-FormulaNet-L",
+  "suite": "hefferon-pdf",
+  "corpus_cases": 6,
+  "runs": 2,
+  "exact_repeat_count": 6,
+  "exact_repeat_total": 6,
+  "exact_repeat_accuracy": 1.0,
+  "structural_first_review_correct": 3,
+  "structural_first_review_total": 6,
+  "repeat_worker_p95_seconds": 25.10931291700399,
+  "release_latency_gate_under_0.8_seconds": false,
+  "timing_scope": "Warm worker pipe round trip including PNG decoding and inference; excludes capture, Swift PNG encoding and clipboard write",
+  "release_gate": "FAIL",
+  "cases": [
+    {
+      "id": "hefferon-01",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 8.858321542007616,
+      "worker_seconds_run_2": 8.593365958993672
+    },
+    {
+      "id": "hefferon-02",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 24.69982374999381,
+      "worker_seconds_run_2": 25.10931291700399
+    },
+    {
+      "id": "hefferon-03",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 8.572903624997707,
+      "worker_seconds_run_2": 8.680006124995998
+    },
+    {
+      "id": "hefferon-04",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 8.135564834010438,
+      "worker_seconds_run_2": 8.658450208997237
+    },
+    {
+      "id": "hefferon-05",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 7.399963584000943,
+      "worker_seconds_run_2": 7.612580250002793
+    },
+    {
+      "id": "hefferon-06",
+      "exact_repeat": true,
+      "worker_seconds_run_1": 7.986316666996572,
+      "worker_seconds_run_2": 7.606271458003903
+    }
+  ],
+  "evidence": {
+    "run_1": "benchmarks/held-out/pdf/results/large-repeat-1.json",
+    "run_2": "benchmarks/held-out/pdf/results/large-repeat-2.json",
+    "first_review": "benchmarks/held-out/pdf/results/large/reviews-hefferon-pdf.json"
+  }
+}

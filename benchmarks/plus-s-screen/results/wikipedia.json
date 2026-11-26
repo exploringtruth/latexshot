@@ -1,0 +1,614 @@
+{
+  "model": "PP-FormulaNet_plus-S",
+  "revision": "3d46f557e3a1752f4bf81202395af3b5ecfadfd2",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "cold_first_prediction_seconds": 6.600025667001319,
+  "cold_first_prediction_case": "fractions-01",
+  "cold_first_prediction": {
+    "latex": "\\begin{aligned}{}&{{}\\frac{1}{2}}\\\\ {}&{{}\\frac{1}{3}=\\frac{1}{2}\\div\\frac{1}{3}=\\frac{1}{2}\\times\\frac{3}{1}=\\frac{3}{2},\\qquad\\frac{\\frac{3}{2}}{5}=\\frac{3}{2}\\div5=\\frac{3}{2}\\times\\frac{1}{5}=\\frac{3}{10},}\\\\ {}&{{}\\frac{12\\cdot{}_{4}^{3}}{26}=\\frac{12\\times4+3}{4}\\div26=\\frac{12\\times4+3}{4}\\times\\frac{1}{26}=\\frac{51}{104}.}\\\\ \\end{aligned}"
+  },
+  "results": [
+    {
+      "id": "fractions-01",
+      "category": "fractions",
+      "image": "crops/fractions-01.png",
+      "expected_latex": "\\begin{align}\n\\frac{\\;\\!\\tfrac{1}{2}\\;\\!}{\\tfrac{1}{3}}\n&= \\frac{1}{2} \\div \\frac{1}{3}\n= \\frac{1}{2} \\times \\frac{3}{1}\n= \\frac{3}{2},\n\\qquad\n\\frac{\\;\\!\\tfrac{3}{2}\\;\\!}5\n= \\frac{3}{2} \\div 5\n= \\frac{3}{2}\\times\\frac{1}{5}\n= \\frac{3}{10},\n\\\\[5pt]\n\\frac{12\\tfrac{3}{4}}{26}\n&= \\frac{12 \\times 4 + 3}{4} \\div 26\n= \\frac{12 \\times 4 + 3}{4} \\times \\frac{1}{26}\n= \\frac{51}{104}.\n\\end{align}",
+      "latex": "\\begin{aligned}{}&{{}\\frac{1}{2}}\\\\ {}&{{}\\frac{1}{3}=\\frac{1}{2}\\div\\frac{1}{3}=\\frac{1}{2}\\times\\frac{3}{1}=\\frac{3}{2},\\qquad\\frac{\\frac{3}{2}}{5}=\\frac{3}{2}\\div5=\\frac{3}{2}\\times\\frac{1}{5}=\\frac{3}{10},}\\\\ {}&{{}\\frac{12\\cdot{}_{4}^{3}}{26}=\\frac{12\\times4+3}{4}\\div26=\\frac{12\\times4+3}{4}\\times\\frac{1}{26}=\\frac{51}{104}.}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.601685166999232,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-02",
+      "category": "fractions",
+      "image": "crops/fractions-02.png",
+      "expected_latex": "\\frac{63}{462} = \\frac{63 \\div 21}{462 \\div 21}= \\frac{3}{22}.",
+      "latex": "\\frac{63}{462}=\\frac{63\\div21}{462\\div21}=\\frac{3}{22}.",
+      "error": null,
+      "warm_worker_seconds": 0.16215841699886369,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-03",
+      "category": "fractions",
+      "image": "crops/fractions-03.png",
+      "expected_latex": "\\frac14 + \\frac13=\\frac{1\\times3}{4\\times3} + \\frac{1\\times4}{3\\times4}=\\frac3{12} + \\frac4{12}=\\frac7{12}.",
+      "latex": "\\frac{1}{4}+\\frac{1}{3}=\\frac{1\\times3}{4\\times3}+\\frac{1\\times4}{3\\times4}=\\frac{3}{12}+\\frac{4}{12}=\\frac{7}{12}.",
+      "error": null,
+      "warm_worker_seconds": 0.23990266700275242,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-04",
+      "category": "fractions",
+      "image": "crops/fractions-04.png",
+      "expected_latex": "\\frac9{15}+\\frac{10}{15}=\\frac{19}{15}=1\\frac4{15}.",
+      "latex": "\\frac{9}{15}+\\frac{10}{15}=\\frac{19}{15}=1\\frac{4}{15}.",
+      "error": null,
+      "warm_worker_seconds": 0.1661807919954299,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-05",
+      "category": "fractions",
+      "image": "crops/fractions-05.png",
+      "expected_latex": "\\frac{a}{b} + \\frac {c}{d} = \\frac{ad+cb}{bd}.",
+      "latex": "\\frac{a}{b}+\\frac{c}{d}=\\frac{a d+c b}{b d}.",
+      "error": null,
+      "warm_worker_seconds": 0.12975187499978347,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-06",
+      "category": "fractions",
+      "image": "crops/fractions-06.png",
+      "expected_latex": "\\begin{alignat}{3}\n\\frac34 + \\frac56\n&= \\frac{3 \\cdot 6}{4 \\cdot 6} + \\frac{4 \\cdot 5}{4\\cdot 6}\n= \\frac{18}{24} + \\frac{20}{24}\n&&= \\frac{19}{12}\n\\\\[10mu]\n&=\\frac{3 \\cdot 3}{4 \\cdot 3} + \\frac{2 \\cdot 5}{2 \\cdot 6}\n= \\frac{9}{12} + \\frac{10}{12}\n&&=\\frac{19}{12}.\n\\end{alignat}",
+      "latex": "\\begin{aligned}{\\frac{3}{4}+\\frac{5}{6}}&{{}=\\frac{3\\cdot6}{4\\cdot6}+\\frac{4\\cdot5}{4\\cdot6}=\\frac{18}{24}+\\frac{20}{24}}&{=\\frac{19}{12}}\\\\ {}&{{}=\\frac{3\\cdot3}{4\\cdot3}+\\frac{2\\cdot5}{2\\cdot6}=\\frac{9}{12}+\\frac{10}{12}}&{=\\frac{19}{12}.}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.4570255829967209,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-07",
+      "category": "fractions",
+      "image": "crops/fractions-07.png",
+      "expected_latex": "\\frac{2}{3} \\times \\frac{3}{4} = \\frac{6}{12}.",
+      "latex": "\\frac{3}{3}\\times\\frac{3}{4}=\\frac{6}{12}.",
+      "error": null,
+      "warm_worker_seconds": 0.13167758400231833,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-08",
+      "category": "fractions",
+      "image": "crops/fractions-08.png",
+      "expected_latex": "\\frac{2}{3} \\times \\frac{3}{4}\n= \\frac{{\\color{RoyalBlue}\\cancel{\\color{Black}2}} ^{~1}}\n       {{\\color{RedOrange}\\cancel{\\color{Black}3}} ^{~1}} \\times\n  \\frac{{\\color{RedOrange}\\cancel{\\color{Black}3}} ^{~1}}\n       {{\\color{RoyalBlue}\\cancel{\\color{Black}4}} ^{~2}}\n= \\frac{1}{1} \\times \\frac{1}{2} = \\frac{1}{2}.",
+      "latex": "\\frac{2}{3}\\times\\frac{3}{4}=\\frac{\\mathcal{Z}^{'}}{\\mathcal{Z}^{'}}\\times\\frac{\\mathcal{Z}^{'}}{\\mathcal{A}^{'}}=\\frac{1}{1}\\times\\frac{1}{2}=\\frac{1}{2}.",
+      "error": null,
+      "warm_worker_seconds": 0.27757737500360236,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-09",
+      "category": "fractions",
+      "image": "crops/fractions-09.png",
+      "expected_latex": "3 \\times 2\\frac{3}{4} = \\frac31 \\times \\frac{2\\times 4 + 3}{4} = \\frac{33}{4} = 8\\frac{1}{4}.",
+      "latex": "3\\times2\\frac{3}{4}=\\frac{3}{1}\\times\\frac{2\\times4+3}{4}=\\frac{33}{4}=8\\frac{1}{4}.",
+      "error": null,
+      "warm_worker_seconds": 0.19213908299570903,
+      "structurally_correct": null
+    },
+    {
+      "id": "fractions-10",
+      "category": "fractions",
+      "image": "crops/fractions-10.png",
+      "expected_latex": "3 \\times 2\\frac34 = 3 \\times 2 + 3 \\times \\frac34 = 6 + \\frac94 = 8\\frac14.",
+      "latex": "3\\times2\\frac{3}{4}=3\\times2+3\\times\\frac{3}{4}=6+\\frac{9}{4}=8\\frac{1}{4}.",
+      "error": null,
+      "warm_worker_seconds": 0.18018137500621378,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-01",
+      "category": "roots",
+      "image": "crops/roots-01.png",
+      "expected_latex": "\\frac{\\sqrt{2}}{2} = \\frac{1}{\\sqrt{2}}",
+      "latex": "\\frac{\\sqrt{2}}{2}=\\frac{1}{\\sqrt{2}}",
+      "error": null,
+      "warm_worker_seconds": 0.1252786660043057,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-02",
+      "category": "roots",
+      "image": "crops/roots-02.png",
+      "expected_latex": "\\sqrt{x^2} = \\left|x\\right| = \n\\begin{cases} \n  x,  & \\text{if }x \\ge 0 \\\\\n  -x, & \\text{if }x < 0. \n\\end{cases}",
+      "latex": "\\sqrt{x^{2}}=\\left|x\\right|=\\begin{cases}{x,\\quad fmathrm x i x\\\\geq0}\\\\ {-x,\\mathrm f i f x x<0.}\\\\ \\end{cases}",
+      "error": null,
+      "warm_worker_seconds": 0.17690637499617878,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-03",
+      "category": "roots",
+      "image": "crops/roots-03.png",
+      "expected_latex": "\\sqrt{xy} = \\sqrt x \\sqrt y",
+      "latex": "\\sqrt{x y}=\\sqrt{x}\\sqrt{y}",
+      "error": null,
+      "warm_worker_seconds": 0.10324420899996767,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-04",
+      "category": "roots",
+      "image": "crops/roots-04.png",
+      "expected_latex": "\\sqrt x = x^{1/2}.",
+      "latex": "\\sqrt{x}=x^{1/2}.",
+      "error": null,
+      "warm_worker_seconds": 0.10397304199432256,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-05",
+      "category": "roots",
+      "image": "crops/roots-05.png",
+      "expected_latex": "f'(x) = \\frac{1}{2\\sqrt x}.",
+      "latex": "f^{'}(x)=\\frac{1}{2\\sqrt{x}}.",
+      "error": null,
+      "warm_worker_seconds": 0.12016749999747844,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-06",
+      "category": "roots",
+      "image": "crops/roots-06.png",
+      "expected_latex": "\\sqrt{1 + x} = \\sum_{n=0}^\\infty \\frac{(-1)^n(2n)!}{(1-2n)(n!)^2(4^n)}x^n = 1 + \\frac{1}{2}x - \\frac{1}{8}x^2 + \\frac{1}{16} x^3 - \\frac{5}{128} x^4 + \\cdots,",
+      "latex": "\\sqrt{1+x}=\\sum_{n=;0}}^{{inftyinfty}\\frac{\\big(-1\\big)^{n}(2n)!}{(1-2n)(n!)^{2}(4^{n})}x^{n}=1+\\frac{1}{2}x-\\frac{1}{8}x^{2}+\\frac{1}{16}x^{3}-\\frac{5}{128}x^{4}+\\cdots,",
+      "error": null,
+      "warm_worker_seconds": 0.3574183750024531,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-07",
+      "category": "roots",
+      "image": "crops/roots-07.png",
+      "expected_latex": "\\sqrt{p^{2k}} = p^k,",
+      "latex": "\\sqrt{p^{2k}}=p^{k},",
+      "error": null,
+      "warm_worker_seconds": 0.10671362499851966,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-08",
+      "category": "roots",
+      "image": "crops/roots-08.png",
+      "expected_latex": "\\sqrt{p_1^{2e_1+1} \\cdots p_k^{2e_k+1}p_{k+1}^{2e_{k+1}} \\dots p_n^{2e_n}} = p_1^{e_1} \\dots p_n^{e_n} \\sqrt{p_1\\dots p_k}.",
+      "latex": "\\sqrt{p_{1}^{2e_{1}+1}\\cdots p_{k}^{2e_{k}+1}p_{k+1}^{2e_{k+1}}\\cdots p_{n}^{2e_{n}}}=p_{1}^{e_{1}}\\cdots p_{n}^{e_{n}}\\sqrt{p_{1}\\cdots p_{k}}\\enspace.",
+      "error": null,
+      "warm_worker_seconds": 0.3167432909976924,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-09",
+      "category": "roots",
+      "image": "crops/roots-09.png",
+      "expected_latex": "\\sqrt{11} = 3 + \\cfrac{1}{3 + \\cfrac{1}{6 + \\cfrac{1}{3 + \\cfrac{1}{6 + \\cfrac{1}{3 + \\ddots}}}}}",
+      "latex": "\\begin aligned}{\\sqrt{11}=3+\\frac{1}{3+\\cfrac{1}{6+\\cfrac{1}{3+\\cfrac{1}{6+\\cfrac{1}{3+\\ddots}}}}}}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.2181200839986559,
+      "structurally_correct": null
+    },
+    {
+      "id": "roots-10",
+      "category": "roots",
+      "image": "crops/roots-10.png",
+      "expected_latex": "\\sqrt{11} = 3 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\cfrac{2}{6 + \\ddots}}}}} = 3 + \\cfrac{6}{20 - 1 - \\cfrac{1}{20 - \\cfrac{1}{20 - \\cfrac{1}{20 - \\cfrac{1}{20 - \\ddots}}}}}.",
+      "latex": "\\sqrt{11}=3+\\cfrac{2}{6+\\cfrac{2}{6+\\cfrac{2}{6+\\cfrac{2}{6+\\cfrac{2}{6+\\cdots\\ ddots}}}}}=3+\\cfrac{6}{20-1-\\cfrac{1}{20-\\cfrac{1}{20-\\cfrac\\{{1}}{20-\\cdots\\ \\ }}}}.",
+      "error": null,
+      "warm_worker_seconds": 0.33017320799990557,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-01",
+      "category": "matrices",
+      "image": "crops/matrices-01.png",
+      "expected_latex": "\\begin{bmatrix}1 & 9 & -13 \\\\20 & 5 & -6 \\end{bmatrix}",
+      "latex": "\\left[\\begin{array}{c c c}{1}&{9}&{-13}\\\\ {20}&{5}&{-6}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.16929104199516587,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-02",
+      "category": "matrices",
+      "image": "crops/matrices-02.png",
+      "expected_latex": "\\mathbf{A} = \\begin{bmatrix}\n-1.3 &  0.6 \\\\\n20.4 &  5.5 \\\\\n 9.7 & -6.2\n\\end{bmatrix}.",
+      "latex": "\\mathbf{A}=\\left[\\begin{array}{c c}{-1.3}&{0.6}\\\\ {20.4}&{5.5}\\\\ {9.7}&{-6.2}\\\\ \\end{array}\\right].",
+      "error": null,
+      "warm_worker_seconds": 0.20429687499563443,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-03",
+      "category": "matrices",
+      "image": "crops/matrices-03.png",
+      "expected_latex": "\\begin{bmatrix}3 & 7 & 2 \\end{bmatrix}",
+      "latex": "\\left[\\begin{array}{l l}{3}&{7}&\\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.12015683399658883,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-04",
+      "category": "matrices",
+      "image": "crops/matrices-04.png",
+      "expected_latex": "\\begin{bmatrix}4 \\\\ 1 \\\\ 8 \\end{bmatrix}",
+      "latex": "\\left[\\begin{array}{l}{4}\\\\ {1}\\\\ {8}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.12877962500351714,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-05",
+      "category": "matrices",
+      "image": "crops/matrices-05.png",
+      "expected_latex": "\\begin{bmatrix}\n9 & 13 & 5 \\\\\n1 & 11 & 7 \\\\\n2 &  6 & 3\n\\end{bmatrix}",
+      "latex": "\\left[\\begin{array}{c c c}{9}&{13}&{5}\\\\ {1}&{11}&{7}\\\\ {2}&{6}&{3}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.18884862500271993,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-06",
+      "category": "matrices",
+      "image": "crops/matrices-06.png",
+      "expected_latex": "\\mathbf{A} =\n\\begin{bmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{bmatrix} =\n\\begin{pmatrix}\na_{11} & a_{12} & \\cdots & a_{1n} \\\\\na_{21} & a_{22} & \\cdots & a_{2n} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\na_{m1} & a_{m2} & \\cdots & a_{mn}\n\\end{pmatrix}.",
+      "latex": "\\mathbf{A}=\\left[\\begin{array}{c c c c}{a_{11}}&{a_{12}}&{\\cdots}&{a_{1n}}\\\\ {a_{21}}&{a_{22}}&{\\cdots}&{a_{2n}}\\\\ {\\vdots}&{\\vdots}&{\\ddots}&{\\vdots}\\\\ {a_{m1}}&{a_{m2}}&{\\cdots}&{a_{m n}}\\\\ \\end{array}\\right]=\\left(\\begin{array}{c c c c}{a_{11}}&{a_{12}}&{\\cdots}&{a_{1n}}\\\\ {a_{21}}&{a_{22}}&{\\cdots}&{a_{2n}}\\\\ {\\vdots}&{\\vdots}&{\\ddots}&{\\vdots}\\\\ {a_{m1}}&{a_{m2}}&{\\cdots}&{a_{m n}}\\\\ \\end{array}\\right).",
+      "error": null,
+      "warm_worker_seconds": 0.6748927910011844,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-07",
+      "category": "matrices",
+      "image": "crops/matrices-07.png",
+      "expected_latex": "\\mathbf A = \\begin{bmatrix}\n0 & -1 & -2 & -3\\\\\n1 &  0 & -1 & -2\\\\\n2 &  1 &  0 & -1\n\\end{bmatrix}",
+      "latex": "\\mathbf{A}=\\left[\\begin{array}{c c c c}{0}&{-1}&{-2}&{-3}\\\\ {1}&{0}&{-1}&{-2}\\\\ {2}&{1}&{0}&{-1}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.23872475000098348,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-08",
+      "category": "matrices",
+      "image": "crops/matrices-08.png",
+      "expected_latex": "\\begin{bmatrix}\n1 & 3 & 1 \\\\\n1 & 0 & 0\n\\end{bmatrix}\n+\n\\begin{bmatrix}\n0 & 0 & 5 \\\\\n7 & 5 & 0\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1+0 & 3+0 & 1+5 \\\\\n1+7 & 0+5 & 0+0\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n1 & 3 & 6 \\\\\n8 & 5 & 0\n\\end{bmatrix}",
+      "latex": "\\left[\\begin{array}{l l l}{1}&{3}&{1}\\\\ {1}&{0}&{0}\\\\ \\end{array}\\right]+\\left[\\begin{array}{l l l}{0}&{0}&{5}\\\\ {7}&{5}&{0}\\\\ \\end{array}\\right]=\\left[\\begin{array}{l}{1+0\\ 3++0\\ 1+5}\\\\ {1+7\\ 0+5\\ 0+0}\\\\ \\end{array}\\right]=\\left[\\begin{array}{l l l}{1}&{3}&{6}\\\\ {8}&{5}&{0}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.4491861249989597,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-09",
+      "category": "matrices",
+      "image": "crops/matrices-09.png",
+      "expected_latex": "2 \\cdot \\begin{bmatrix}\n1 &  8 & -3 \\\\\n4 & -2 &  5\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2 \\cdot 1 & 2\\cdot 8 & 2\\cdot -3 \\\\\n2\\cdot 4 & 2\\cdot -2 & 2\\cdot 5\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n2 & 16 & -6 \\\\\n8 & -4 & 10\n\\end{bmatrix}",
+      "latex": "2\\cdot\\left[\\begin{array}{c c c}{1}&{8}&{-3}\\\\ {4}&{-2}&{5}\\\\ \\end{array}\\right]=\\left[\\begin{array}{c c c}{2\\cdot1}&{2\\cdot8}&{2\\cdot-3}\\\\ {2\\cdot4}&{2\\cdot-2}&{2\\cdot5}\\\\ \\end{array}\\right]=\\left[\\begin{array}{c c c}{2}&{16}&{-6}\\\\ {8}&{-4}&{10}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.4621725830002106,
+      "structurally_correct": null
+    },
+    {
+      "id": "matrices-10",
+      "category": "matrices",
+      "image": "crops/matrices-10.png",
+      "expected_latex": "\\begin{bmatrix}\n1 &  2 & 3 \\\\\n0 & -6 & 7\n\\end{bmatrix}^\\mathrm{T} =\n\\begin{bmatrix}\n1 &  0 \\\\\n2 & -6 \\\\\n3 &  7\n\\end{bmatrix}",
+      "latex": "\\left[\\begin{array}{c c}{1}&{2}&{3}\\\\ {0}&{-6}&{7}\\\\ \\end{array}\\right]^{\\mathrm{T}}=\\left[\\begin{array}{c c}{1}&{0}\\\\ {2}&{-6}\\\\ {3}&{7}\\\\ \\end{array}\\right]",
+      "error": null,
+      "warm_worker_seconds": 0.26452449999487726,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-01",
+      "category": "aligned",
+      "image": "crops/aligned-01.png",
+      "expected_latex": "\\begin{align}\n3z+2=\\tfrac{7}{2}z+1\\\\ \\Rightarrow z=2\n\\end{align}",
+      "latex": "\\begin{array}{r}{3z+2=\\frac{7}{2}z+1}\\\\ {\\Rightarrow z=2}\\\\ \\end{array}",
+      "error": null,
+      "warm_worker_seconds": 0.14698354199936148,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-02",
+      "category": "aligned",
+      "image": "crops/aligned-02.png",
+      "expected_latex": "\\begin{align}\n   \\int_a^b u(x) v'(x) \\, dx \n   & = \\Big[u(x) v(x)\\Big]_a^b - \\int_a^b u'(x) v(x) \\, dx\\\\\n   & = u(b) v(b) - u(a) v(a) - \\int_a^b u'(x) v(x) \\, dx.\n \\end{align}",
+      "latex": "\\begin{aligned}{\\int_{a}^{b}u(x)v^{\\prime}(x)d x}&{{}=\\left[u(x)v(x)\\right]_{a}^{b}-\\int_{a}^{b}u^{\\prime}(x)v(x)d x}\\\\ {}&{{}=u(b)v(b)-u(a)v(a)-\\int_{a}^{b}u^{\\prime}(x)v(x)d x.}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.34455991700087907,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-03",
+      "category": "aligned",
+      "image": "crops/aligned-03.png",
+      "expected_latex": "\\begin{align}\n  x(y) &= f(g^{-1}(y)) \\\\\n  y(x) &= g(f^{-1}(x))\n\\end{align}",
+      "latex": "\\begin{aligned}{x(y)=f(g^{-1}(y)),}\\\\ {y(x)=g(f^{-1}(x)),}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.17055249999975786,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-04",
+      "category": "aligned",
+      "image": "crops/aligned-04.png",
+      "expected_latex": "\\begin{align}\n  \\int x\\cos(x)\\,dx & = \\int u\\ dv \\\\\n  & = u\\cdot v - \\int v \\, du \\\\\n  & = x\\sin(x) - \\int \\sin(x)\\,dx \\\\\n  & = x\\sin(x) + \\cos(x) + C,\n \\end{align}",
+      "latex": "\\begin{aligned}{\\int x\\ \\mathrm{c o s}(x)d x}&{{}=\\int u d\\:v{}}}\\\\{{}&{{}=u\\cdot v-\\int v d u}\\\\ {}&{{}=x\\mathrm{s i n}(x)-\\int\\operatorname{s i n}(x)d x}\\\\ {}&{{}=x\\mathrm{s i n}(x)+\\operatorname{c o s}(x)+C,}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.32145066700468305,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-05",
+      "category": "aligned",
+      "image": "crops/aligned-05.png",
+      "expected_latex": "\\begin{align}\n\\int \\ln(x)\\,dx & = x\\ln(x) - \\int\\frac{x}{x}\\,dx \\\\\n& = x\\ln(x) - \\int 1\\,dx \\\\\n& = x\\ln(x) - x + C \\\\\n& = x(\\ln(x)-1)+C\n\\end{align}",
+      "latex": "\\begin{aligned}{\\int\\operatorname{l n}(x)d x}&{{}=x{\\operatorname{l n}}x(x x)-\\int\\frac{x}{x}d x}\\\\ {}&{{}=x{\\operatorname{l n}}(x)-\\int1x d x}\\\\ {}&{{}=x{\\operatorname{l n}}(x)-x+C}\\\\ {}&{{}=x(\\ operatorname l n(x)-1)+C}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.33115279100456974,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-06",
+      "category": "aligned",
+      "image": "crops/aligned-06.png",
+      "expected_latex": "\\begin{align}\n\\int\\arctan(x)\\,dx\n& = x\\arctan(x) - \\int\\frac{x}{1+x^2}\\,dx \\\\[8pt]\n& = x\\arctan(x) - \\frac{\\ln(1+x^2)}{2} + C\n\\end{align}",
+      "latex": "\\begin{aligned}{\\int\\operatorname{a r c t a n}(x)d x}&{{}=x\\mathrm{a r c t a n}(x)-\\int\\frac{x}{1+x^{2}}d x}\\\\ {}&{{}=x\\mathrm{a r c t a n}(x)-\\frac{\\operatorname{l n}(1+x^{2})}{2}+C}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.2855213340008049,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-07",
+      "category": "aligned",
+      "image": "crops/aligned-07.png",
+      "expected_latex": "\\begin{align}\n\\frac{\\pi}{2} & = \\prod_{n=1}^\\infty \\frac{ 4n^2 }{ 4n^2 - 1 } = \\prod_{n=1}^\\infty \\left(\\frac{2n}{2n-1} \\cdot \\frac{2n}{2n+1}\\right) \\\\[6pt]\n& = \\Big(\\frac{2}{1} \\cdot \\frac{2}{3}\\Big) \\cdot \\Big(\\frac{4}{3} \\cdot \\frac{4}{5}\\Big) \\cdot \\Big(\\frac{6}{5} \\cdot \\frac{6}{7}\\Big) \\cdot \\Big(\\frac{8}{7} \\cdot \\frac{8}{9}\\Big) \\cdot \\; \\cdots\n\\end{align}",
+      "latex": "\\begin{aligned}{\\frac{\\pi}{2}}}&{{}=\\prod_{n=1}^{\\infty}\\frac{4n^{2}}{4n^{2}-1}=\\prod_{n=1}^{\\infty}\\left(\\frac{2n}{2n-1}\\cdot\\frac{2n}{2n+1}\\right)}\\\\ {}&{{}=\\left(\\frac{1}{1}\\cdot\\frac{2}{3}\\right)\\cdot\\left(\\frac{4}{3}\\cdot\\frac{4}{5}\\right)\\cdot\\left(\\frac{6}{5}\\cdot\\frac{6}{7}\\right)\\cdot\\left(\\frac{8}{7}\\cdot\\frac{8}{9}\\right)\\cdot\\cdots}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.5359597909991862,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-08",
+      "category": "aligned",
+      "image": "crops/aligned-08.png",
+      "expected_latex": "\\begin{align}\n\\Gamma(z) & = \\int_0^\\infty e^{-x} x^{z-1} dx \\\\[6pt]\n & = - \\int_0^\\infty x^{z-1} \\, d\\left(e^{-x}\\right) \\\\[6pt]\n & = - \\Biggl[e^{-x} x^{z-1}\\Biggl]_0^\\infty + \\int_0^\\infty e^{-x} d\\left(x^{z-1}\\right) \\\\[6pt]\n & = 0 + \\int_0^\\infty \\left(z-1\\right) x^{z-2} e^{-x}  dx\\\\[6pt]\n & = (z-1)\\Gamma(z-1).\n\\end{align}",
+      "latex": "\\begin{aligned}{\\Gamma(z)}&{{}=\\int_{0}^{\\infty}e^{-x}x^{z-1}d x}\\\\ {}&{{}=-\\int_{0}^{\\infty}x^{z-1}d\\left(e^{-x}\\right)}\\\\ {}&{{}=-\\left[e^{-x}x^{z-1}\\right]_{0}^{\\infty}+\\int_{0}^{\\infty}e^{-x}d\\left(x^{z-1}\\right)}\\\\ {}&{{}=0+\\int_{0}^{\\infty}\\left(z-1\\right)x^{z-2}e^{-x}d x}\\\\ {}&{{}=(z-1)\\Gamma(z-1).}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.5467335409994121,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-09",
+      "category": "aligned",
+      "image": "crops/aligned-09.png",
+      "expected_latex": "\\begin{align}\n(\\mathcal{F}f')(\\xi) &= \\int_{-\\infty}^\\infty e^{-2\\pi iy\\xi} f'(y)\\,dy \\\\\n&=\\left[e^{-2\\pi iy\\xi} f(y)\\right]_{-\\infty}^\\infty - \\int_{-\\infty}^\\infty (-2\\pi i\\xi e^{-2\\pi iy\\xi}) f(y)\\,dy \\\\[5pt]\n&=2\\pi i\\xi \\int_{-\\infty}^\\infty e^{-2\\pi iy\\xi} f(y)\\,dy \\\\[5pt]\n&=2\\pi i\\xi \\mathcal{F}f(\\xi).\n\\end{align}",
+      "latex": "\\begin{aligned}{(\\mathcal{F}f^{'})(\\xi)}&{{}=\\int_{-\\infty}^{\\infty}e^{-2\\pi i y\\xi}f^{'}(y)d y}\\\\ {}&{{}=\\left[e^{-2\\pi i y\\xi}f(y)\\right]_{-\\infty}^{\\infty}-\\int_{-\\infty}^{\\infty}\\big(-2\\pi i\\xi e^{-2\\pi i y\\xi}\\big)f(y)d y}\\\\ {}&{{}=2\\pi i\\xi\\int_{-\\infty}^{\\infty}e^{-2\\pi i y\\xi}f(y)d y}\\\\ {}&{{}=2\\pi i\\xi\\mathcal{F}f(\\xi).}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.5340278330040746,
+      "structurally_correct": null
+    },
+    {
+      "id": "aligned-10",
+      "category": "aligned",
+      "image": "crops/aligned-10.png",
+      "expected_latex": "\\begin{align}\n\\langle -\\Delta f, f \\rangle_{L^2} &= -\\int_{-\\infty}^\\infty f''(x)\\overline{f(x)}\\,dx \\\\[5pt]\n&=-\\left[f'(x)\\overline{f(x)}\\right]_{-\\infty}^\\infty + \\int_{-\\infty}^\\infty f'(x)\\overline{f'(x)}\\,dx \\\\[5pt]\n&=\\int_{-\\infty}^\\infty \\vert f'(x)\\vert^2\\,dx \\geq 0.\n\\end{align}",
+      "latex": "\\begin{aligned}{\\left\\\\race-\\Delta f,f\\right\\rangle_{L^{2}}=}&{{}~-\\int_{-\\infty}^{\\infty}^{{}}f^{'}(x)\\overline{{f(x)}}d x}\\\\ {=}&{{}~-\\left[f^{'}(x)\\overline{{f(x)}}\\right]_{-\\infty}^{\\infty}+\\int_{-\\infty}^{\\infty}^{\\infty}f^{'}(x)\\overline{{f^{'}(x)}}d x}\\\\ {=}&{{}~\\int_{-\\infty}^{\\infty}~{}~|f^{'}(x)|^{2}d x\\geq0.}\\\\ \\end{aligned}",
+      "error": null,
+      "warm_worker_seconds": 0.5323910000006435,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-01",
+      "category": "small-type",
+      "image": "crops/small-type-01.png",
+      "expected_latex": "\\int_{a}^{b} f'(t) \\, dt = f(b) - f(a)",
+      "latex": "\\int_{a}^{b}f^{'}(t)d t=f(b)-f(a)",
+      "error": null,
+      "warm_worker_seconds": 0.1299618749981164,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-02",
+      "category": "small-type",
+      "image": "crops/small-type-02.png",
+      "expected_latex": "\\frac{dy}{dx} = \\frac{d}{dx} f(x).",
+      "latex": "\\begin{array}{r}{\\frac{d y}{d x}=\\frac{d}{d x}f(x).}\\end\\array}array\\",
+      "error": null,
+      "warm_worker_seconds": 0.14300579200062202,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-03",
+      "category": "small-type",
+      "image": "crops/small-type-03.png",
+      "expected_latex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\Bigl(\\frac{d}{dx} f(x)\\Bigr).",
+      "latex": "\\begin{array}{r}{\\frac{d^{2}y}{d x^{2}}=\\frac{d}{d x}\\left(\\frac{d}{d x}f(x)\\right).}\\\\ \\end{array}",
+      "error": null,
+      "warm_worker_seconds": 0.1894696669987752,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-04",
+      "category": "small-type",
+      "image": "crops/small-type-04.png",
+      "expected_latex": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}.",
+      "latex": "\\frac{d y}{d x}=\\frac{d y}{d u}\\cdot\\frac{d u}{d x}\\cdot.",
+      "error": null,
+      "warm_worker_seconds": 0.13717362500028685,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-05",
+      "category": "small-type",
+      "image": "crops/small-type-05.png",
+      "expected_latex": "D_{xy} f(x,y) = \\frac{\\partial}{\\partial y} \\Bigl(\\frac{\\partial}{\\partial x} f(x,y) \\Bigr)",
+      "latex": "\\begin{array}{r}{D_{x y}f(x,y)=\\frac{\\check{sigma}}{\\check{\\sigma}y}\\Big(\\frac{\\partial}{\\partial x}f(x,y)\\Big).}\\end{array}",
+      "error": null,
+      "warm_worker_seconds": 0.20211299999937182,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-06",
+      "category": "small-type",
+      "image": "crops/small-type-06.png",
+      "expected_latex": "\\textstyle D_{x}^2 f(x,y) = \\frac{\\partial}{\\partial x} \\Bigl(\\frac{\\partial}{\\partial x} f(x,y) \\Bigr)",
+      "latex": "\\begin{array}{r}{D_{x}^{2}f(x,y)=\\frac{\\partial}{\\partial x}\\Big(\\frac{\\partial}{\\partial x}f(x,y)\\Big).}\\end{array}",
+      "error": null,
+      "warm_worker_seconds": 0.19196625000040513,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-07",
+      "category": "small-type",
+      "image": "crops/small-type-07.png",
+      "expected_latex": "\\frac{d}{dx}x^a = ax^{a-1}",
+      "latex": "\\frac{d}{d x}x^{a}=a x^{a-1}",
+      "error": null,
+      "warm_worker_seconds": 0.11762816600094084,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-08",
+      "category": "small-type",
+      "image": "crops/small-type-08.png",
+      "expected_latex": "\\frac{d}{dx}e^x = e^x",
+      "latex": "\\frac{d}{d x}e^{x}=e^{x}",
+      "error": null,
+      "warm_worker_seconds": 0.11063287499564467,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-09",
+      "category": "small-type",
+      "image": "crops/small-type-09.png",
+      "expected_latex": "\\frac{d}{dx}a^x = a^x\\ln(a)",
+      "latex": "\\frac{d}{d x}a^{x}=a^{x}\\mathrm{l n}(a),",
+      "error": null,
+      "warm_worker_seconds": 0.1344757090046187,
+      "structurally_correct": null
+    },
+    {
+      "id": "small-type-10",
+      "category": "small-type",
+      "image": "crops/small-type-10.png",
+      "expected_latex": "\\frac{d}{dx}\\ln(x) = \\frac{1}{x}",
+      "latex": "\\frac{d}{d x}{\\operatorname{l n}(x)}=\\frac{1}{x},",
+      "error": null,
+      "warm_worker_seconds": 0.14560825000080513,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-01",
+      "category": "dark-background",
+      "image": "crops/dark-background-01.png",
+      "expected_latex": "\\int u \\, dv \\ =\\ uv - \\int v \\, du.",
+      "latex": "\\int u v=v v\\-v d u.",
+      "error": null,
+      "warm_worker_seconds": 0.10712604200671194,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-02",
+      "category": "dark-background",
+      "image": "crops/dark-background-02.png",
+      "expected_latex": "\\Big(u(x)v(x)\\Big)'  = u'(x) v(x) + u(x) v'(x).",
+      "latex": "\\left(u(x)v(x)\\right)^{'}=u^{'}(x)v(x)+u(x)v^{'}(x).",
+      "error": null,
+      "warm_worker_seconds": 0.1654997910009115,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-03",
+      "category": "dark-background",
+      "image": "crops/dark-background-03.png",
+      "expected_latex": "\\int \\Big(u(x)v(x)\\Big)'\\,dx  = \\int u'(x)v(x)\\,dx + \\int u(x)v'(x) \\,dx,",
+      "latex": "\\int\\left(u(x)v(x)_right{^{\\prime}}d x=\\int u^{'}(x)v(x)d x+\\int u(x)v^{'}(x)d x,",
+      "error": null,
+      "warm_worker_seconds": 0.18086141599633265,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-04",
+      "category": "dark-background",
+      "image": "crops/dark-background-04.png",
+      "expected_latex": "u(x)v(x)  = \\int u'(x)v(x)\\,dx + \\int u(x)v'(x)\\,dx,",
+      "latex": "u(x)v(x)=\\int u^{'}(x)v(x)d x+\\int u(x)v^{'}(x)d x,",
+      "error": null,
+      "warm_worker_seconds": 0.15145816699805437,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-05",
+      "category": "dark-background",
+      "image": "crops/dark-background-05.png",
+      "expected_latex": "\\int u(x)v'(x)\\,dx  = u(x)v(x) - \\int u'(x)v(x) \\,dx,",
+      "latex": "\\int u(x)v^{'}(x)d x=u(x)v(x)-\\int u^{'}(x)v(x)d x,",
+      "error": null,
+      "warm_worker_seconds": 0.15180095799587434,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-06",
+      "category": "dark-background",
+      "image": "crops/dark-background-06.png",
+      "expected_latex": "\\int u(x)\\,dv  = u(x)v(x) - \\int v(x)\\,du.",
+      "latex": "\\int u(x)d v=u(x)v(x)-\\int v(x)d u.",
+      "error": null,
+      "warm_worker_seconds": 0.12093499999900814,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-07",
+      "category": "dark-background",
+      "image": "crops/dark-background-07.png",
+      "expected_latex": "\\int_a^b u(x) v'(x) \\, dx \n    = u(b) v(b) - u(a) v(a) - \\int_a^b u'(x) v(x) \\, dx .",
+      "latex": "\\int_{a}^{b}u(x)v^{'}(x)d x=u(b)v(b)-u(a)v(a)-\\int_{a}^{b}u^{'}(x)v(x)d x.",
+      "error": null,
+      "warm_worker_seconds": 0.19851658300467534,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-08",
+      "category": "dark-background",
+      "image": "crops/dark-background-08.png",
+      "expected_latex": "u(x)= e^x/x^2, \\, v'(x) =e^{-x}",
+      "latex": "u(x)=e^{x}/x^{2},v^{'}(x)=e^{-x}",
+      "error": null,
+      "warm_worker_seconds": 0.13757937499758555,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-09",
+      "category": "dark-background",
+      "image": "crops/dark-background-09.png",
+      "expected_latex": "\\int_1^\\infty u(x)v'(x)\\,dx = \\Big[u(x)v(x)\\Big]_1^\\infty - \\int_1^\\infty u'(x)v(x)\\,dx",
+      "latex": "\\int_{1}^{\\infty}u(x)v^{\\prime}(x)d x=\\left[u(x)v(x)\\right]_{1}^{\\infty}-\\int_{1}^{\\infty}u^{\\prime}(x)v(x)d x.",
+      "error": null,
+      "warm_worker_seconds": 0.22055445800651796,
+      "structurally_correct": null
+    },
+    {
+      "id": "dark-background-10",
+      "category": "dark-background",
+      "image": "crops/dark-background-10.png",
+      "expected_latex": "u(x)= e^{-x},\\, v'(x) =x^{-1}\\sin(x)",
+      "latex": "u(x)=e^{-x},v^{'}(x)=x^{-1}\\mathrm{s i n}(x)",
+      "error": null,
+      "warm_worker_seconds": 0.14630595900234766,
+      "structurally_correct": null
+    }
+  ],
+  "release_approved": false
+}

@@ -1,0 +1,23 @@
+{
+  "chrome": "Google Chrome 157.0.8103.79",
+  "screen_capture": "Chrome headless rasterization followed by complete-ink crops",
+  "scale_factors": [
+    1,
+    2
+  ],
+  "font_sizes_css_px": [
+    24,
+    36,
+    48
+  ],
+  "drag_parameter_css_px": [
+    2,
+    6,
+    16,
+    30
+  ],
+  "drag_margins": "left=p, top=floor(p/2)+2, right=floor(p/2)+2, bottom=p",
+  "exact_pixel_matches": 48,
+  "archived_crops": 48,
+  "comparison": "Pillow RGB arrays compared with numpy.array_equal for each manifest image"
+}
