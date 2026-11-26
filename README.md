@@ -1,34 +1,57 @@
-<p align="center"><img src="Assets/Icon/LaTeXShot.png" width="128" alt="LaTeXShot app icon"></p>
+<p align="center">
+  <img src="Assets/Icon/LaTeXShot.png" width="128" alt="LaTeXShot app icon">
+</p>
+<h1 align="center">LaTeXShot</h1>
+<p align="center">Screenshot an equation and copy it as LaTeX, offline.</p>
+<p align="center">
+  <a href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg"><strong>Download the DMG</strong></a>
+  · <a href="https://github.com/exploringtruth/latexshot/releases/latest">Latest release</a>
+  · <a href="https://exploringtruth.github.io/latexshot/">Website</a>
+</p>
+<p align="center">
+  <a href="#install">Apple silicon · macOS 14 or later</a>
+  · <a href="LICENSE">GPL-3.0-only</a>
+</p>
 
-# LaTeXShot
-
-Screenshot an equation and copy it as LaTeX, offline.
-
-[Download for Mac](https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg) · [Website](https://exploringtruth.github.io/latexshot/) · [Feedback](https://github.com/exploringtruth/latexshot/issues)
-
-**v1.0.0** is available for Apple silicon. The frozen printed-equation benchmark accepted 60 of 66 results (90.9%), below the 95% target. Review the copied LaTeX before using it. [Benchmark results](benchmarks/pix2text-v1/README.md)
+LaTeXShot puts printed equations from PDFs and websites on your clipboard. Press **⌘⇧L**, select the equation, and paste the LaTeX into your editor. Recognition runs on your Mac.
 
 ## Install
 
-Requires an **Apple silicon Mac (M1 or later) running macOS 14 or later**. The first release targets printed equations in PDFs and websites; handwriting is planned for a follow-up release.
+LaTeXShot requires an **Apple silicon Mac (M1 or later) running macOS 14 or later**.
 
-Open the official DMG, drag **LaTeXShot** to **Applications**, then open LaTeXShot from Applications. The app is **ad-hoc signed and unnotarized**. The [v1.0.0 ZIP](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0.zip) is an alternative download. Verify either file against the published [SHA256SUMS](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/SHA256SUMS).
+1. Download the [latest DMG](https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg) and open it.
+2. Drag **LaTeXShot** into **Applications**, then eject the disk image.
+3. Open **LaTeXShot** from Applications. Grant Screen Recording access when macOS prompts you so LaTeXShot can read the region you select.
+
+The [v1.0.0 ZIP](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/LaTeXShot-1.0.0.zip) is also available. Verify either download against the [published checksums](https://github.com/exploringtruth/latexshot/releases/download/v1.0.0/SHA256SUMS).
 
 ### If macOS blocks the app
 
-1. Download the DMG from this repository's official [GitHub releases](https://github.com/exploringtruth/latexshot/releases).
-2. Open the DMG and move **LaTeXShot** to **Applications**.
-3. Open LaTeXShot from Applications once. macOS may block it because the developer or notarization cannot be verified.
-4. If you trust this download, open **System Settings → Privacy & Security**, scroll to the security message for LaTeXShot, and click **Open Anyway**.
-5. Click **Open** in the confirmation prompt. See [Apple's instructions](https://support.apple.com/en-us/102445).
+LaTeXShot is **ad-hoc signed and unnotarized**. If you trust the copy you downloaded from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases):
 
-Grant Screen Recording access when prompted so LaTeXShot can read the equation you select. The app lives in the menu bar. Open **Settings → General** to control Launch at Login.
+1. Open the installed app once to trigger the macOS warning.
+2. Go to **System Settings → Privacy & Security** and scroll to **Security**.
+3. Click **Open Anyway** next to the LaTeXShot warning, then confirm **Open**.
+4. Look for the LaTeXShot icon in the menu bar. [Apple’s instructions](https://support.apple.com/en-us/102445)
 
-## Capture and shortcuts
+## Usage
 
-Press **⌘⇧L**, drag around a printed equation, then paste its LaTeX. **Escape** cancels selection. **Capture Equation** in the menu uses the same capture flow. Change, clear, or restore the shortcut in **Settings → Shortcuts**.
+1. Press **⌘⇧L** or choose **Capture Equation** from the menu bar.
+2. Drag around a printed equation. Press **Escape** to cancel.
+3. Paste the copied LaTeX wherever you need it. A popup previews the equation when rendering succeeds.
 
-Clipboard formats in **Settings → General**:
+Change, clear, or restore the capture shortcut in **Settings → Shortcuts**. A failed recognition leaves your clipboard intact.
+
+## Features
+
+- **Clipboard formats.** Copy raw LaTeX, use Markdown or LaTeX delimiters, or define your own wrapper.
+- **Equation History.** Reuse saved formulas in the current clipboard format.
+- **Capture and shortcuts.** Adjust selection dimming and assign shortcuts for Settings, Equation History, or clipboard formats.
+- **Launch at Login.** Manage it in **Settings → General**.
+
+### Clipboard formats
+
+Choose a format in **Settings → General**. Changing the format immediately recopies the latest LaTeXShot equation when one is available.
 
 | Format | Example |
 | --- | --- |
@@ -39,33 +62,33 @@ Clipboard formats in **Settings → General**:
 | Display LaTeX | `\[x^2\]` |
 | Custom | Your literal prefix + `x^2` + suffix |
 
-Custom wrappers preserve spaces and line breaks, including empty fields. The copied popup displays the equation body independently of the selected wrapper. A recognition failure preserves the previous clipboard.
+Custom wrappers preserve whitespace, line breaks, and empty fields. The popup renders the equation without its clipboard wrapper.
 
-## Equation History
+### Equation History
 
-Choose **Equation History** from the menu bar menu to open a panel at the top center of the current display. Click a rendered equation to copy it in the current clipboard format, or drag it into a compatible text field. LaTeXShot keeps the 10 most recently copied equations by default. In **Settings → General**, pause recording or choose a limit from 1 to 5,000. Assign an optional **Show Equation History** shortcut in **Settings → Shortcuts**. Use the trash button in the panel to clear the history.
-
-Changing the clipboard format immediately recopies the latest LaTeXShot equation when one is available.
-
-## Updates
-
-Download updates manually from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases). Quit LaTeXShot and replace the app in Applications with the newer copy. In-app update checks and automatic updates are disabled in v1.0.0.
+Choose **Equation History** from the menu bar. Click a rendered equation to copy it, or drag it into a compatible text field. History keeps the 10 most recent copies by default. You can pause recording or choose a limit from 1 to 5,000 in **Settings → General**. Use the trash button in the panel to clear saved entries.
 
 ## Privacy
 
-Equation crops stay in memory during capture and recognition. Recognition uses a bundled offline model and runtime; it does not upload crops. Preferences, including clipboard format, custom wrappers, shortcut, and first-run hint state, are stored locally. Launch at Login is managed by macOS.
+The bundled Pix2Text model processes equation crops in memory on your Mac. Crops stay on your device. Preferences and Equation History are stored locally, and saved formulas persist across restarts. The app uses Screen Recording to capture your selection. **Send Feedback…** opens GitHub Issues in your browser, where you choose what to share. LaTeXShot has no analytics.
 
-Equation History stores recent copied formula text on your Mac across restarts.
+## FAQ
 
-Screen Recording permission allows the app to capture the selected screen region. **Send Feedback…** opens GitHub Issues in your default browser; you choose what to submit. No analytics are configured. A local development run may need separate model/runtime setup; see [recognition packaging](docs/UPDATER.md#offline-recognition-assets).
+### Does LaTeXShot need an internet connection to recognize equations?
 
-## Feedback
+The installed app recognizes equations offline with the bundled model and runtime.
 
-Use **Send Feedback…** from the menu or [open a GitHub issue](https://github.com/exploringtruth/latexshot/issues). Include the macOS version and what happened. Share an equation or screenshot only when you intend to make it public.
+### What kinds of equations can I capture?
 
-## Build locally
+v1.0.0 supports printed equations in PDFs and websites. Handwriting support is planned. The frozen printed-equation benchmark accepted **60 of 66 results (90.9%)** against a 95% target. Review the copied LaTeX before using it. [Benchmark results](benchmarks/pix2text-v1/README.md)
 
-Use an Apple silicon Mac with macOS 14 or later and **Swift 6.2 / Xcode 26 or later**. A development recognition environment also requires Python 3.12. Prepare the pinned [Pix2Text runtime and model](docs/runtime/pix2text.md), then run:
+### How do I update v1.0.0?
+
+Download the new version from [GitHub Releases](https://github.com/exploringtruth/latexshot/releases). Quit LaTeXShot, then replace the app in Applications. In-app update checks and automatic updates are disabled in v1.0.0.
+
+## Build from source
+
+Use an Apple silicon Mac with macOS 14 or later, **Swift 6.2 / Xcode 26 or later**, and Python 3.12 or later. Preparing the [pinned Pix2Text runtime and model](docs/runtime/pix2text.md) requires a network connection.
 
 ```sh
 python3 scripts/build-pix2text-runtime.py /absolute/path/to/latexshot-development
@@ -75,17 +98,20 @@ LATEXSHOT_MODEL_DIRECTORY=/absolute/path/to/latexshot-development/RecognitionMod
 swift run LaTeXShot
 ```
 
-The setup command downloads the pinned development dependencies and model and needs a network connection. Recognition after setup runs offline. This development environment is not proof that a runtime can be relocated inside a distributed app.
-
-The app-side recognition adapter requires the offline runtime and model from the recognition track. A local package can be built without them for menu, Settings, and permission smoke checks; equation recognition remains unavailable until those assets are provided:
+To build a local v1.0.0 DMG and ZIP with those assets:
 
 ```sh
-VERSION=1.0.0 bash scripts/build-dmg.sh --local
+VERSION=1.0.0 \
+RECOGNITION_RUNTIME_DIR=/absolute/path/to/latexshot-development/RecognitionRuntime \
+RECOGNITION_MODEL_DIR=/absolute/path/to/latexshot-development/RecognitionModel \
+bash scripts/build-dmg.sh --local
 ```
 
-Output: `.build/dist/--local/1.0.0/LaTeXShot.app`, a versioned DMG, stable-name DMG, and ZIP. Approved artwork is optional for this local smoke build. This is not a public release qualification.
+Output goes to `.build/dist/--local/1.0.0/`. See the [packaging and release guide](docs/UPDATER.md) and [product plan](PLAN.md).
 
-Maintainers: [update setup, release gates, and rollback](docs/UPDATER.md). Product requirements and benchmark targets are in [PLAN.md](PLAN.md).
+## Feedback
+
+Choose **Send Feedback…** in the menu bar or [open a GitHub issue](https://github.com/exploringtruth/latexshot/issues). Include your macOS version and what happened. Share an equation or screenshot only if you intend to make it public.
 
 ## License
 
