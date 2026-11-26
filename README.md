@@ -86,3 +86,9 @@ VERSION=1.0.0 bash scripts/build-dmg.sh --local
 Output: `.build/dist/--local/1.0.0/LaTeXShot.app`, a versioned DMG, stable-name DMG, and ZIP. Approved artwork is optional for this local smoke build. This is not a public release qualification.
 
 Maintainers: [update setup, release gates, and rollback](docs/UPDATER.md). Product requirements and benchmark targets are in [PLAN.md](PLAN.md).
+
+## License
+
+LaTeXShot’s original source code is licensed under the [GNU General Public License, version 3 only](LICENSE) (`GPL-3.0-only`).
+
+Third-party components and the Pix2Text model retain their respective licenses. See the [recognition notices](docs/runtime/pix2text-NOTICES.md) and the license files shipped with individual components.
