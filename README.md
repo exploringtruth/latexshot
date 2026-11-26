@@ -4,9 +4,9 @@
 <h1 align="center">LaTeXShot</h1>
 <p align="center">Screenshot an equation and copy it as LaTeX, offline.</p>
 <p align="center">
-  <a href="https://github.com/exploringtruth/latexshot/releases/latest"><img src="docs/badges/release-v1.0.0.png" height="20" alt="Release v1.0.0"></a>
+  <a href="https://github.com/exploringtruth/latexshot/releases/latest"><img src="docs/badges/latest-release-v1.0.0.png" height="20" alt="Release v1.0.0"></a>
   <a href="LICENSE"><img src="docs/badges/gpl-3.0-only.png" height="20" alt="License: GPL-3.0-only"></a>
-  <a href="#install"><img src="docs/badges/macos-14-plus.png" height="20" alt="Requires macOS 14 or later on Apple silicon"></a>
+  <a href="#install"><img src="docs/badges/macos-14-or-later.png" height="20" alt="Requires macOS 14 or later on Apple silicon"></a>
 </p>
 <p align="center">
   <a href="https://github.com/exploringtruth/latexshot/releases/latest/download/LaTeXShot.dmg"><strong>Download the DMG</strong></a>
